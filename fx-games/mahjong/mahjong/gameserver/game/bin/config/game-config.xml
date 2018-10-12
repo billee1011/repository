@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- id:  platformId: 联运平台  ; maxConcurrentUser: 允许同时最高在线  maxRegisterUser: 允许最多注册人数  -->
+ <!--heartBeat: 网关心跳检测时间(0 不进行心跳检测) compress: 网关数据包压缩 crypto: 网关数据包加密 compressThreshold: 压缩阀值 enableAcceleratorValidate 是否允许处理加速器,accIntervalUplimit 加速检测的间隔上限，到达这个上限就弹框警告，毫秒单位-->
+<root platformId="0"  maxConcurrentUser="3000" maxRegisterUser="100000" heartBeat="120" compress="false" compressThreshold="512" crypto="true"  enableAcceleratorValidate="true" accIntervalUplimit="5000">
+	<identity>
+	<!--务必第一个server leader为true,leader为是否为原始区， 区的信息，合区后这里会有很多条，游戏区worldId (全局唯一，所有平台共用 )worldname:游戏区名 (全局唯一,所有平台共用 ) 
+	id:平台的区ID,name：平台的区名称，externalIp：区的外网IP或者域名-->
+	<entry leader="true" worldId="1" worldName="G1" id="1" name="majhong_王宁服务器" externalIp="192.168.1.12"/>
+	</identity>
+	<!--  服务器相关配置 innerPort 服务器内部RPC通信端口，tcpPort TCP玩家通信端口，webPort 后台http连接端口-->
+	<!-- tgw: true启用TGW模式 false 不启用（腾讯专用） -->
+	<server innerPort="9527" tgw="false" tcpPort="9999"  webPort="10086" />
+     <!--  游戏配置: lobal: 策划数据;  debug: 调试模式(true: 聊天框内输出调试信息/允许debug命令) saveInterval: 存档时间间隔(单位:秒) offlineInterval: 离线玩家在内存中的存活时间(单位:秒) exchange 充值功能是否开启-->
+	<!-- 游戏所需语言环境(韩国版ko(KR),英文版en,中文zh(CN/TW) YB兑换比例(zh->10, ko->1)-->
+	<!-- antiAddiction: true 表示启用防沉迷-->
+	<!-- translate ：是否开启翻译功能 -->
+	<!-- activate: true 表示启用检测账号是否激活 -->
+	<!-- mokylinLog: true 表示启用生成墨麟总部日志-->
+	<!-- location: true 表示会定位玩家[仅限在中国大陆使用]-->
+	<game local="F:\workpace\mahjong\DesignData\CN" debug="true" saveInterval="300" offlineInterval="3600"  exchange="true"  language="zh" exchangeRate="10" antiAddiction="true" translate="false" activate="false"  mokylinLog="true" location="false"/>                                                                               
+	<!-- MySQL 配置 -->
+<db>
+		<!-- needCompress: blob字段是否压缩-->
+		<property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/mahjong?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8"/>
+		<property name="jdbcDriver" value="com.mysql.jdbc.Driver"/>
+		<property name="jdbcUser" value="root"/>
+		<property name="jdbcPassword" value="mysql"/>
+		<property name="needCompress" value="true"/>
+		<property name="initialPoolSize" value="1"/>
+		<property name="minPoolSize" value="2"/>
+		<property name="maxPoolSize" value="50"/>
+		<property name="acquireIncrement" value="3"/>
+		<property name="maxIdleTime" value="3600"/>
+		<property name="maxStatements" value="0"/>
+		<property name="maxStatementsPerConnection" value="100"/>
+		<property name="preferredTestQuery" value="select 1"/>
+	</db>
+	
+	<cache>
+	<!-- redis配置 type 1表示游戏库，2表示全局库,3表示角色库 5表示消息库 
+		<entry type="1" ip="192.168.1.48" port="6399" index="10" />
+		<entry type="2" ip="192.168.1.48" port="6393" index="0" />
+		<entry type="3" ip="192.168.1.48" port="6382" index="0" />
+		<entry type="5" ip="192.168.1.48" port="6384" index="0" />
+	-->
+	</cache>
+	<backserver url="http://127.0.0.1:8080/admin/"></backserver>
+	<playback playbacklocal="/data/playback/"></playback>
+	<downImg localurl="/data/img/"></downImg>
+	
+	<!-- RPC Client配置: timeout: 毫秒单位,0表示没有timeout,一般生产线上为5000-->
+	<rpc timeout="5000">
+	</rpc>
+	<!-- 平台节点先删除把 
+		<platform>
+		</platform>
+	-->	
+</root>

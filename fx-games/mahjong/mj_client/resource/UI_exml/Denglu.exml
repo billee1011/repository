@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Denglu" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15823b94b30"/>
+	<e:Image id="img_loadBg" width="813" height="32" x="231" y="565" source="load_barBg"/>
+	<e:Image id="img_loadTiao" width="756" height="11" x="262" y="569" source="load_bar"/>
+	<e:Label id="label_loadMsg" text="2%" x="609" y="558" anchorOffsetX="0" width="75" fontFamily="KaiTi" textAlign="center" strokeColor="0xb51249" stroke="1" textColor="0xf7f7f2"/>
+	<e:Label text="抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活" x="75" y="685" anchorOffsetX="0" width="1120" size="20" fontFamily="KaiTi" stroke="2"/>
+	<e:Image id="img_zi" width="195" height="38" x="542" y="517" source="loading_zi"/>
+</e:Skin>

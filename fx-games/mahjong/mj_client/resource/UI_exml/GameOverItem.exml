@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameOverItem" width="231" height="404" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="img_headBorder" width="106" height="105" y="4" source="main_headBg" x="4"/>
+	<e:Label id="label_name" text="玩家名字七" x="106.5" y="24.5" size="24" textColor="0x680607" anchorOffsetX="0" width="125" fontFamily="Microsoft YaHei"/>
+	<e:Label id="label_id" text="ID: 01245" x="106.5" y="66.5" size="24" anchorOffsetX="0" width="125" fontFamily="Microsoft YaHei" textColor="0x680607"/>
+	<e:Label text="总成绩" x="78" y="296" size="24" textColor="0x680607" fontFamily="Microsoft YaHei"/>
+	<e:Image id="img_head" width="82" height="83" x="14" y="12.5" anchorOffsetX="0" anchorOffsetY="0"/>
+</e:Skin>

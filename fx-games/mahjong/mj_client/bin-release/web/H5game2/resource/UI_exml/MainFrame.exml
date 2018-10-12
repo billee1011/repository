@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MainFrame" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Component id="com_createRoom" width="342" height="76" x="307" y="426"/>
+	<e:Component id="com_enterRoom" width="342" height="76" x="695" y="426"/>
+	<e:Component id="com_help" width="72" height="100" x="998" y="16"/>
+	<e:Component id="com_message" width="72" height="100" x="1086" y="16"/>
+	<e:Component id="com_setting" width="72" height="100" x="1174" y="16"/>
+	<e:Image width="108" height="108" x="26" y="8" source="mf_headwen"/>
+	<e:Image id="img_headBorder" width="108" height="108" x="26" y="4" source="mf_headdi"/>
+	<e:Label id="label_name" text="隔壁老王" x="141" y="23" anchorOffsetX="0" width="155" textColor="0xf2bc1a" fontFamily="KaiTi"/>
+	<e:Label id="label_id" text="ID:2415234" x="141" y="66" anchorOffsetX="0" width="179" textColor="0xF2BC1A" fontFamily="KaiTi"/>
+	<e:Image width="46" height="44" x="301" y="26" source="mf_diamond"/>
+	<e:Label id="label_diamond" text="550" x="348" y="37" anchorOffsetX="0" width="126" textAlign="center" textColor="0x8ac3f2"/>
+	<e:Button id="btn_addDiamond" label="" x="482" y="34" width="31" height="32">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="mf_add" source.down="mf_add"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

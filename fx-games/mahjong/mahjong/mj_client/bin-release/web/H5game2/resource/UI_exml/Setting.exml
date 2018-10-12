@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Setting" width="811" height="267" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="label_xieyi" text="同意用户使用协议" x="580" y="589" anchorOffsetX="0" width="253" textColor="0x66352C" bold="true" fontFamily="KaiTi" textAlign="left"/>
+	<e:Image id="img_backBg" width="508" height="26" x="97" y="32.5" source="jidutiaod"/>
+	<e:Image id="img_backTiao" width="508" height="26" x="97" y="32.5" source="jidutiaos"/>
+	<e:Image id="img_backHead" width="71" height="75" x="245" y="2" source="jzshazi"/>
+	<e:Image id="img_backBg0" width="508" height="26" x="97" y="107.5" source="jidutiaod"/>
+	<e:Image id="img_backTiao0" width="508" height="26" x="97" y="107.5" source="jidutiaos"/>
+	<e:Image id="img_backHead0" width="71" height="75" x="245" y="77" source="jzshazi"/>
+	<e:Label text="音乐" x="16" y="30.5" fontFamily="KaiTi"/>
+	<e:Label text="音效" x="16" y="107" fontFamily="KaiTi"/>
+</e:Skin>

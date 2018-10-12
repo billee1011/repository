@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="OverLabelItem" width="215" height="38" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="label_msg" text=" 自摸次数      0" x="8" y="8" size="24" textColor="0x580800" anchorOffsetX="0" width="200" fontFamily="Microsoft YaHei"/>
+</e:Skin>

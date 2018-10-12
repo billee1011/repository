@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+       	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+     	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
+ 
+	<!-- bus share 模块 -->
+	
+	<bean id="busMsgDispatcher" class="com.lingyu.common.message.BusMsgDispatcher">
+		<constructor-arg index="0" ref="busExecutor"></constructor-arg>
+		<constructor-arg index="1" ref="busMessageMediator"></constructor-arg>
+	</bean>
+	
+	<bean id="busExecutor" class="com.lingyu.common.message.BalanceBusinessExecutor">
+		<constructor-arg index="0" value="11"></constructor-arg>
+		<constructor-arg index="1">
+			<map>
+				<!--key 1bus_cache 2 bus_init  3 stage 4 public -->
+				<!-- 玩家业务逻辑 -->
+				<entry key="1" value="2"></entry>
+            </map>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="busMessageMediator" class="com.lingyu.common.message.MessageMediator" depends-on="springContainer">
+		<constructor-arg index="0" value="com.lingyu.game.action.bus"></constructor-arg>
+	</bean>
+</beans>

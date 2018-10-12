@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+	<description>JDBC</description>
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close">
+		<property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/mj_admin?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8"/>
+		<property name="driverClass" value="com.mysql.jdbc.Driver"/>
+		<property name="user" value="root"/>
+		<property name="password" value="123456"/>
+		<!-- 初始化连接池中的连接数，取值应在minPoolSize与maxPoolSize之间，默认为3--> 
+		<property name="initialPoolSize" value="2"/>
+		<!-- 连接池中保留的最小连接数，默认为：3--> 
+		<property name="minPoolSize" value="2"/>
+		<!--连接池中保留的最大连接数。默认值: 15 -->   
+		<property name="maxPoolSize" value="15"/>
+		<!--当连接池中的连接耗尽的时候c3p0一次同时获取的连接数。默认值: 3 -->   
+		<property name="acquireIncrement" value="3"/>
+		<!--定义在从数据库获取新连接失败后重复尝试的次数。默认值: 30 ；小于等于0表示无限次-->   
+         <property name="acquireRetryAttempts" value="0"/>  
+         <!--重新尝试的时间间隔，默认为：1000毫秒-->   
+          <property name="acquireRetryDelay" value="1000" />  
+	 <!--最大空闲时间，3600秒内未使用则连接被丢弃。若为0则永不丢弃。默认值: 0 -->
+                <property name="maxIdleTime" value="3600"/>
+		 <!--c3p0全局的PreparedStatements缓存的大小。如果maxStatements与maxStatementsPerConnection均为0，则缓存不生效，只要有一个不为0，则语句的缓存就能生效。如果默认值: 0-->   
+		<property name="maxStatements" value="0"/>
+		 <!--maxStatementsPerConnection定义了连接池内单个连接所拥有的最大缓存statements数。默认值: 0 -->   
+		<property name="maxStatementsPerConnection" value="0"/>
+		<!--定义所有连接测试都执行的测试语句。在使用连接测试的情况下这个一显著提高测试速度。注意： 
+　 测试的表必须在初始数据源的时候就存在。Default: null-->
+		<property name="preferredTestQuery" value="select 1"/>
+	 	 <!--每18000秒检查所有连接池中的空闲连接。Default: 0 -->
+                <property name="idleConnectionTestPeriod" value="18000"/>
+		<!-- 每次都验证连接是否可用 -->
+		<property name="testConnectionOnCheckout" value="false"/>
+	</bean>
+	
+	<bean id="resourceManager" class="com.lingyu.common.resource.ResourceManager">
+		<!-- <constructor-arg index="0" value="E:/wow_design/trunk/data/CN"></constructor-arg> -->
+		<constructor-arg index="0" value="E:\project\trunk\game_mj\DesignData\CN"></constructor-arg>
+	</bean>
+	<bean id="tcpConfig" class="com.lingyu.admin.config.TCPConfig">
+	    <constructor-arg index="0" value="10088"></constructor-arg>
+	</bean>
+</beans>

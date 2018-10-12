@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.lingyu.game.service.id.IdManager" x="1047" y="1247">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class
+        name="com.lingyu.game.service.config.ConfigDataTemplateManager"
+        x="771" y="1058">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class
+        name="com.lingyu.game.service.mahjong.MahjongResultLogRepository"
+        x="2067" y="1163">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"
+            accessors-accepted="true" constructors-accepted="true"/>
+    </Class>
+    <Class
+        name="com.lingyu.game.service.mahjong.MahjongDataTemplateManager"
+        x="2117" y="1452">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.lingyu.game.service.role.RoleManager" x="680" y="1430">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.lingyu.game.service.mahjong.MahjongManager"
+            endpointName="mahjongManager" kind="Simple"/>
+        <Association destinationClassName="com.lingyu.game.RouteManager"
+            endpointName="routeManager" kind="Simple"/>
+        <Association
+            destinationClassName="com.lingyu.game.service.role.RoleRepository"
+            endpointName="roleRepository" kind="Simple"/>
+        <Association
+            destinationClassName="com.lingyu.game.service.id.IdManager"
+            endpointName="idManager" kind="Simple"/>
+        <Communication destinationClassName="com.lingyu.game.service.role.RoleRepository"/>
+        <Communication destinationClassName="com.lingyu.game.service.mahjong.MahjongManager"/>
+    </Class>
+    <Class name="com.lingyu.game.RouteManager" x="1860" y="1719">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.lingyu.common.entity.ChessEvery" x="610" y="890">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.lingyu.game.service.role.RoleRepository" x="1467" y="1591">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="true"
+            accessors-accepted="true" constructors-accepted="true"/>
+    </Class>
+    <Class name="com.lingyu.common.entity.MahjongRoom" x="940" y="316">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.lingyu.common.entity.ChessEvery"
+            endpointName="currMoChessEvery" kind="Simple"/>
+        <Association
+            destinationClassName="com.lingyu.common.entity.RoleCache"
+            endpointName="roleCacheMap" kind="Simple"/>
+        <Association
+            destinationClassName="com.lingyu.common.entity.ChessEvery"
+            endpointName="currChessEvery" kind="Simple"/>
+        <Association
+            destinationClassName="com.lingyu.common.entity.ChessEvery"
+            endpointName="roomChess[]" kind="Simple"/>
+        <Communication destinationClassName="com.lingyu.common.entity.ChessEvery"/>
+        <Communication destinationClassName="com.lingyu.common.entity.RoleCache"/>
+    </Class>
+    <Class name="com.lingyu.game.service.mahjong.MahjongManager"
+        x="1375" y="935">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.lingyu.game.service.role.RoleManager"
+            endpointName="roleManager" kind="Simple"/>
+        <Association
+            destinationClassName="com.lingyu.game.service.mahjong.MahjongDataTemplateManager"
+            endpointName="mahjongDataTemplateManager" kind="Simple"/>
+        <Association
+            destinationClassName="com.lingyu.common.entity.MahjongRoom"
+            endpointName="rooms" kind="Simple"/>
+        <Association destinationClassName="com.lingyu.game.RouteManager"
+            endpointName="routeManager" kind="Simple"/>
+        <Association
+            destinationClassName="com.lingyu.game.service.role.RoleRepository"
+            endpointName="roleRepository" kind="Simple"/>
+        <Association
+            destinationClassName="com.lingyu.game.service.mahjong.MahjongResultLogRepository"
+            endpointName="mahjongResultLogRepository" kind="Simple"/>
+        <Association
+            destinationClassName="com.lingyu.game.service.config.ConfigDataTemplateManager"
+            endpointName="configDataTemplateManager" kind="Simple"/>
+        <Association
+            destinationClassName="com.lingyu.game.service.id.IdManager"
+            endpointName="idManager" kind="Simple"/>
+        <Communication destinationClassName="com.lingyu.game.service.config.ConfigDataTemplateManager"/>
+        <Communication destinationClassName="com.lingyu.game.service.mahjong.MahjongResultLogRepository"/>
+        <Communication destinationClassName="com.lingyu.game.service.mahjong.MahjongDataTemplateManager"/>
+        <Communication destinationClassName="com.lingyu.game.service.role.RoleManager"/>
+        <Communication destinationClassName="com.lingyu.game.RouteManager"/>
+        <Communication destinationClassName="com.lingyu.common.entity.ChessEvery"/>
+        <Communication destinationClassName="com.lingyu.game.service.role.RoleRepository"/>
+        <Communication destinationClassName="com.lingyu.common.entity.MahjongRoom"/>
+        <Communication destinationClassName="com.lingyu.common.entity.RoleCache"/>
+    </Class>
+    <Class name="com.lingyu.common.entity.RoleCache" x="448" y="358">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.lingyu.common.entity.ChessEvery"
+            endpointName="outChessList" kind="Simple"/>
+        <Association
+            destinationClassName="com.lingyu.common.entity.ChessEvery"
+            endpointName="roleChessList" kind="Simple"/>
+        <Communication destinationClassName="com.lingyu.common.entity.ChessEvery"/>
+    </Class>
+</ClassDiagram>

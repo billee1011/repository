@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="game-data" default="main" basedir="..">
+	<property name="output.name" value="${ant.project.name}-1.0.0-RELEASE.jar"/>
+    <property name="server.dir" value="${basedir}/${ant.project.name}" />
+    <property name="dist.dir" value="${basedir}/lib" />
+    <property name="src.dir" value="${server.dir}/src"/>
+	<property name="lib.dir" value="${basedir}/lib"/>
+    <property name="classes.dir" value="${server.dir}/build"/>
+	<property file="${basedir}/bin/version.properties"/>
+
+    <path id="classpath">
+        <fileset dir="${lib.dir}" includes="**/*.jar" />
+    </path>
+
+	<pathconvert property="libs.project" pathsep=" ">
+		<mapper>
+			<chainedmapper>
+				<flattenmapper/>
+				<globmapper from="*" to="lib/*" />
+			</chainedmapper>
+		</mapper>
+		<path>
+			<fileset dir="${lib.dir}">
+				<include name="**/*.jar" />
+			</fileset>
+		</path>
+	</pathconvert>
+
+    <target name="main" depends="clean,compile,package" />
+
+    <target name="prepare">
+        <mkdir dir="${classes.dir}" />
+    </target>
+
+    <target name="run-depend" if="src.depend">
+        <echo message="Removing class files that changed and dependent class files." />
+        <depend cache="${classes.dir}" srcdir="${src.dir}" destdir="${classes.dir}" />
+    </target>
+
+    <target name="copy-resources">
+        <echo message="Copy xml, dat and property file from work src dir to the class dir"/>
+        <!-- copy to the classes directory -->
+        <copy todir="${classes.dir}">
+            <fileset dir="${src.dir}">
+				<include name="**/*.xml"/>
+            </fileset>
+        </copy> 
+    </target>
+	
+    <target name="compile" depends="prepare,run-depend,copy-resources" description="compile">
+        <javac encoding="utf-8" includeantruntime="on" source="1.8" debug="true" destdir="${classes.dir}" srcdir="${src.dir}" classpathref="classpath" />
+    </target>
+
+	<target name="package" description=" Creates distribution jar file">
+		<delete file="MANIFEST.MF" />
+		<tstamp>
+			<format property="buildTime" pattern="yyyy-MM-dd HH:mm:ss" />
+		</tstamp>
+		<manifest file="MANIFEST.MF">
+			<attribute name="Built-By" value="${user.name}" />
+			<attribute name="Built-Date" value="${buildTime}" />
+			<attribute name="Implementation-Version" value="${branch}-${svn}-${version}" />
+		</manifest>
+		<jar destfile="${dist.dir}/${output.name}" basedir="${classes.dir}" manifest="MANIFEST.MF" />
+		<delete file="MANIFEST.MF" />
+	</target>
+    <target name="clean" description=" Removes jars and classes">
+		<delete quiet="true" dir="${classes.dir}" />
+		<delete file="${dist.dir}/${output.name}"/>
+    </target>	
+</project>

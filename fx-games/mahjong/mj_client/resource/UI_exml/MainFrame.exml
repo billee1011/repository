@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MainFrame" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="683" height="41" x="317" y="7" source="main_ggBg"/>
+	<e:Image width="230" height="45" x="97" y="43" source="main_kabg"/>
+	<e:Component id="com_rule" width="85" height="94" x="978" y="9"/>
+	<e:Component id="com_message" width="85" height="94" x="1080" y="9"/>
+	<e:Component id="com_setting" width="85" height="94" x="1178" y="10"/>
+	<e:Image id="img_headBorder" width="106" height="105" y="3" source="main_headBg" x="2"/>
+	<e:Label id="label_name" text="隔壁老王七个字" x="139" y="12" anchorOffsetX="0" width="196" textColor="0xf2bc1a" fontFamily="KaiTi" size="27"/>
+	<e:Label id="label_diamond" text="550" x="151" y="52" anchorOffsetX="0" width="126" textAlign="center" textColor="0xfaf4c4" size="28"/>
+	<e:Button id="btn_addDiamond" label="" x="482" y="34" width="31" height="32">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="mf_add" source.down="mf_add"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image width="44" height="50" x="105" y="41" source="main_ka"/>
+	<e:Image width="41" height="41" x="340" y="8" source="main_laba"/>
+	<e:Button id="btn_add" label="" x="275" y="37" width="55" height="55">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="main_add" source.down="main_add"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn_share" label="" x="113" y="605" width="110" height="110">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="main_share" source.down="main_share"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn_backSee" label="" x="272" y="605" width="110" height="110">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="main_backSee" source.down="main_backSee"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn_custom" label="" x="853" y="605" width="110" height="110">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="main_custom" source.down="main_custom"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn_gonggao" label="" x="1007" y="605" width="110" height="110">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="main_gonggao" source.down="main_gonggao"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

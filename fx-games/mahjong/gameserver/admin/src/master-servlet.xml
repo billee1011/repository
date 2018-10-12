@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+	 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+	http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd"
+	default-init-method="initialize" default-destroy-method="destroy">
+
+	<!-- 开启controller注解支持 -->
+	<!-- 注：如果base-package=com.lingyu.admin 则注解事务不起作用 -->
+	<context:component-scan base-package="com.lingyu.admin.controller">
+		<context:include-filter type="annotation"
+			expression="org.springframework.stereotype.Controller" />
+	</context:component-scan>
+	<!--异步超时设定  -->
+	<!-- 拦截器定义 -->
+	<mvc:interceptors>
+		<bean id="sessionInterceptor" class="com.lingyu.servlet.SessionInterceptor" />
+		<bean id="slowLogInterceptor" class="com.lingyu.servlet.SlowLogInterceptor" />
+		<bean id="permissionInterceptor" class="com.lingyu.servlet.PrivilegeInterceptor" />
+		<bean id="operationInterceptor" class="com.lingyu.servlet.OperationInterceptor" />
+		<!-- Changes the locale when a 'locale' request parameter is sent; e.g. 
+			/?locale=de -->
+		<bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" />
+	</mvc:interceptors>
+
+	<!-- 国际化的消息资源文件 -->
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename" value="messages" />
+		<property name="defaultEncoding" value="UTF-8" />
+	</bean>
+	<!-- 获取本地 根据Cookie判定用户的语言设定（Cookie中保存着用户前一次的语言设定参数）。 -->
+	<bean id="localeResolver"
+		class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
+		<property name="cookieName">
+			<value>browserLocale</value>
+		</property>
+		<property name="cookiePath">
+			<value>/admin/</value>
+		</property>
+		<property name="cookieMaxAge">
+			<value>2147483647</value>
+		</property>
+	</bean>
+
+
+	<!-- 默认的注解映射的支持 会自动注册RequestMappingHandlerMapping与AnnotationMethodHandlerAdapter 
+		两个bean,是spring MVC为@Controllers分发请求所必须的。 -->
+		<!-- 实现了一些数据格式的转换比如Date -->
+	<bean id="conversionService"
+		class="org.springframework.format.support.FormattingConversionServiceFactoryBean" />
+	<mvc:annotation-driven conversion-service="conversionService">
+	  <mvc:async-support default-timeout="0"/>
+		<mvc:message-converters register-defaults="true">
+
+			<!-- fastjosn spring support -->
+			<bean id="jsonConverter"
+				class="com.lingyu.common.json.MappingFastJsonHttpMessageConverter">
+				<property name="supportedMediaTypes" value="application/json" />
+				<property name="serializerFeature">
+					<list>
+						<value>WriteMapNullValue</value>
+						<value>QuoteFieldNames</value>
+					</list>
+				</property>
+			</bean>
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+	<!-- ========================= VIEW定义 ========================= -->
+	<!-- bean name view resolver -->
+	<bean class="org.springframework.web.servlet.view.BeanNameViewResolver"
+		p:order="0" />
+
+	<!-- 根据客户端的不同的请求决定不同的 view进行响应, 如 /blog/1.json /blog/1.xml -->
+	<bean
+		class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+		<property name="order" value="1" />
+		<property name="viewResolvers">
+			<list>
+				<bean
+					class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+					<property name="viewClass"
+						value="org.springframework.web.servlet.view.JstlView" />
+					<property name="contentType" value="text/html" />
+					<property name="prefix" value="/WEB-INF/jsp/" />
+					<property name="suffix" value=".jsp" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 默认的视图解析器 在上边的解析错误时使用 (默认使用html)- -->
+	<bean id="defaultViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+		p:order="3">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="contentType" value="text/html" />
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	<!-- 文件上传相关 -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!--one of the properties available;the maximum file size in bytes -->
+		<property name="maxUploadSize" value="9223372036854775807" />
+	</bean>
+</beans>

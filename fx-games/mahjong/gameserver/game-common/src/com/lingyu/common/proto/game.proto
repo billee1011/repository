@@ -1,0 +1,18 @@
+package com.lingyu.common.proto;
+option optimize_for = CODE_SIZE;
+
+message RpcMsg
+{
+	required bool server=1;//是否服务器发起的消息
+	required bool sync=2;//是否属于同步的消息
+	optional bool binarymsg=3;//是为二进制消息
+	required int64 seqId = 4;
+    required int32 type = 5;
+    optional int32 msgType = 6;//协议编号
+	optional int64 roleId = 7;// 角色id
+    optional string content = 8; //fastjson序列号后的消息体
+    optional bytes relayMsgBody = 9;//转发的二进制消息与content二者留一
+	optional int64 timestamp = 10;
+	optional bool broadcast = 11;//全服广播
+	repeated int64 broadcastRoleIds = 12;// 广播给指定角色
+}

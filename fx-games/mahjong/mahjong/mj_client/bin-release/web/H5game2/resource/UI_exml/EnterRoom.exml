@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="EnterRoom" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="1260" height="680" y="24" x="12" source="public_frame_a_png" scale9Grid="263,163,122,44"/>
+	<e:Image width="157" height="34" x="549" y="111" source="input_room_no"/>
+	<e:Label text="8" x="439" y="201" textColor="0xCC3B70" size="40" id="label_0"/>
+	<e:Label id="label_1" text="8" x="511" y="201" textColor="0xcc3b70" size="40"/>
+	<e:Label text="8" x="588" y="201" textColor="0xCC3B70" size="40" id="label_2"/>
+	<e:Label text="8" x="663" y="201" textColor="0xCC3B70" size="40" id="label_3"/>
+	<e:Label text="8" x="741" y="201" textColor="0xCC3B70" size="40" id="label_4"/>
+	<e:Label text="8" x="818.5" y="201" textColor="0xCC3B70" size="40" id="label_5"/>
+</e:Skin>

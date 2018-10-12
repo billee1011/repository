@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.lingyu.game.GameServerContext" x="1376" y="474">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="true"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.lingyu.common.core.AbstractServerContext"/>
+        <Association
+            destinationClassName="com.lingyu.game.service.job.AsyncManager"
+            endpointName="asyncManager" kind="Simple"/>
+        <Association
+            destinationClassName="com.lingyu.common.config.ServerConfig"
+            endpointName="appConfig" kind="Simple"/>
+        <Association
+            destinationClassName="com.lingyu.common.db.GameRepository"
+            endpointName="gameRepository" kind="Simple"/>
+        <Association destinationClassName="com.lingyu.game.RouteManager"
+            endpointName="routeManager" kind="Simple"/>
+    </Class>
+    <Class name="com.lingyu.game.service.job.AsyncManager" x="1084" y="633">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.lingyu.common.core.AbstractServerContext"/>
+    </Class>
+    <Class name="com.lingyu.common.core.AbstractService.State" x="1519" y="32">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.lingyu.game.GameServerService" x="1265" y="316">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.lingyu.common.core.AbstractService"/>
+        <Communication destinationClassName="com.lingyu.common.db.GameRepository"/>
+        <Communication destinationClassName="com.lingyu.game.GameServerContext"/>
+        <Communication destinationClassName="com.lingyu.game.service.job.AsyncManager"/>
+        <Communication destinationClassName="com.lingyu.common.config.ServerConfigManager"/>
+        <Communication destinationClassName="com.lingyu.common.config.ServerConfig"/>
+        <Communication destinationClassName="com.lingyu.common.core.AbstractServerContext"/>
+    </Class>
+    <Class name="com.lingyu.game.RouteManager" x="1591" y="630">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.lingyu.common.core.AbstractService" x="1318" y="70">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.lingyu.common.core.AbstractService.State"
+            endpointName="state" kind="Simple"/>
+    </Class>
+    <Class name="com.lingyu.common.entity.RoleCache" x="1056" y="1418">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.lingyu.common.core.AbstractService.ShutdownThread"
+        x="1032" y="28">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.lingyu.common.core.AbstractService"
+            endpointName="service" kind="Simple"/>
+        <Communication destinationClassName="com.lingyu.common.core.AbstractService"/>
+    </Class>
+    <Class name="com.lingyu.common.db.GameRepository" x="289" y="610">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.lingyu.game.service.job.AsyncManager.RouterTask"
+        x="904" y="705">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.lingyu.game.service.job.AsyncManager.ScheduleTask"
+            endpointName="task" kind="Simple"/>
+    </Class>
+    <Class name="com.lingyu.common.config.ServerConfigManager" x="288" y="58">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.lingyu.common.config.ServerConfig"
+            endpointName="config" kind="Simple"/>
+        <Communication destinationClassName="com.lingyu.common.config.ServerConfig"/>
+    </Class>
+    <Class name="com.lingyu.common.config.ServerConfig" x="7" y="34">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.lingyu.common.core.AbstractServerContext" x="355" y="267">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="true"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.lingyu.common.entity.MahjongRoom" x="1672" y="1082">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.lingyu.common.entity.RoleCache"
+            endpointName="roleCacheMap" kind="Simple"/>
+        <Communication destinationClassName="com.lingyu.common.entity.RoleCache"/>
+    </Class>
+    <Class name="com.lingyu.game.service.job.AsyncManager.ScheduleTask"
+        x="725" y="691">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="com.lingyu.game.service.job.AsyncManager"/>
+    </Class>
+</ClassDiagram>

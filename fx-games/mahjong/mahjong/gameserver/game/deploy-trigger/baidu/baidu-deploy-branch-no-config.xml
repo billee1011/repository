@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="deploy-kunlun-trigger-with-config" default="deploy">
+
+	<!-- set deploy branch name -->
+	<property name="branch_name" value="20121201_161947"></property>
+	
+	<target name="deploy">
+
+		<ant antfile="baidu-deploy-branch.xml">
+			<property name="bname" value="${branch_name}"></property>
+			<property name="ncd" value="false"></property>
+			<!-- 是否需要发布数据库脚本，true：需要，false：不需要 -->
+			<property name="nsqld" value="false"></property>
+		</ant>
+					
+	</target>
+	
+</project>

@@ -1,0 +1,30 @@
+{
+			chart: {
+	            plotBackgroundColor: null,
+	            plotBorderWidth: null,
+	            plotShadow: false,
+	            width:800,
+	            height:600
+	        },
+	        title: {
+	            text: '各分区收入比(人民币)'
+	        },
+	        credits: {
+	            enabled: false
+	        },
+	        plotOptions: {
+	            pie: {
+	                allowPointSelect: true,
+	                cursor: 'pointer',
+	                dataLabels: {
+	                    enabled: true,
+	                    format: '<b>{point.name}</b>:{point.y}({point.percentage:.1f} %)',
+	                }
+	            }
+	        },
+	        series: [{
+	            type: 'pie',
+	            data: eval('('+'${pie}'+')'),
+	            name: "金额"
+	        }]
+}

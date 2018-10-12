@@ -1,0 +1,528 @@
+10002  验证用户信息 (废弃)
+c -> s
+	pid
+	userId
+s -> c	
+	失败=[0,errorcode]
+	成功等于[
+		1
+		nowTime, // 当前时间
+		offset, // 当前时区
+		[
+			roleId,
+			name,
+			gender,
+			houseCar
+		]...
+	]
+	
+	
+	
+10003  登陆游戏
+c->s
+	loginType 登陆类型 1=微信登陆 2=游客登陆
+	pid 
+	userId  客户端有缓存，就传userId过来，没有缓存传""
+	machingId  机器的设备码 有唯一性
+	code 只用作微信登陆并且没有userId没有缓存，游客登陆传""
+s->c
+	失败=[0,errorcode]
+	成功=[
+			1,
+			nowTime, // 当前时间
+			offset, // 当前时区
+			[
+				roleId,
+				name,
+				gender,
+				diamond, // 钻石
+				headimgUrl // 头像url地址 （游客登陆为""）
+			]
+			userId,
+			ip
+		]
+	
+
+10004  创建用户 (废弃)
+c->s
+	userId
+	pid
+	name
+	gender
+s->c
+	失败=[0,errorcode]
+	成功=[1]
+	
+	
+10007 创建房间
+c->s
+	jushu, 局数
+	zimohu, 是否只能自摸胡 1=是 2=否
+	feng, 是否要风牌 1=是  2=否
+	hongzhong, 是否要红中赖子  1=是 2=否
+	yu 下鱼
+s->c
+	失败=[0,errorcode]
+	成功=[1,roomNum, [zimohu(boolean), feng(boolean), hongzhong(boolean), yu]]
+	
+	
+10008 加入房间
+c->s
+	roomNum
+s->c
+	失败=[0,errorcode]
+	成功=[
+			1,
+			roomNum,
+			[zimohu(boolean), feng(boolean), hongzhong(boolean), yu],	
+			jushu,
+			[
+				[
+					index,
+					id,
+					name,
+					ip
+				]...
+			]
+		]
+	
+	
+10009 给客户端推送初始化的牌 
+s->c
+	[
+		[
+			id, 牌的唯一id
+			color, 牌的花色
+			num, 牌的数值
+			used
+		]...
+	]
+	
+	
+10010 客户端提示 碰，杠，胡 之类的
+s->c
+数组大小不固定，如果有碰和暗杠，则会返回
+	[
+		1,
+		2
+	]
+碰=1  暗杠=2  明杠=3  胡=4  自摸=5
+	
+
+
+10011 打牌
+c->s
+	paiId
+s->c
+	失败=[0,errorcode]
+	成功=[
+			1,
+			roleId,
+			roleIndex,
+			[
+				id, 牌的唯一id
+				color, 牌的花色
+				num, 牌的数值
+				used
+			]
+		 ]
+		 如果有提示标签的话，会推送10010
+		 如果没有提示标签的话。会推送10012
+		 
+		 
+10012 推送摸到的牌
+s->c
+	[
+		1,
+		roleId,
+		roleIndex,
+		[
+			id, 牌的唯一id
+			color, 牌的花色
+			num, 牌的数值
+			used
+		]
+	]
+
+10013 麻将标签操作
+c->s
+	signType 标签类型
+s->c
+	失败=[0,errorcode]
+	成功=[
+			1,
+			roleId,
+			roleIndex,
+			signType,
+			[
+				[
+					id,
+					color,
+					num,
+					used
+				]...
+			]
+		 ]
+备：signType是胡牌类型的话，返回10016协议
+	
+10014 解散房间
+c->s
+	
+s->c
+	失败=[0,errorcode]
+	成功=[
+			1,
+			[
+				code,name,id
+			]
+		 ]
+		 
+10015 退出房间
+c->s
+	
+s->c
+	失败=[0,errorcode]
+	成功=[
+			1
+		 ]
+	注意：退出成功会给其他玩家刷新房间列表，走10008协议
+	
+10016 每局的结算面板
+s->c
+	[
+		[
+			roleId, 
+			jifen总积分, 
+			oneGangjifen每局的杠分, 
+			oneSumjifen每局的总分,
+			[玩家牌的列表
+				[
+					id,
+					color,
+					num,
+					used
+				]...
+			]
+		]...
+	]
+
+	
+10017 开始游戏
+c->s
+s->c
+	失败=[0,errorcode]
+	成功=[
+		1,
+		roleId
+	 ]
+如果4个人都点了开始游戏，会给客户端返回10009 ，10012 ，10010 
+
+
+10018 断线重连-->在打牌界面
+s->c
+	失败=[0,errorcode]
+	成功=[
+		1,
+		roomNum,
+		[zimohu(boolean), feng(boolean), hongzhong(boolean), yu],
+		alreadyJuShu, 已经打了的局数
+		sumIndex, 已经摸了多少张牌
+		curIndex, 当前索引
+		[
+			index,玩家索引
+			roleId,
+			name,
+			ip,
+			jifen,
+			[玩家自己牌的列表(其他玩家这里存放的是已经被用过的牌)
+				[ 
+					id,
+					color,
+					num,
+					used
+				]...
+			]
+			[打出来的牌
+				[
+					id,
+					color,
+					num,
+					used
+				]...
+			]
+		]...
+		jushu
+	 ]
+	 
+11001 聊天
+c->s
+ Object[] obj
+s->c
+	失败=[0,errorcode]
+	成功=[
+		obj（服务器只做转发）
+	 ]
+	 
+11003 屌翻老的连接
+c->s
+
+s->c
+	[0,errorcode]
+
+10019 查看总战绩
+c->s
+s->c
+	失败=[0,errorcode]
+	成功=[
+		1,
+		[
+			index,roleId,name,zimoCount,jiepaoCount,dianpaoCount,angangCount,minggangCount,jifen总积分
+		]...
+	 ]
+	 
+10020 申请解散房间
+c->s
+s->c
+	失败=[0,errorcode]
+	成功=[
+		1,
+		[发起人信息
+			errorcode,name,ms分钟,roleId
+		],
+		[其他3个玩家
+			roleId,name,state(玩家操作的状态 true=同意 false=拒绝)
+		]...
+	 ]
+	 
+10021 申请解散房间--操作
+c->s
+	type 1=同意 2=拒绝
+s->c
+	失败=[0,errorcode]
+	成功=[
+		1,
+		{
+			type=1,
+			roleId
+		}
+		{
+			type=2,
+			[
+				errorcode,
+				name
+			]
+		}
+		{
+			type=3 所有人都同意了
+			[
+				errorcode,
+				[
+					[
+						name
+					]
+				]...
+			]
+		}
+		
+		{
+			type=4 定时时间到了
+			[
+				errorcode,
+				[
+					roomNum,
+					ms分钟
+				]
+			]
+		}
+	 ]
+	 
+12001 拉去战绩信息
+c->s
+pageNum
+s->c
+	失败=[0,errorcode]
+	成功=[
+		1,
+		[
+			id,
+			roomNum,
+			[
+				[roleId,name,jifen]...
+			]
+			startTime
+		]...
+	 ]
+	 
+12002 拉去战绩详情信息
+c->s
+id
+s->c
+	失败=[0,errorcode]
+	成功=[
+		1,
+		[
+			xuhao,
+			startTime,
+			[
+				[roleId,name,jifen]...
+			]
+		]...
+	 ]
+	 
+12003 战绩回放
+c->s
+id,
+jushu 就是序号
+s->c
+	失败=[0,errorcode]
+	成功=[
+		1,
+		[
+			buzhouid，步骤的序号
+			type,
+			roleId,
+			operateIndex,当前操作的索引
+			objs
+		]...
+	 ]
+	{type=1 牌的初始化
+		objs=[
+				roomNum,
+				iszimohu,(true or false) 是否是自己摸胡
+				isfeng,(true or false) 是否是不要风牌
+				ishz,(true or false) 是否是红中赖子
+				startDate,当前局的开始时间
+				jushu,
+				alreadyJuShu,
+				leftchess,剩余牌数
+				[
+					roleid,
+					roleIndex,
+					name,
+					jifen,
+					[
+						[牌的属性
+							id,
+							color,
+							num,
+							used
+						]...
+					]
+				]...
+			]
+	}
+	{type=2 摸牌
+		objs=[牌的属性
+				id,
+				color,
+				num,
+				used
+			]
+	}
+	{type=3 标签提示
+		和10010的协议格式一样
+	}
+	{type=4 标签操作
+		objs=[
+				signType,
+				[
+					id,
+					color,
+					num,
+					used
+				]...
+			]
+		注意：signType是胡牌或者自摸或者过的时候，数组返回的为null。跟10013协议一样
+	}
+	{type=5 打牌
+		objs=[
+				id, 牌的唯一id
+				color, 牌的花色
+				num, 牌的数值
+				used
+			]
+	}
+	 
+13001 拉取公告列表
+c->s
+s->c
+	[
+		id,
+		content,
+		interval,
+		beginTime, 格式：yyyy-MM-dd HH:mm:ss，返回的是string
+		endTime, 格式：yyyy-MM-dd HH:mm:ss，返回的是string
+	]...
+	
+13002 添加公告列表
+s->c
+	[
+		id,
+		content,
+		interval,
+		beginTime, 格式：yyyy-MM-dd HH:mm:ss，返回的是string
+		endTime, 格式：yyyy-MM-dd HH:mm:ss，返回的是string
+	]
+	
+13003 删除公告
+s->c
+	[
+		id
+	]
+
+	
+14001 新邮件的通知
+s->c
+	[
+		1
+	]
+	
+14002 拉取邮件列表
+c->s
+s->c
+	[
+		id,
+		senderId,发送者id，为0就是系统发送，senderName就是null。
+		senderName,
+		status  邮件状态 1=已读取  0=未读取
+	]...
+	
+	
+14003 打开邮件
+c->s
+mailId
+s->c
+	[
+		1,
+		title,
+		senderId,
+		senderName,
+		content,
+		addTime,
+		diamond
+	]
+	
+14004 删除邮件
+c->s
+mailIds long数组
+s->c
+	[
+		1,
+		[
+			ids已经删除的mailId
+		]...
+	]
+	
+16001 拉去版本公告
+c->s
+s->c
+	[
+		type,
+		content,
+		version
+	]...
+	
+	 
+
+	 
+	

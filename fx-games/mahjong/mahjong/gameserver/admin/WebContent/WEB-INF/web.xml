@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>《英雄王座》管理后台</display-name>
+	<description>运维，监控，产品，客服专用</description>
+	<context-param>
+		<param-name>webAppRootKey</param-name>
+		<param-value>admin.root</param-value>
+	</context-param>
+	<!-- - Location of the Log4J config file, for initialization and refresh 
+		checks. - Applied by Log4jConfigListener. -->
+	<listener>
+		<listener-class>com.lingyu.admin.AdminServer</listener-class>
+	</listener>
+	<session-config>
+		<session-timeout>360</session-timeout>
+	</session-config>
+	<!-- servlet开始 -->
+	<!-- 用于获取数据+页面 -->
+	<servlet>
+		<servlet-name>master</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:master-servlet.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+		<async-supported>true</async-supported>
+	</servlet>
+	<!-- servlet结束 -->
+	<!-- servlet映射配置开始 -->
+	<servlet-mapping>
+		<servlet-name>master</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	<!-- servlet映射配置结束 -->
+	<!-- filter配置开始 -->
+	<filter>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		 <async-supported>true</async-supported>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+	</filter>
+	<!-- filter配置结束 -->
+	<!-- filter映射配置开始 -->
+	<filter-mapping>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- filter映射配置结束 -->
+	<welcome-file-list>
+		<welcome-file>index.do</welcome-file>
+	</welcome-file-list>
+</web-app>

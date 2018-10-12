@@ -1,0 +1,11 @@
+{"file":"mj_loadUI.png","frames":{
+"login_btn_checkbox":{"x":758,"y":74,"w":58,"h":58,"offX":0,"offY":0,"sourceW":58,"sourceH":58},
+"login_check_mark":{"x":758,"y":134,"w":56,"h":58,"offX":0,"offY":0,"sourceW":56,"sourceH":58},
+"jidutiaod":{"x":228,"y":34,"w":508,"h":26,"offX":0,"offY":0,"sourceW":508,"sourceH":26},
+"jidutiaos":{"x":228,"y":62,"w":500,"h":19,"offX":4,"offY":4,"sourceW":508,"sourceH":26},
+"jzshazi":{"x":935,"y":112,"w":71,"h":75,"offX":0,"offY":0,"sourceW":71,"sourceH":75},
+"commonClose":{"x":935,"y":34,"w":76,"h":76,"offX":0,"offY":0,"sourceW":76,"sourceH":76},
+"loading_zi":{"x":738,"y":34,"w":195,"h":38,"offX":0,"offY":0,"sourceW":195,"sourceH":38},
+"load_bar":{"x":0,"y":124,"w":756,"h":11,"offX":0,"offY":0,"sourceW":756,"sourceH":11},
+"load_barBg":{"x":0,"y":0,"w":813,"h":32,"offX":0,"offY":0,"sourceW":813,"sourceH":32},
+"yellowBtn":{"x":0,"y":34,"w":226,"h":88,"offX":0,"offY":1,"sourceW":226,"sourceH":89}}}

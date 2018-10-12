@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Direction" width="115" height="115" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="img_bg" width="115" height="115" x="0" y="0" source="turn_pos_bg"/>
+	<e:Image id="img_4" width="98" height="32" x="8" y="79" source="turn_pos_3"/>
+	<e:Image id="img_3" width="32" height="98" x="5" y="8" source="turn_pos_2"/>
+	<e:Image id="img_2" width="98" height="32" x="8" y="4" source="turn_pos_1"/>
+	<e:Image id="img_1" width="32" height="98" x="79" y="8" source="turn_pos_0"/>
+</e:Skin>

@@ -1,0 +1,6 @@
+class ItemVoUnit {
+	public constructor() {
+	}
+
+
+}

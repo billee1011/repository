@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.body{position:relative;width:100%;overflow:hidden}
+.bg_body{position:absolute;left:0;width:1630px;height:700px;background:url(../../ac/regist/bg_login.jpg) no-repeat center 0}
+.login_wrapper{width:1000px;margin:0 auto;padding-top:25px;position:relative;height:640px;_height:640px;margin-top:10px}
+@media only screen and (min-width:1600px){.bg_body{width:1920px;height:720px}
+}
+@media only screen and (max-width:1440px){.login_wrapper{height:540px}
+}
+@media only screen and (max-width:1280px){.login_wrapper{height:490px}
+}
+.mod_login_wrapper{position:relative;float:right;top:10px}
+.mod_login_pre{text-align:center;background:#dbdbdb;border-radius:5px;-webkit-box-shadow:0 3px 6px rgba(0,0,0,.45);-moz-box-shadow:0 3px 6px rgba(0,0,0,.45);box-shadow:0 3px 6px rgba(0,0,0,.45);background-image:-webkit-linear-gradient(bottom,#d7d7d7,#f3f3f3);background-image:-moz-linear-gradient(bottom,#d7d7d7,#f3f3f3);background-image:-ms-linear-gradient(bottom,#d7d7d7,#f3f3f3);background-image:linear-gradient(to top,#d7d7d7,#f3f3f3);width:418px;height:310px}
+.mod_login_pre .mod_intro{height:70px;padding-top:30px;border-bottom:1px solid #b9b9b9}
+.mod_login_pre .mod_intro h2{color:#404a58;font:bold 14px Microsoft Yahei;margin-bottom:10px}
+.mod_login_pre .mod_go{padding-top:17px;border-top:1px solid #fff}
+.mod_login_pre .mod_go p{color:#798699;margin-top:20px;font:normal 12px Microsoft Yahei}
+.mod_login_pre .mod_go .tips{border:1px solid #d19f17;background:#fffee7;color:#264663;padding:8px 15px;margin:0 30px 17px;border-radius:3px;font-family:simsun;text-align:left;line-height:1.5em}
+.mod_login_pre button{width:172px;height:62px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;margin:0 5px;font:bold 14px Microsoft Yahei}
+.mod_login_pre .mod_go .btn_active
+{color:#fff;background-color:#3f83c7;-webkit-box-shadow:0 1px 1px rgba(0,0,0,.15),inset 0 1px #82bdf8;-moz-box-shadow:0 1px 1px rgba(0,0,0,.15),inset 0 1px #82bdf8;box-shadow:0 1px 1px rgba(0,0,0,.15),inset 0 1px #82bdf8;border:solid 1px #2265a8;background-image:-webkit-linear-gradient(bottom,#245588,#4993de);background-image:-moz-linear-gradient(bottom,#245588,#4993de);background-image:-ms-linear-gradient(bottom,#245588,#4993de);background-image:linear-gradient(to top,#245588,#4993de)}
+.mod_login_pre .mod_go .btn_normal
+{color:#404a58;background-color:#e8e8e8;-webkit-box-shadow:0 1px 1px rgba(0,0,0,.15),inset 0 1px #fff;-moz-box-shadow:0 1px 1px rgba(0,0,0,.15),inset 0 1px #fff;box-shadow:0 1px 1px rgba(0,0,0,.15),inset 0 1px #fff;border:solid 1px #c8c8c8;background-image:-webkit-linear-gradient(bottom,#e2e2e2,#eee);background-image:-moz-linear-gradient(bottom,#e2e2e2,#eee);background-image:-ms-linear-gradient(bottom,#e2e2e2,#eee);background-image:linear-gradient(to top,#e2e2e2,#eee)}
+.mod_login{position:relative;width:418px;height:315px;background:#fff;border-radius:5px;box-shadow:0 1px 3px rgba(0,0,0,0.6);margin-top:-3px}
+.mod_login_intro{position:relative;width:388px;padding:15px;font:normal 14px/25px Microsoft Yahei;color:#798699;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.6);border-top-left-radius:5px;border-top-right-radius:5px}
+.mod_login_intro h2{font-size:20px;font-weight:bold;color:#404a58}
+.mod_login_intro .reg_link{position:absolute;right:20px;bottom:10px;font-size:12px;font-family:Simsun}
+.login_text{position:absolute;width:271px;height:374px;overflow:hidden;background:url(../../ac/regist/login_text.png?20130911) no-repeat center top;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../ac/regist/login_text.png?20130911',sizingMethod='crop')}
+.login_text1{top:55px;height:85px;background-position:0 0;-webkit-animation:text-show 3s 1}
+.login_text2{top:180px;height:85px;background-position:0 -135px;-webkit-animation:text-show 3s 1}
+.login_text3{top:315px;height:85px;background-position:0 -270px;-webkit-animation:text-show 3s 1}
+@-webkit-keyframes text-show{0%{opacity:0;-webkit-transform:scale(1.1,1.1)}
+100%{opacity:1}
+}
+/*  |xGv00|8ca0ca269bad666cfd7e5b5a37b93472 */

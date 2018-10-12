@@ -1,0 +1,58 @@
+{
+        title: {
+            text: '新进及活跃'
+        },
+        chart: {
+            zoomType: 'xy',
+             width:800,
+	        height:600
+        },
+        xAxis: {
+            categories: ${dateStr},
+            labels:{
+            	rotation:270
+            }
+        },
+        yAxis: [{
+            labels: {
+                style: {
+                    color: Highcharts.getOptions().colors[0]
+                }
+            },
+            title: {
+                text: '新增注册数',
+                style: {
+                    color: Highcharts.getOptions().colors[0]
+                }
+            }
+        }, {
+            title: {
+                text: '每日活跃和非新增活跃',
+                style: {
+                    color: Highcharts.getOptions().colors[1]
+                }
+            },
+            labels: {
+                style: {
+                    color: Highcharts.getOptions().colors[1]
+                }
+            },
+            opposite: true
+        }],
+        credits: {
+            enabled: false
+        },
+        plotOptions:{
+        	column:{
+        		dataLabels:{
+	        		enabled:true
+	        	}
+        	},
+        	spline:{
+        		dataLabels:{
+	        		enabled:true
+	        	}
+        	}
+        },
+        series:[{name:"非新增活跃",data:eval('('+'${data1}'+')'),type:"column",yAxis: 1},{name:"新增注册数",data:eval('('+'${data2}'+')'),type:"spline"},{name:"活跃用户DAU",data:eval('('+'${data3}'+')'),type:"spline",yAxis: 1}]
+	}

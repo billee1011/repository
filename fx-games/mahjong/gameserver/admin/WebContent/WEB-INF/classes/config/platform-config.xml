@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!-- 研发环境 -->
+      <entry id="dev" name="dev" key="" clientUrl="" homeUrl="" payUrl="" hostName="" exchangeRate="10" appId="1000004" loginUri="/dev/login.do" forumUrl="" twitterUrl=""></entry>
+</root>

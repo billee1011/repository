@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MainGame" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="label_room" text="Label" x="16" y="15.33" anchorOffsetX="0" width="204.34" fontFamily="KaiTi" textAlign="left"/>
+	<e:Label id="label_jushu" text="Label" x="16" y="59.33" anchorOffsetX="0" width="168.34" fontFamily="KaiTi" textAlign="left"/>
+	<e:Image source="headallbk" scale9Grid="6,59,120,65" anchorOffsetX="0" anchorOffsetY="0" width="110" x="167.34" height="120" y="9"/>
+	<e:Image source="headallbk" scale9Grid="6,59,120,65" anchorOffsetX="0" anchorOffsetY="0" width="110" x="277.34" height="120" y="9.33"/>
+	<e:Button id="btn_back" label="" x="1083" y="20.33" width="179" height="61">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_back_sala" source.down="btn_back_sala"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label text="痞子" x="201.34" y="101.33" textColor="0x3eef17" fontFamily="KaiTi" size="25"/>
+	<e:Label text="癞子" x="309.34" y="101" textColor="0x64ea0e" size="25" fontFamily="KaiTi"/>
+</e:Skin>

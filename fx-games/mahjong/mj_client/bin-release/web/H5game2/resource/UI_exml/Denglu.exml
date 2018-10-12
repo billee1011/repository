@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Denglu" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15823b94b30"/>
+	<e:Image id="img_ckBg" width="58" height="58" x="511" y="575" source="login_btn_checkbox"/>
+	<e:Image id="img_ckHead" width="58" height="58" x="511" y="575" source="login_check_mark"/>
+	<e:Label id="label_xieyi" text="同意用户使用协议" x="580" y="589" anchorOffsetX="0" width="253" textColor="0x66352c" bold="true" fontFamily="KaiTi" textAlign="left"/>
+	<e:Image id="img_loadBg" width="508" height="26" x="372" y="593" source="jidutiaod"/>
+	<e:Image id="img_loadTiao" width="508" height="26" x="372" y="593" source="jidutiaos"/>
+	<e:Image id="img_shaizi" width="71" height="75" x="331.5" y="565.5" source="jzshazi"/>
+	<e:Label id="label_loadMsg" text="正在加载游戏资源 2%" x="437" y="553.5" anchorOffsetX="0" width="380" textColor="0xcbd868" fontFamily="KaiTi"/>
+</e:Skin>

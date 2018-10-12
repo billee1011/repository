@@ -1,0 +1,15 @@
+{"file":"mj_enterroomUI.png","frames":{
+"input_room_no":{"x":1299,"y":336,"w":157,"h":34,"offX":0,"offY":0,"sourceW":157,"sourceH":34},
+"btn_del":{"x":261,"y":160,"w":259,"h":87,"offX":0,"offY":0,"sourceW":259,"sourceH":87},
+"btn_num_1":{"x":522,"y":160,"w":257,"h":87,"offX":0,"offY":0,"sourceW":257,"sourceH":87},
+"btn_num_2":{"x":0,"y":160,"w":259,"h":87,"offX":0,"offY":0,"sourceW":259,"sourceH":87},
+"btn_num_3":{"x":1156,"y":89,"w":259,"h":87,"offX":0,"offY":0,"sourceW":259,"sourceH":87},
+"btn_num_4":{"x":0,"y":249,"w":257,"h":86,"offX":0,"offY":0,"sourceW":257,"sourceH":86},
+"btn_num_5":{"x":1042,"y":178,"w":259,"h":86,"offX":0,"offY":0,"sourceW":259,"sourceH":87},
+"btn_num_6":{"x":781,"y":160,"w":259,"h":86,"offX":0,"offY":0,"sourceW":259,"sourceH":86},
+"btn_num_7":{"x":1040,"y":266,"w":257,"h":85,"offX":0,"offY":0,"sourceW":257,"sourceH":85},
+"btn_num_8":{"x":259,"y":249,"w":259,"h":85,"offX":0,"offY":1,"sourceW":259,"sourceH":87},
+"btn_num_9":{"x":520,"y":249,"w":259,"h":85,"offX":0,"offY":0,"sourceW":259,"sourceH":85},
+"btn_reset":{"x":781,"y":248,"w":257,"h":86,"offX":0,"offY":0,"sourceW":257,"sourceH":86},
+"cell_record_bg":{"x":0,"y":0,"w":1154,"h":158,"offX":0,"offY":1,"sourceW":1154,"sourceH":159},
+"btn_num_0":{"x":1156,"y":0,"w":259,"h":87,"offX":0,"offY":0,"sourceW":259,"sourceH":87}}}

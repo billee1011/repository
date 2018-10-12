@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="deploy-baidu-trigger" default="deploy">
+
+	<property name="host" value="192.168.1.3"/>
+	<property name="username" value="root"/>
+	<property name="password" value="linyu123.com"/>
+	
+	<!-- set deploy branch name -->
+	<property name="branch_name" value="${bname}"></property>
+	
+	<target name="deploy">
+
+		<!-- create deploy version -->
+		<sshexec host="${host}" username="${username}"  password="${password}" trust="true"
+			command="source /etc/profile;echo deploy.time=B-`date -d today +%Y%m%d_%H%M%S` > /data/samba/linyu/java-deploy/dntg/server/deploy-version-build/deploy-version-build.txt"/>
+		<loadproperties srcfile="\\192.168.1.3\Linyu Share\java-deploy\dntg\server\deploy-version-build\deploy-version-build.txt"></loadproperties>
+		
+		<!-- check out -->
+		<sshexec host="${host}" username="${username}"  password="${password}" trust="true"
+			command="cd /data/java-build-dir/dntg/baidu;svn checkout http://192.168.1.3/svn/dntg_java/dntg_server/branches/${branch_name} ${branch_name} --username deploy --password deploy --non-interactive"/>
+
+		<!-- deploy -->
+		<sshexec host="${host}" username="${username}"  password="${password}" trust="true"
+			command="source /etc/profile;cd /data/java-build-dir/dntg/baidu/${branch_name};/usr/local/apache-ant-1.8.3/bin/ant -f total-build-baidu.xml -Ddeploy_time=${deploy.time} -Dncd=${ncd} -Dnsqld=${nsqld}"/>
+
+		<sshexec host="${host}" username="${username}"  password="${password}" trust="true"
+			command="source /etc/profile;echo branch_name=${branch_name} > /data/samba/linyu/java-deploy/dntg/server/deploy-version-build/${deploy.time}-${branch_name}.txt"/>
+		<echo message="Deployed Version:${deploy.time}"/>
+				
+	</target>
+	
+</project>

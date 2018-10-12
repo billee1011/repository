@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CreateRoom" width="1034" height="642" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="1034" height="642" x="0" y="12" source="public_frame_big_png" locked="true"/>
+	<e:Image width="946" height="498" x="41" y="65" source="b_kuang_ai_png"/>
+	<e:Label text="模式：" x="68" y="112" anchorOffsetX="0" width="108" textAlign="left" size="26" fontFamily="Microsoft YaHei" textColor="0x856153"/>
+	<e:Label text="玩法：" x="68" y="174" anchorOffsetX="0" width="108" textAlign="left" size="26" fontFamily="Microsoft YaHei" textColor="0x856153"/>
+	<e:Label text="起胡：" x="68" y="328" anchorOffsetX="0" width="108" textAlign="left" size="26" fontFamily="Microsoft YaHei" textColor="0x856153"/>
+	<e:Label text="封顶：" x="68" y="375" anchorOffsetX="0" width="108" textAlign="left" size="26" fontFamily="Microsoft YaHei" textColor="0x856153"/>
+	<e:Label text="局数：" x="68" y="480" anchorOffsetX="0" width="108" textAlign="left" size="26" fontFamily="Microsoft YaHei" textColor="0x856153"/>
+	<e:Button id="btn_sure" label="" x="391" y="556" width="226" height="89">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="yellowBtn" source.down="yellowBtn"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image width="559" height="95" x="232" y="10" source="frameBarLong_png"/>
+	<e:Image width="218" height="59" x="399" y="18" source="create_title"/>
+	<e:Image width="134" height="38" x="442" y="583" source="create_freezi" touchEnabled="false"/>
+	<e:Image width="923" height="2" x="54" y="153" source="create_cutline"/>
+	<e:Image width="923" height="2" x="54" y="310" source="create_cutline"/>
+	<e:Image width="923" height="2" x="64" y="464" source="create_cutline"/>
+	<e:Image width="443" x="215" y="420" height="35" source="create_andi"/>
+	<e:Label text="金顶400倍, 阳光顶500倍, 哈顶600倍" x="223" y="424" anchorOffsetX="0" width="431" fontFamily="Microsoft YaHei" size="26"/>
+	<e:Image id="btn_close" width="76" height="76" x="958" y="0" source="commonClose"/>
+</e:Skin>

@@ -1,0 +1,12 @@
+{"file":"mj_settingUI.png","frames":{
+"set_barBg":{"x":0,"y":0,"w":312,"h":36,"offX":0,"offY":0,"sourceW":312,"sourceH":36},
+"set_head":{"x":146,"y":68,"w":51,"h":54,"offX":0,"offY":0,"sourceW":51,"sourceH":54},
+"set_music":{"x":199,"y":100,"w":71,"h":30,"offX":0,"offY":0,"sourceW":71,"sourceH":30},
+"set_musicOff":{"x":441,"y":39,"w":66,"h":66,"offX":0,"offY":0,"sourceW":66,"sourceH":66},
+"set_musicOn":{"x":373,"y":39,"w":66,"h":66,"offX":0,"offY":0,"sourceW":66,"sourceH":66},
+"set_title":{"x":68,"y":68,"w":76,"h":42,"offX":0,"offY":0,"sourceW":76,"sourceH":42},
+"set_yinxiao":{"x":199,"y":68,"w":71,"h":30,"offX":0,"offY":0,"sourceW":71,"sourceH":30},
+"set_yinxiaoOff":{"x":305,"y":39,"w":66,"h":66,"offX":0,"offY":0,"sourceW":66,"sourceH":66},
+"set_yinxiaoOn":{"x":0,"y":68,"w":66,"h":66,"offX":0,"offY":0,"sourceW":66,"sourceH":66},
+"set_zi":{"x":314,"y":0,"w":140,"h":37,"offX":0,"offY":0,"sourceW":140,"sourceH":37},
+"set_bar":{"x":0,"y":38,"w":303,"h":28,"offX":0,"offY":0,"sourceW":303,"sourceH":28}}}

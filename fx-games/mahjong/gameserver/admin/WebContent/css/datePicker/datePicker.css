@@ -1,0 +1,179 @@
+.r {
+float: right !important;
+outline: none;
+margin: 0px;
+padding: 0px;
+border: none;
+vertical-align: top;
+list-style-type: none;
+display: block;
+}
+.relative {
+position: absolute;
+font-size: 12px;
+font-weight: normal;
+line-height:1.333;
+right: 0px;
+top: 0px;
+z-index: 999;
+}
+a.time {
+height: 52px;
+width: 278px;
+margin: 21px 0 0 0px;
+background: url(image/infoBar.gif);
+}
+.time, .maintop .dropselect {
+display: block;
+color: #616D73;
+border: 1px solid #A6AEB7;
+border-radius: 5px;
+float: left;
+line-height: 74px;
+font-size: 14px;
+}
+a.time span {
+height: 52px;
+background: url(image/infoBar_time_arrow.gif) no-repeat right top;
+padding-right: 36px;
+background-position: 231px top \9;
+}
+.time span, .maintop .dropselect h4 {
+background: url(image/timeAroww.png) no-repeat right top;
+line-height: 36px;
+font-size: 14px;
+display: inline-block;
+height: 36px;
+padding: 0 53px 0 10px;
+}
+a.time p {
+background: url("image/Contrastcalendar_max.png") no-repeat scroll left 10px transparent;
+height: 43px;
+line-height: 13px;
+padding: 10px 0 0 42px;
+text-align: left;
+font-size: 14px;
+width: 190px;
+}
+a.time font {
+background: none;
+color: #616D73;
+padding: 0;
+width: 204px;
+height: 29px;
+line-height: 29px;
+font-size: 14px;
+}
+
+.Timeinput,.textinput{
+	height:22px; line-height:22px; width:92px; -webkit-width:91px;width:90px \9; border:1px solid #9FA3A8; background:url(../images/mincalendar.png) no-repeat 77px 4px #fff; box-shadow:0 1px 0 #DDDDDF inset; border-radius:2px; color:#8B969C; padding-left:5px;
+}
+* html.Timeinput,* html.textinput{
+	width:90px
+}
+.textinput{
+	background: #fff;
+}
+.Timeinput.mrnone{
+	margin-right: 0;
+}
+.startTime_Datepicker{
+	height: 35px;
+	position: absolute;
+	left: 0;
+	width: 192px !important;
+	top: 0;
+	opacity: 0;
+	filter=alpha(opacity=0);
+}
+.timetxt{
+	 background:#F2F5F7; border-radius:5px; border:1px solid #A1A5A8; position:absolute;top:74px; z-index:9999995;
+}
+.timetxt.panone{
+	padding:0
+}
+.timetop{
+	background:#7288A0; border-top-left-radius:3px;border-top-right-radius:4px; height:30px; line-height:30px; color:#fff; padding:0 13px; display:block
+}
+.r.relative .timetxt{
+	right:0;
+}
+.time,.maintop .dropselect{
+	display:block; color:#616D73; height:36px;background:url(../images/addbut_bg.png); border:1px solid #A6AEB7; border-radius:5px; 
+	float:left; line-height:36px; font-size:14px;
+}
+.time:hover,.time.hover,.buttonDiv .dropselect.over,.buttonDiv .dropselect.current{
+	background:#e8ecf1; text-decoration:none;
+}
+.time font{
+	font-size:16px;height:36px; line-height:36px; display:block; text-shadow:1px 1px 1px #fff;
+}
+.time.report img{
+	 margin:10px 10px 0; cursor: pointer;
+}
+.time.report{
+	cursor: auto;
+}
+
+
+a:hover.Confirm{
+	background:#5BAC54;
+}
+a:hover.Cancel,a:hover.CancelonCL,a:hover.maxCancel,a:hover.maxCancelbut{
+	background:#d0d4d8; color:#5F6A73;
+}
+a.Confirm,a.Cancel{
+	box-shadow: 0 1px 0px #BACAD1;
+	margin-left: 10px;
+	float:right !important;
+	display:block;text-decoration:none; height:22px; line-height:22px; background:url(image/button_bg.png); padding:0 10px; margin-top:8px; color:#616D73;  border:1px solid #9FA3A8; cursor:pointer; border-radius:3px;
+}
+a.Confirm{
+	background:url(image/Confirm.png); color:#fff; border-color:#46975D;  
+}
+
+
+ font small{
+	font-size:14px;
+}
+.time.report img.setup{
+	margin: 12px 10px 0 5px;
+}
+.time font.calendar{
+	background:url(../images/calendar.png) no-repeat left center;
+}
+.time font.Filterbut{
+	 background:url(../images/Filter.png) no-repeat 2px center; padding:0 15px 0 30px
+}
+.l.relative .timetxt{
+	left:0;
+}
+.timetxt.panone{
+	padding:0
+}
+.timetop{
+	background:#7288A0; border-top-left-radius:3px;border-top-right-radius:4px; height:30px; line-height:30px; color:#fff; padding:0 13px; display:block
+}
+.timetop a.close{
+	background: url(../images/close_Pop.png) no-repeat; display: block; height: 10px; width: 10px; margin-top: 9px;
+}
+.timetop a,.timetop a:visited{
+	margin:0 5px; color:#fff;
+}
+.TimeDef{
+	color:#4B565E; padding:13px 13px 2px 13px;
+}
+.TimeDef input{
+	margin:0 5px;
+}
+.Pop_line .opeDiv{
+	border-top:1px solid #fff;
+}
+.opeDiv a{
+	margin:0 13px 13px 0
+}
+.Pop,.Pop_line{
+	text-align: left;
+	/*position:absolute; left:300px; top:300px; color:#4B565E;
+    z-index: 999999;*/
+}

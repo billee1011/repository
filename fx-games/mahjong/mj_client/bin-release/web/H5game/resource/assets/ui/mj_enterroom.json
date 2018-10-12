@@ -1,0 +1,16 @@
+{"file":"mj_enterroomUI.png","frames":{
+"btn_num_5":{"x":576,"y":311,"w":190,"h":61,"offX":0,"offY":0,"sourceW":190,"sourceH":61},
+"btn_num_6":{"x":384,"y":265,"w":190,"h":61,"offX":0,"offY":0,"sourceW":190,"sourceH":61},
+"btn_num_7":{"x":192,"y":265,"w":190,"h":61,"offX":0,"offY":0,"sourceW":190,"sourceH":61},
+"btn_num_8":{"x":0,"y":265,"w":190,"h":61,"offX":0,"offY":0,"sourceW":190,"sourceH":61},
+"btn_num_9":{"x":776,"y":248,"w":190,"h":61,"offX":0,"offY":0,"sourceW":190,"sourceH":61},
+"btn_reset":{"x":776,"y":185,"w":190,"h":61,"offX":0,"offY":0,"sourceW":190,"sourceH":61},
+"btn_del":{"x":776,"y":122,"w":190,"h":61,"offX":0,"offY":0,"sourceW":190,"sourceH":61},
+"btn_num_0":{"x":776,"y":59,"w":190,"h":61,"offX":0,"offY":0,"sourceW":190,"sourceH":61},
+"btn_num_1":{"x":584,"y":248,"w":190,"h":61,"offX":0,"offY":0,"sourceW":190,"sourceH":61},
+"btn_num_2":{"x":584,"y":185,"w":190,"h":61,"offX":0,"offY":0,"sourceW":190,"sourceH":61},
+"btn_num_3":{"x":584,"y":122,"w":190,"h":61,"offX":0,"offY":0,"sourceW":190,"sourceH":61},
+"btn_num_4":{"x":584,"y":59,"w":190,"h":61,"offX":0,"offY":0,"sourceW":190,"sourceH":61},
+"enterRoomNumBg":{"x":0,"y":0,"w":582,"h":263,"offX":0,"offY":0,"sourceW":582,"sourceH":263},
+"enterRoom_input":{"x":584,"y":0,"w":409,"h":57,"offX":0,"offY":0,"sourceW":409,"sourceH":57},
+"enterRoomTitle":{"x":768,"y":311,"w":153,"h":44,"offX":0,"offY":0,"sourceW":153,"sourceH":44}}}

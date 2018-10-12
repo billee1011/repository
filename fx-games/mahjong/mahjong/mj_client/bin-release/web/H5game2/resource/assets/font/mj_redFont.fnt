@@ -1,0 +1,11 @@
+{"file":"mj_redFontUI.png","frames":{
+"0":{"x":0,"y":0,"w":23,"h":38,"offX":0,"offY":0,"sourceW":23,"sourceH":38},
+"1":{"x":94,"y":80,"w":6,"h":32,"offX":10,"offY":3,"sourceW":23,"sourceH":38},
+"2":{"x":24,"y":40,"w":22,"h":38,"offX":1,"offY":0,"sourceW":23,"sourceH":38},
+"3":{"x":24,"y":80,"w":21,"h":38,"offX":2,"offY":0,"sourceW":23,"sourceH":38},
+"4":{"x":70,"y":80,"w":22,"h":32,"offX":1,"offY":3,"sourceW":23,"sourceH":38},
+"5":{"x":25,"y":0,"w":21,"h":38,"offX":2,"offY":0,"sourceW":23,"sourceH":38},
+"6":{"x":48,"y":0,"w":21,"h":38,"offX":2,"offY":0,"sourceW":23,"sourceH":38},
+"7":{"x":47,"y":80,"w":21,"h":35,"offX":0,"offY":3,"sourceW":21,"sourceH":38},
+"8":{"x":0,"y":80,"w":22,"h":38,"offX":1,"offY":0,"sourceW":23,"sourceH":38},
+"9":{"x":0,"y":40,"w":22,"h":38,"offX":1,"offY":0,"sourceW":23,"sourceH":38}}}

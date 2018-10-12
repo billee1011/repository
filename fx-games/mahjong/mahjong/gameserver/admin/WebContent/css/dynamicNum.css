@@ -1,0 +1,169 @@
+body main {
+  height: 100%;
+  background-size: 18px 18px;
+  overflow: hidden;
+  color: #f8e9d6;
+  font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+  font-size: 70px;
+  margin: 0px;
+  padding: 0px;
+}
+body main .num-anim {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 130px;
+  width: 89px;
+}
+body main .num-anim .top-half-num,
+body main .num-anim .bottom-half-num {
+  text-align: center;
+  overflow: hidden;
+  padding-top: 0px;
+}
+body main .num-anim .top-half-num {
+  height: 50%;
+}
+body main .num-anim .bottom-half-num {
+  margin-top: 0px;
+  height: 50%;
+  margin-top: 65px;
+  background-color: #2e323e;
+  background-image: none;
+}
+body main .num-anim .bottom-half-num .dropper {
+  margin-top: -68px;
+}
+body main .num-anim.bottom-anim {
+  left: 0px;
+  top: 5px;
+  -webkit-transform: perspective(80px) rotateX(90deg) rotateY(0deg);;
+  -moz-transform: perspective(80px) rotateX(90deg) rotateY(0deg);;
+  -o-transform: perspective(80px) rotateX(90deg) rotateY(0deg);;
+  -ms-transform: perspective(80px) rotateX(90deg) rotateY(0deg);;
+  transform: perspective(80px) rotateX(90deg) rotateY(0deg);;
+}
+body main .num-anim.bottom-anim.down {
+  -webkit-transform: perspective(80px) rotateX(0deg) rotateY(0deg);
+  -moz-transform: perspective(80px) rotateX(0deg) rotateY(0deg);
+  -o-transform: perspective(80px) rotateX(0deg) rotateY(0deg);
+  -ms-transform: perspective(80px) rotateX(0deg) rotateY(0deg);
+  transform: perspective(80px) rotateX(0deg) rotateY(0deg);
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-transition-delay: 0.25s;
+  -moz-transition-delay: 0.25s;
+  -o-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+body main .num-anim.top-anim {
+  -webkit-transform: perspective(80px) rotateX(0deg) rotateY(0deg);;
+  -moz-transform: perspective(80px) rotateX(0deg) rotateY(0deg);;
+  -o-transform: perspective(80px) rotateX(0deg) rotateY(0deg);;
+  -ms-transform: perspective(80px) rotateX(0deg) rotateY(0deg);;
+  transform: perspective(80px) rotateX(0deg) rotateY(0deg);;
+}
+body main .num-anim.top-anim.up {
+  -webkit-transform: perspective(80px) rotateX(-90deg) rotateY(0deg);
+  -moz-transform: perspective(80px) rotateX(-90deg) rotateY(0deg);
+  -o-transform: perspective(80px) rotateX(-90deg) rotateY(0deg);
+  -ms-transform: perspective(80px) rotateX(-90deg) rotateY(0deg);
+  transform: perspective(80px) rotateX(-90deg) rotateY(0deg);
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+body main canvas {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+
+body main #clock .time-container {
+  float: left;
+  height: 150px;
+  margin: 0 0 0 20px;
+  -webkit-border-radius: 10px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 10px;
+  -moz-background-clip: padding;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+body main #clock .time-container .num {
+  position: absolute;
+  top: 0px;
+  left: 00px;
+  display: inline-block;
+  z-index: 1;
+  height: 50%;
+  overflow: hidden;
+  width: 100%;
+  -webkit-box-shadow: 0 2px 0px rgba(0, 0, 0, .25), inset 0 2px 0px rgba(255, 255, 255, .25);
+  -moz-box-shadow: 0 2px 0px rgba(0, 0, 0, .25), inset 0 2px 0px rgba(255, 255, 255, .25);
+  box-shadow: 0 2px 0px rgba(0, 0, 0, .25), inset 0 2px 0px rgba(255, 255, 255, .25);
+}
+body main #clock .time-container .num.bottom {
+  top: 53%;
+  height: 46%;
+}
+body main #clock .time-container .num.bottom .bottom-container {
+  margin-top: -76%;
+}
+body main #clock .time-container .fade {
+  position: absolute;
+  top: -20px;
+  left: -41px;
+  width: 100%;
+  height: 200%;
+  background-color: transparent;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 2;
+}
+body main #clock .time-container .digit {
+  position: relative;
+  float: left;
+  width: 60px;
+  height: 75px;
+  margin: 5px 0 0 10px;
+  -webkit-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 5px;
+  -moz-background-clip: padding;
+  border-radius: 5px;
+  background-clip: padding-box;
+  text-align: center;
+  text-shadow: #ffffff 0px -3px 0px, #000000 0px 3px 0px;
+  background-color: #353a48;
+  -webkit-box-shadow: 0 2px 0px rgba(0, 0, 0, .25), inset 0 2px 0px rgba(255, 255, 255, .25), 2px 2px 3px rgba(0, 0, 0, 1), -2px -2px 3px rgba(0, 0, 0, 1), 2px -2px 3px rgba(0, 0, 0, 1), -2px 2px 3px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0 2px 0px rgba(0, 0, 0, .25), inset 0 2px 0px rgba(255, 255, 255, .25), 2px 2px 3px rgba(0, 0, 0, 1), -2px -2px 3px rgba(0, 0, 0, 1), 2px -2px 3px rgba(0, 0, 0, 1), -2px 2px 3px rgba(0, 0, 0, 1);
+  box-shadow: 0 2px 0px rgba(0, 0, 0, .25), inset 0 2px 0px rgba(255, 255, 255, .25), 2px 2px 3px rgba(0, 0, 0, 1), -2px -2px 3px rgba(0, 0, 0, 1), 2px -2px 3px rgba(0, 0, 0, 1), -2px 2px 3px rgba(0, 0, 0, 1);
+  overflow: hidden;
+}
+body main #clock .time-container .digit::after {
+  content: " ";
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  width: 80px;
+  margin-top: 3px;
+  height: 121px;
+  -webkit-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 5px;
+  -moz-background-clip: padding;
+  border-radius: 5px;
+  background-clip: padding-box;
+  display: inline-block;
+}
+.swapper {
+  position: relative;
+  z-index: 2;
+}

@@ -1,0 +1,112 @@
+package com.lingyu.common.core;
+
+public abstract class ErrorCode {
+	public static final String _OK = "OK";
+	// 空数组
+	public static final Object[] EMPTY_ARRAY = new Object[] {};
+
+	/** 失败 */
+	public static final int EC_FAILED = 0;
+	public static final Object[] FAILED = new Object[] { 0 };
+
+	/** 成功 */
+	public static final int EC_OK = 1;
+	public static final Object[] OK = new Object[] { 1 };
+
+	// ***********************************************通用模块*********************************
+	/** 用户已存在 */
+	public static final Object[] USER_EXIST = new Object[] { 0, 1001 };
+	/** 用户不存在 */
+	public static final Object[] USER_NOT_EXIST = new Object[] { 0, 1002 };
+	/** 角色不存在 */
+	public static final Object[] ROLE_NOT_EXIST = new Object[] { 0, 1003 };
+	/** 房间不存在 */
+	public static final Object[] ROOM_NOT_EXIST = new Object[] { 0, 1004 };
+	/** 游戏已开始 */
+	public static final Object[] GAME_AREADY_START = new Object[] { 0, 1005 };
+	/** 超出房间人数 */
+	public static final Object[] OVER_ROOM_NUM = new Object[] { 0, 1006 };
+	/** 你没有房间。怎么打的牌？ */
+	public static final Object[] ROLE_NOT_IN_ROOM = new Object[] { 0, 1007 };
+	/** 操作异常 */
+	public static final Object[] OPERATE_ERROR = new Object[] { 0, 1008 };
+	/** 没有这张牌。怎么打的 */
+	public static final Object[] ROLE_NOT_THIS_EVERY = new Object[] { 0, 1009 };
+	/** 不该你打牌啊亲~ */
+	public static final Object[] ROLE_ID_NOT_SAME = new Object[] { 0, 1010 };
+	/** 你已经有房间里。不能再创建*/
+	public static final Object[] ROOM_EXIST_NOT_CREATE = new Object[] { 0, 1011 };
+	/** 你没有房间，不能解散*/
+	public static final Object[] ROOM_NOT_EXIST_NOT_DIS = new Object[] { 0, 1012 };
+	/** 房间已被房主{0}解散*/
+	public static final int Error_1013 = 1013;
+	/** 你不是房间的创建者，不能解散*/
+	public static final Object[] NOT_CREATE_LEADER = new Object[] { 0, 1014 };
+	/** 你已经在房间里，不能再加入*/
+	public static final Object[] ROLE_IN_ROOM_NOT_JOIN = new Object[] { 0, 1015 };
+	/** 你走错协议了*/
+	public static final Object[] ERROR_MSGTYPE = new Object[] { 0, 1016 };
+	/** 消耗房卡全局配置异常*/
+	public static final Object[] COST_CAR_ERROR = new Object[] { 0, 1017 };
+	/** 您的账户在其他地方登陆，请注意账户安全*/
+	public static final Object[] USERID_RELOAD = new Object[] { 0, 1018 };
+	/** 当前局数已经打完了。*/
+	public static final Object[] CUR_JUSHU_FINISH = new Object[] { 0, 1019 };
+	/** 现在还不能查看总战绩*/
+	public static final Object[] NOT_LOOK_SUM_SCORE = new Object[] { 0, 1020 };
+	
+	/** 玩家{0}申请解散房间，请等待其他玩家选择(超过{1}分钟未做选择，则默认同意)*/
+	public static final int Error_1021 = 1021;
+	/** 玩家{0}申请解散房间，请选择是否同意(超过{1}分钟未做选择，则默认同意)*/
+	public static final int Error_1022 = 1022;
+	/** 玩家{0}拒绝解散房间，牌局继续*/
+	public static final int Error_1023 = 1023;
+	/** 玩家{0}同意，解散房间成功*/
+	public static final int Error_1024 = 1024;
+	/** 房间{0}超过{1}分钟未全部做出选择，已默认解散*/
+	public static final int Error_1025 = 1025;
+	
+	/** 有玩家解散房间,你怎么还点的开始游戏?*/
+	public static final Object[] START_GAME_ERROR_OPERATE = new Object[] { 0, 1026 };
+	/** 房间已存在 */
+	public static final Object[] ROOM_EXIST = new Object[] { 0, 1027 };
+	/** 你有标签操作，请先操作标签 */
+	public static final Object[] ROLECACHE_EXIST_SIGN = new Object[] { 0, 1028 };
+	/** 查看战绩没有数据 */
+	public static final Object[] LOOK_ZHANJI_NOT_DATA = new Object[] { 0, 1029 };
+	/** 找不到邮件信息 */
+	public static final Object[] NOT_FIND_MAIL_INFO = new Object[] { 0, 1030 };
+	/** 钻石为0.领个毛线啊 */
+	public static final Object[] DIAMOND_ZERO = new Object[] { 0, 1031 };
+	/** 消耗货币类型错误 */
+	public static final Object[] ACCOUNT_TYPE_ERROR = new Object[] { 0, 1032 };
+	/** 很抱歉,角色钻石不足 */
+	public static final Object[] DIAMOND_NOT_ENOUGH = new Object[] { 0, 1033 };
+	/** 找不到回放记录 */
+	public static final Object[] PLAY_BACK_NOT_FIND = new Object[] { 0, 1034 };
+	/** 数据错误（碰杠胡过路杠。signMap不为空的） */
+	public static final Object[] DATA_ERROR = new Object[] { 0, 1035 };
+	/** 标签操作数据异常（signMap找不到roleid） */
+	public static final Object[] SIGN_OPERATE_ERROR = new Object[] { 0, 1036 };
+	/** 错误的登陆类型 */
+	public static final Object[] LOGIN_TYPE_ERROR = new Object[] { 0, 1037 };
+	/** 找不到session */
+	public static final Object[] NOT_FIND_SESSION = new Object[] { 0, 1038 };
+	/** 游客登陆一个设备只能有一个账号，账号为空了 */
+	public static final Object[] YOUKE_USER_ID_NULL = new Object[] { 0, 1039 };
+	/** 服务器升级维护中，请耐心等待 */
+	public static final Object[] SERVER_MAINTAINING = new Object[] { 0, 1040 };
+	/** 拉取微信信息的时候。openid为null */
+	public static final Object[] WEIXIN_OPENID_NULL = new Object[] { 0, 1041 };
+	
+}
+
+
+
+
+
+
+
+
+
+

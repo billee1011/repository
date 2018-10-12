@@ -1,0 +1,7 @@
+{"file":"mj_mainGameUI.png","frames":{
+"off_line_sign":{"x":126,"y":69,"w":63,"h":41,"offX":0,"offY":0,"sourceW":63,"sourceH":41},
+"timeclock":{"x":62,"y":69,"w":62,"h":60,"offX":0,"offY":0,"sourceW":62,"sourceH":60},
+"btn_back_sala":{"x":305,"y":0,"w":179,"h":61,"offX":0,"offY":0,"sourceW":179,"sourceH":61},
+"btn_dismiss_room":{"x":305,"y":63,"w":178,"h":61,"offX":0,"offY":0,"sourceW":178,"sourceH":61},
+"btn_weixin_invite":{"x":0,"y":0,"w":303,"h":67,"offX":0,"offY":0,"sourceW":303,"sourceH":67},
+"huatong":{"x":0,"y":69,"w":60,"h":96,"offX":0,"offY":0,"sourceW":60,"sourceH":96}}}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CreateRoom" width="790" height="389" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect width="789" height="387" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Label text="创建房间" x="233" y="7" anchorOffsetX="0" width="317" textAlign="center"/>
+	<e:Label text="局数选择:" x="23.5" y="104" anchorOffsetX="0" width="132" textAlign="left"/>
+	<e:Label text="扣钻方式:" x="23.5" y="192.5" anchorOffsetX="0" width="132" textAlign="left"/>
+	<e:Button id="btn_sure" label="确定" x="351.5" y="327"/>
+</e:Skin>

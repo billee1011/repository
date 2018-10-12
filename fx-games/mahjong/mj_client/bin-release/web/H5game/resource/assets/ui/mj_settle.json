@@ -1,0 +1,11 @@
+{"file":"mj_settleUI.png","frames":{
+"settle_bigwiner":{"x":434,"y":134,"w":75,"h":59,"offX":0,"offY":0,"sourceW":75,"sourceH":59},
+"settle_endzi":{"x":291,"y":81,"w":209,"h":51,"offX":0,"offY":0,"sourceW":209,"sourceH":51},
+"settle_host":{"x":230,"y":134,"w":85,"h":82,"offX":0,"offY":0,"sourceW":85,"sourceH":82},
+"settle_huangpai":{"x":291,"y":0,"w":147,"h":79,"offX":0,"offY":0,"sourceW":147,"sourceH":79},
+"settle_pao":{"x":317,"y":134,"w":115,"h":57,"offX":0,"offY":0,"sourceW":115,"sourceH":57},
+"settle_score":{"x":0,"y":0,"w":289,"h":85,"offX":0,"offY":0,"sourceW":290,"sourceH":85},
+"settle_sharezi":{"x":440,"y":0,"w":58,"h":32,"offX":0,"offY":0,"sourceW":58,"sourceH":32},
+"settle_startzi":{"x":0,"y":168,"w":140,"h":38,"offX":0,"offY":0,"sourceW":140,"sourceH":38},
+"settle_win":{"x":0,"y":87,"w":228,"h":79,"offX":2,"offY":0,"sourceW":232,"sourceH":80},
+"settle_main":{"x":317,"y":193,"w":104,"h":37,"offX":0,"offY":0,"sourceW":104,"sourceH":37}}}

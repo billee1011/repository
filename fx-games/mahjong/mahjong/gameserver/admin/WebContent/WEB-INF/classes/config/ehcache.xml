@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ehcache.xsd" updateCheck="false" dynamicConfig="false">
+	<diskStore path="java.io.tmpdir" />
+	<!--timeToLiveSeconds 缓存数据在失效前的允许存活时间(单位:秒) -->
+	<!--timeToIdleSeconds 缓存数据在失效前的允许闲置时间(单位:秒),仅当eternal=false时使用 -->
+	<defaultCache maxElementsInMemory="10000" eternal="false"
+		timeToIdleSeconds="120" timeToLiveSeconds="120" overflowToDisk="false"
+		diskPersistent="false" diskExpiryThreadIntervalSeconds="120"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="statOnlineNum" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="60" timeToLiveSeconds="60"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="statConcurrentUser" maxElementsInMemory="10000"
+		eternal="false" overflowToDisk="false" timeToIdleSeconds="60"
+		timeToLiveSeconds="60" memoryStoreEvictionPolicy="LRU" />
+	<cache name="operationLog" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="statRegisterNum" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="statRegisterUser" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="statPopulation" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="statRemain" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="statAllRemain" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="statLostTask" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="statLostRatio" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="getConvertList" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="300"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="statExchange" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="statExchangeList" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="statFinance" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="statAllFinanceList" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="statFinanceList" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="statchargelist" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="statJob" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="statareachargelist" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="statUser" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="getStatUserList" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="getConvertList4pf" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="getConvertList4area" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />	
+	<cache name="getConvertList4worldId" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="getBalance" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="300" timeToLiveSeconds="300"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="getStatCrossOnlineNum" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="60" timeToLiveSeconds="60"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="getStatCrossNum" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="60" timeToLiveSeconds="60"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="getDayConsumeLog" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="60" timeToLiveSeconds="60"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="getShoplog" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="60" timeToLiveSeconds="60"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="prizePool" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="60" timeToLiveSeconds="60"
+		memoryStoreEvictionPolicy="LRU" />
+	<cache name="rewardInfo" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="60" timeToLiveSeconds="60"
+		memoryStoreEvictionPolicy="LRU" />	
+	<cache name="getRole" maxElementsInMemory="10000" eternal="false"
+		overflowToDisk="false" timeToIdleSeconds="60" timeToLiveSeconds="60"
+		memoryStoreEvictionPolicy="LRU" />	
+</ehcache>

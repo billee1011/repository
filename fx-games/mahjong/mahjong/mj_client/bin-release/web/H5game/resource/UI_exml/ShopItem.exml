@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopItem" width="189" height="223" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect width="186" height="216" x="0" y="4" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Label id="label_diamond" text="Label" x="38" y="14" anchorOffsetX="0" width="113" textAlign="center"/>
+	<e:Image width="46" height="44" x="73.5" y="89.5" source="mf_diamond"/>
+	<e:Button id="btn_buy" label="Button" x="43" y="166" anchorOffsetX="0" width="111" anchorOffsetY="0" height="43"/>
+</e:Skin>

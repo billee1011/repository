@@ -1,0 +1,17 @@
+{"file":"mj_mainFrameUI.png","frames":{
+"mf_msgshow":{"x":948,"y":106,"w":30,"h":30,"offX":0,"offY":0,"sourceW":30,"sourceH":30},
+"main_set":{"x":217,"y":90,"w":76,"h":94,"offX":8,"offY":0,"sourceW":85,"sourceH":94},
+"main_share":{"x":685,"y":0,"w":108,"h":108,"offX":1,"offY":1,"sourceW":110,"sourceH":110},
+"main_add":{"x":615,"y":43,"w":55,"h":55,"offX":0,"offY":0,"sourceW":55,"sourceH":55},
+"main_backSee":{"x":795,"y":0,"w":108,"h":105,"offX":0,"offY":3,"sourceW":110,"sourceH":110},
+"main_custom":{"x":905,"y":0,"w":109,"h":104,"offX":0,"offY":3,"sourceW":110,"sourceH":110},
+"main_ggBg":{"x":0,"y":0,"w":683,"h":41,"offX":0,"offY":0,"sourceW":683,"sourceH":41},
+"main_gonggao":{"x":108,"y":43,"w":107,"h":104,"offX":1,"offY":3,"sourceW":110,"sourceH":110},
+"main_headBg":{"x":0,"y":43,"w":106,"h":105,"offX":0,"offY":0,"sourceW":106,"sourceH":105},
+"main_headMask":{"x":449,"y":43,"w":86,"h":84,"offX":0,"offY":0,"sourceW":86,"sourceH":84},
+"main_kabg":{"x":217,"y":43,"w":230,"h":45,"offX":0,"offY":0,"sourceW":230,"sourceH":45},
+"main_laba":{"x":905,"y":106,"w":41,"h":41,"offX":0,"offY":0,"sourceW":41,"sourceH":41},
+"main_msg":{"x":295,"y":90,"w":76,"h":93,"offX":8,"offY":1,"sourceW":85,"sourceH":94},
+"main_rule":{"x":537,"y":43,"w":76,"h":94,"offX":8,"offY":0,"sourceW":85,"sourceH":94},
+"main_ka":{"x":615,"y":100,"w":44,"h":49,"offX":0,"offY":1,"sourceW":44,"sourceH":50},
+"question":{"x":373,"y":90,"w":52,"h":52,"offX":0,"offY":0,"sourceW":52,"sourceH":52}}}

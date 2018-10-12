@@ -1,0 +1,30 @@
+{
+        chart: {
+        	type:'spline',
+        	width:800,
+        	height:600,
+        	options3d: {
+                enabled: true,
+            }
+        },
+        plotOptions:{
+        	column:{
+        		dataLabels:{
+        			enabled:true
+        		}
+        	}
+        },
+        title: {
+            text: '日活跃'
+        },
+        xAxis:{
+        	categories:eval('('+'${data1}'+')')
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+        	name:'日活跃',
+        	data:eval('('+'${data2}'+')')
+        }]
+    }

@@ -1,0 +1,13 @@
+{"file":"mj_mainFrameUI.png","frames":{
+"mf_headdi":{"x":344,"y":103,"w":106,"h":106,"offX":0,"offY":0,"sourceW":106,"sourceH":106},
+"mf_headwen":{"x":573,"y":45,"w":108,"h":108,"offX":0,"offY":0,"sourceW":108,"sourceH":108},
+"mf_help":{"x":149,"y":170,"w":72,"h":100,"offX":0,"offY":0,"sourceW":72,"sourceH":100},
+"mf_msg":{"x":75,"y":170,"w":72,"h":100,"offX":0,"offY":0,"sourceW":72,"sourceH":101},
+"mf_msgshow":{"x":258,"y":123,"w":30,"h":30,"offX":0,"offY":0,"sourceW":30,"sourceH":30},
+"mf_paomadeng":{"x":0,"y":0,"w":891,"h":43,"offX":0,"offY":0,"sourceW":891,"sourceH":43},
+"mf_set":{"x":0,"y":170,"w":73,"h":101,"offX":0,"offY":0,"sourceW":73,"sourceH":101},
+"mf_add":{"x":225,"y":123,"w":31,"h":32,"offX":0,"offY":0,"sourceW":31,"sourceH":32},
+"mf_btnbg":{"x":0,"y":45,"w":342,"h":76,"offX":0,"offY":0,"sourceW":342,"sourceH":76},
+"mf_createzi":{"x":0,"y":123,"w":223,"h":45,"offX":1,"offY":0,"sourceW":224,"sourceH":45},
+"mf_diamond":{"x":223,"y":170,"w":45,"h":44,"offX":0,"offY":0,"sourceW":46,"sourceH":44},
+"mf_enterzi":{"x":344,"y":45,"w":227,"h":56,"offX":0,"offY":0,"sourceW":227,"sourceH":56}}}

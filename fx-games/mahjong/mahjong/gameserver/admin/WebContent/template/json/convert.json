@@ -1,0 +1,33 @@
+{
+        chart: {
+        	type:'column',
+        	width:800,
+        	height:600,
+        	options3d: {
+                enabled: true,
+            }
+        },
+        plotOptions:{
+        	column:{
+        		dataLabels:{
+        			enabled:true,
+        			formatter:function(){
+        				return this.y+"<br/>"+"("+(this.y/${max?c}*100).toFixed(2)+"%"+")";
+        			}
+        		}
+        	}
+        },
+        title: {
+            text: '转化率统计图'
+        },
+        xAxis:{
+        	categories:eval('('+'${data1}'+')')
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+        	name:"人数",
+        	data:eval('('+'${data2}'+')')
+        }]
+    }

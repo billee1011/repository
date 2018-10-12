@@ -1,0 +1,6 @@
+{"file":"mj_operateUI.png","frames":{
+"op_eat":{"x":132,"y":0,"w":91,"h":83,"offX":0,"offY":0,"sourceW":91,"sourceH":83},
+"op_gang":{"x":0,"y":128,"w":81,"h":80,"offX":1,"offY":1,"sourceW":82,"sourceH":81},
+"op_hu":{"x":132,"y":85,"w":84,"h":84,"offX":1,"offY":1,"sourceW":85,"sourceH":85},
+"op_pass":{"x":0,"y":0,"w":130,"h":126,"offX":0,"offY":0,"sourceW":130,"sourceH":126},
+"op_peng":{"x":225,"y":0,"w":86,"h":87,"offX":1,"offY":0,"sourceW":87,"sourceH":87}}}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MainGame" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="257" height="82" x="20" y="13" source="roomMsgBg"/>
+	<e:Label text="房号:" x="39" y="25" anchorOffsetX="0" width="55" fontFamily="Microsoft YaHei" textAlign="left" height="26" size="20" verticalAlign="middle"/>
+	<e:Label id="label_room" text="123456" x="89" y="24.83" anchorOffsetX="0" width="80" fontFamily="Microsoft YaHei" textAlign="left" height="26" size="20" verticalAlign="middle" textColor="0xfff000"/>
+	<e:Label id="label_jushu" text="局数：" x="171" y="27.33" anchorOffsetX="0" width="102" fontFamily="Microsoft YaHei" textAlign="left" size="20"/>
+	<e:Label id="label_jushu0" text="点炮胡 闲庄（算分）" x="51" y="54" anchorOffsetX="0" width="168" fontFamily="Microsoft YaHei" textAlign="left" size="18" textColor="0xafff6f"/>
+	<e:Image width="177" height="82" x="1091" y="16" source="game_setBg"/>
+	<e:Button id="btn_back" label="" x="1194" y="30" width="43" height="43">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="game_quit" source.down="game_quit"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn_set" label="" x="1119" y="30" width="43" height="45">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="game_setting" source.down="game_setting"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image width="683" height="30" x="317" y="12" source="main_ggBg"/>
+	<e:Image width="41" height="41" x="326" y="4" source="main_laba"/>
+	<e:Image width="147" height="74" x="13" y="94" source="game_baoBg"/>
+	<e:Button id="btn_wxInvite" label="" x="491" y="310" width="299" height="73">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="game_longBtn" source.down="game_longBtn"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image id="img_wxzi" width="262" height="45" x="510" y="324" source="game_webInvite" touchEnabled="false"/>
+	<e:Label id="label_leftCard" text="card" x="559" y="420" width="170" height="26" textAlign="center" size="24" fontFamily="Microsoft YaHei"/>
+</e:Skin>

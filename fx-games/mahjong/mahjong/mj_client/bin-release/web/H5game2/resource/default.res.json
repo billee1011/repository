@@ -1,0 +1,290 @@
+{
+	"groups": [
+		{
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,settleBg_png,settleHu_png,testHelp_png,mj_mainGame_json,code_json",
+			"name": "preload"
+		},
+		{
+			"keys": "toast-bg_png,loading2_png,mj_load_json,bgm2_mp3,code_json,mj_loadUI_png",
+			"name": "login"
+		},
+		{
+			"keys": "mj_redFontUI_png,mj_redFont_fnt,mj_blueFontUI_png,mj_blueFont_fnt,mj_center_json",
+			"name": "gameRes"
+		},
+		{
+			"keys": "mj_mainFrame_json,public_frame_a_png,mj_mainFrameUI_png",
+			"name": "mainFrame"
+		},
+		{
+			"keys": "mj_enterroom_json,mj_enterroomUI_png",
+			"name": "enterRoom"
+		},
+		{
+			"keys": "mj_operate_json,mj_operateUI_png",
+			"name": "operate"
+		},
+		{
+			"keys": "mj_mainGame_json",
+			"name": "mainGame"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "assets/ui/mj_center.json",
+			"type": "sheet",
+			"name": "mj_center_json",
+			"subkeys": "banker_sign_big,banker_sign_small,btn_message,btn_setting,head1,head3,headallbk,outmjtile_sign,ready_sign,turn_pos_0,turn_pos_1,turn_pos_2,turn_pos_3,turn_pos_bg,xinhao0,xinhao1,xinhao2,xinhao3,xinhao4"
+		},
+		{
+			"url": "assets/font/mj_blueFontUI.png",
+			"type": "image",
+			"name": "mj_blueFontUI_png"
+		},
+		{
+			"url": "assets/font/mj_redFontUI.png",
+			"type": "image",
+			"name": "mj_redFontUI_png"
+		},
+		{
+			"url": "assets/font/mj_blueFont.fnt",
+			"type": "font",
+			"name": "mj_blueFont_fnt"
+		},
+		{
+			"url": "assets/font/mj_redFont.fnt",
+			"type": "font",
+			"name": "mj_redFont_fnt"
+		},
+		{
+			"url": "assets/login/loading2.png",
+			"type": "image",
+			"name": "loading2_png"
+		},
+		{
+			"url": "assets/login/toast-bg.png",
+			"type": "image",
+			"name": "toast-bg_png"
+		},
+		{
+			"url": "assets/ui/mj_load.json",
+			"type": "sheet",
+			"name": "mj_load_json",
+			"subkeys": "jidutiaod,jidutiaos,jzshazi,login_btn_checkbox,login_check_mark"
+		},
+		{
+			"url": "assets/ui/mj_mainFrame.json",
+			"type": "sheet",
+			"name": "mj_mainFrame_json",
+			"subkeys": "mf_add,mf_btnbg,mf_createzi,mf_diamond,mf_enterzi,mf_headdi,mf_headwen,mf_help,mf_msg,mf_msgshow,mf_paomadeng,mf_set"
+		},
+		{
+			"url": "UIImage/public_frame_a.png",
+			"type": "image",
+			"name": "public_frame_a_png"
+		},
+		{
+			"url": "assets/ui/mj_enterroom.json",
+			"type": "sheet",
+			"name": "mj_enterroom_json",
+			"subkeys": "btn_del,btn_num_0,btn_num_1,btn_num_2,btn_num_3,btn_num_4,btn_num_5,btn_num_6,btn_num_7,btn_num_8,btn_num_9,btn_reset,cell_record_bg,input_room_no"
+		},
+		{
+			"url": "sound/bgm2.mp3",
+			"type": "sound",
+			"name": "bgm2_mp3"
+		},
+		{
+			"url": "assets/ui/mj_operate.json",
+			"type": "sheet",
+			"name": "mj_operate_json",
+			"subkeys": "op_eat,op_gang,op_hu,op_pass,op_peng"
+		},
+		{
+			"url": "UIImage/settleBg.png",
+			"type": "image",
+			"name": "settleBg_png"
+		},
+		{
+			"url": "UIImage/settleHu.png",
+			"type": "image",
+			"name": "settleHu_png"
+		},
+		{
+			"url": "UIImage/testHelp.png",
+			"type": "image",
+			"name": "testHelp_png"
+		},
+		{
+			"url": "assets/ui/mj_mainGame.json",
+			"type": "sheet",
+			"name": "mj_mainGame_json",
+			"subkeys": "btn_back_sala,btn_dismiss_room,btn_weixin_invite,huatong,off_line_sign,timeclock"
+		},
+		{
+			"url": "config/code.json",
+			"type": "json",
+			"name": "code_json"
+		},
+		{
+			"url": "assets/ui/mj_centerUI.png",
+			"type": "image",
+			"name": "mj_centerUI_png"
+		},
+		{
+			"url": "assets/ui/mj_enterroomUI.png",
+			"type": "image",
+			"name": "mj_enterroomUI_png"
+		},
+		{
+			"url": "assets/ui/mj_loadUI.png",
+			"type": "image",
+			"name": "mj_loadUI_png"
+		},
+		{
+			"url": "assets/ui/mj_mainFrameUI.png",
+			"type": "image",
+			"name": "mj_mainFrameUI_png"
+		},
+		{
+			"url": "assets/ui/mj_mainGameUI.png",
+			"type": "image",
+			"name": "mj_mainGameUI_png"
+		},
+		{
+			"url": "assets/ui/mj_operateUI.png",
+			"type": "image",
+			"name": "mj_operateUI_png"
+		}
+	]
+}

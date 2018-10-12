@@ -1,0 +1,1 @@
+declare function selectImage(selectedHandler:Function,thisRef:any): void;

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RoleItem" width="132" height="170" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="img_headBg" width="102" height="125" x="15" y="3" source="head1"/>
+	<e:Image id="img_headNone" width="102" height="125" x="15" y="3" source="head3"/>
+	<e:Label id="label_name" text="玩家名字" x="15" y="93" size="14" width="105" anchorOffsetY="0" height="20" fontFamily="KaiTi" verticalAlign="middle" textAlign="center"/>
+</e:Skin>

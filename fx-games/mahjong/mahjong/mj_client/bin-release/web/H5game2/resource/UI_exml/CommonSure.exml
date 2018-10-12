@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CommonSure" width="443" height="288" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="443" height="288" x="0" y="0" source="itemtip_bg"/>
+	<e:Button id="btn_back" label="" x="410" y="-3" width="36" height="41">
+		<e:Skin states="up,down,disabled">
+		<e:Image width="100%" height="100%" source="commonClose" source.down="commonClose"/>
+		<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+	</e:Button>
+	<e:Button id="btn_sure" label="" x="257" y="212" width="135" height="44">
+	</e:Button>
+	<e:Button id="btn_cancel" label="" x="56" y="212" width="135" height="44">
+	</e:Button>
+	<e:Label id="label_content" text="确定消费100元宝？" x="36" y="72" anchorOffsetX="0" width="379" anchorOffsetY="0" height="126" textAlign="center" size="24" fontFamily="微软雅黑" textColor="0x9d7b0f" verticalAlign="middle"/>
+	<e:Label id="label_title" text="提  示" x="188" y="6" anchorOffsetX="0" width="83" textAlign="center" fontFamily="微软雅黑" size="25" textColor="0xfaf184"/>
+</e:Skin>

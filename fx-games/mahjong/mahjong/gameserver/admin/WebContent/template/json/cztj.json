@@ -1,0 +1,64 @@
+{
+				chart: {
+		            zoomType: 'xy',
+		            width:800,
+	            	height:600
+		        },
+				title: {
+		            text: '充值统计'
+		        },
+		        xAxis: {
+		            categories: eval('('+'${x}'+')'),
+		            labels:{
+		            	rotation:270
+		            }
+		        },
+		        yAxis: [{ 
+		            labels: {
+		                style: {
+		                    color: Highcharts.getOptions().colors[1]
+		                }
+		            },
+		            title: {
+		                text: '充值人数',
+		                style: {
+		                    color: Highcharts.getOptions().colors[1]
+		                }
+		            },
+		            floor:0
+		        }, {
+		            title: {
+		                text: '充值金额',
+		                style: {
+		                    color: Highcharts.getOptions().colors[0]
+		                }
+		            },
+		            labels: {
+		                format: '{value}',
+		                style: {
+		                    color: Highcharts.getOptions().colors[0]
+		                }
+		            },
+		            floor:0,
+		            opposite: true
+		        }],
+		        credits: {
+		            enabled: false
+		        },
+		        series:[{
+		            name: '小时充值金额',
+		            type: 'column',
+		            data: eval('('+'${y1}'+')'),
+		            yAxis: 1
+		        },{
+		        	name:'小时充值人数',
+		        	type:'column',
+		        	data:eval('('+'${y2}'+')')
+		        },{
+		        	name:"总金额",
+		        	type:'spline',
+		        	data:eval('('+'${spline}'+')'),
+		        	yAxis: 1
+		        }
+		                ]
+			}

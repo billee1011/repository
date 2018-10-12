@@ -1,0 +1,36 @@
+{
+	"native": {
+		"path_ignore": [],
+		"android_as_path": "../job/fuck/mjandroid"
+	},
+	"publish": {
+		"web": 0,
+		"native": 1,
+		"path": "bin-release"
+	},
+	"egret_version": "4.0.3",
+	"modules": [
+		{
+			"name": "egret"
+		},
+		{
+			"name": "game"
+		},
+		{
+			"name": "res"
+		},
+		{
+			"name": "eui"
+		},
+		{
+			"name": "tween"
+		},
+		{
+			"name": "socket"
+		},
+		{
+			"name": "uploader",
+			"path": "ext/uploader"
+		}
+	]
+}

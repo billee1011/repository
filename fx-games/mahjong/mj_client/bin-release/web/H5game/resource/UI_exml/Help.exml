@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Help" width="718" height="426" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:List id="list_target" width="444" height="422" x="272" y="0" anchorOffsetX="0" anchorOffsetY="0">
+		<e:layout>
+			<e:VerticalLayout/>
+		</e:layout>
+	</e:List>
+</e:Skin>

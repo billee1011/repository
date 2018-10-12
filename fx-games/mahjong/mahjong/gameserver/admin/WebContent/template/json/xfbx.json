@@ -1,0 +1,68 @@
+{
+			chart: {
+	            zoomType: 'xy',
+	            width:800,
+	            height:600
+	        },
+	        title: {
+	            text: '消费表现'
+	        },
+	        xAxis:[{
+	            categories: eval('('+'${xData}'+')'),
+	            labels:{
+	            	rotation:270
+	            }
+	        }],
+	        yAxis:[
+               {
+	               title: {
+                       text: '消费额度',
+                       style: {
+                           color: Highcharts.getOptions().colors[1]
+                       }
+                   },
+                   labels: {
+                       style: {
+                           color: Highcharts.getOptions().colors[1]
+                       }
+                   }
+               },
+               {
+            	   title: {
+                       text: '消费人数',
+                       style: {
+                           color: Highcharts.getOptions().colors[0]
+                       }
+                   },
+                   labels: {
+                       style: {
+                           color: Highcharts.getOptions().colors[0]
+                       }
+                   },
+                   opposite: true
+               }
+	        ],
+	        credits: {
+	            enabled: false
+	        },
+	        plotOptions:{
+	        	column:{
+	        		dataLabels:{
+	        			enabled:true,
+		        		rotation:270
+		        	}
+	        	},
+	        	spline:{
+	        		dataLabels:{
+		        		enabled:false
+		        	}
+	        	}
+	        },
+	        tooltip: {
+	            shared: true
+	        },
+	        series: [
+		            {name: '消费额度',data: eval('('+'${moneyInfo}'+')'),type: 'column',yAxis: 1},
+		            {name: '消费用户数',data: eval('('+'${userNum}'+')'),type: 'spline'}
+		            ]
+	    }

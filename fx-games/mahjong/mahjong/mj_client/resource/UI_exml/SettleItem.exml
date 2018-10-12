@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SettleItem" width="941" height="117" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="label_id" text="Label" x="115" y="7" fontFamily="KaiTi" anchorOffsetX="0" width="145" size="24" textAlign="left" textColor="0x926455"/>
+	<e:Label id="label_name" text="Label" x="288" y="7" fontFamily="KaiTi" anchorOffsetX="0" width="145" size="24" textAlign="left" textColor="0x926455"/>
+	<e:Label id="label_style" text="" x="459" y="6" fontFamily="KaiTi" anchorOffsetX="0" width="275" size="24" textAlign="center" textColor="0x6c93f0" height="24"/>
+</e:Skin>
