@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<include>
+
+	<!-- 
+		id=0通用逻辑服处理
+		msgType=0 代理服处理 1逻辑服处理
+		extensionName 扩展名
+		handlerClass 业务处理类
+	 -->
+	<!-- 逻辑服通用处理 -->
+	<request id="0" msgType="1" extensionName="request" handlerClass="com.cai.handler.LogicMsgHandler"/>
+	
+	<!-- 心跳 -->
+	<request id="1" msgType="0" extensionName="heartRequest" handlerClass="com.cai.handler.HeatHandler"/>
+	<!--  -->
+	<request id="2" msgType="0" extensionName="loginRequest" handlerClass="com.cai.handler.LoginHandler"/>
+	
+	<request id="5" msgType="0" extensionName="roomRequest" handlerClass="com.cai.handler.RoomHandler"/>
+	
+	
+	
+	
+	
+
+</include>
