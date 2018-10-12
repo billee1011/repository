@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<include>
+	<service order="1" name="sessionServiceImpl" class="com.cai.service.SessionServiceImpl" />
+	<service order="2" name="playerServiceImpl" class="com.cai.service.PlayerServiceImpl" />
+	<service order="3" name="publicServiceImpl" class="com.cai.service.PublicServiceImpl" />
+	 <service order="4" name="idServiceImpl" class="com.cai.service.IDServiceImpl" />
+	<service order="5" name="redisServiceImpl" class="com.cai.service.RedisServiceImpl" />
+	<service order="6" name="mongoDBServiceImpl" class="com.cai.service.MongoDBServiceImpl" />
+	<service order="7" name="rMIServiceImpl" class="com.cai.service.RMIServiceImpl" />
+	<service order="8" name="ptAPIServiceImpl" class="com.cai.service.PtAPIServiceImpl" />
+	<service order="9" name="ptAPIServiceImpl" class="com.cai.service.RankServiceImp" />
+    <service order="11" name="serverBalanceServiceImp" class="com.cai.service.ServerBalanceServiceImp" />
+    <service order="12" name="rMIHandlerServiceImp" class="com.cai.service.RMIHandlerServiceImp" />
+    <service order="13" name="phoneService" class="com.cai.service.PhoneService" />
+    <service order="14" name="clubExclusiveService" class="com.cai.service.ClubExclusiveService" />
+    <service order="15" name="recommenderReceiveService" class="com.cai.service.RecommenderReceiveService" />
+    <service order="16" name="accountRedpacketPoolService" class="com.cai.service.AccountRedpacketPoolService" />
+    <service order="17" name="bonusPointsService" class="com.cai.service.BonusPointsService" />
+    <service order="18" name="weiXinProxyConsumeService" class="com.cai.service.WeiXinProxyConsumeService" />
+    <service order="19" name="zZPromoterService" class="com.cai.service.ZZPromoterService" />
+    
+</include>

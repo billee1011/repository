@@ -1,0 +1,1185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="ServerInfo">
+
+	<typeAlias alias="proxyGameServerModel" type="com.cai.common.domain.ProxyGameServerModel" />
+	<typeAlias alias="logicGameServerModel" type="com.cai.common.domain.LogicGameServerModel" />
+	<typeAlias alias="gateServerModel" type="com.cai.common.domain.GateServerModel" />
+	<typeAlias alias="matchServerModel" type="com.cai.common.domain.MatchGameServerModel" />
+	<typeAlias alias="coinServerModel" type="com.cai.common.domain.CoinGameServerModel" />
+	<typeAlias alias="foundationServerModel"
+		type="com.cai.common.domain.FoundationGameServerModel" />
+	<typeAlias alias="accountModel" type="com.cai.common.domain.AccountModel" />
+	<typeAlias alias="accountParamModel" type="com.cai.common.domain.AccountParamModel" />
+	<typeAlias alias="sysParamModel" type="com.cai.common.domain.SysParamModel" />
+	<typeAlias alias="accountWeixinModel" type="com.cai.common.domain.AccountWeixinModel" />
+	<typeAlias alias="gameNoticeModel" type="com.cai.common.domain.GameNoticeModel" />
+	<typeAlias alias="sysNoticeModel" type="com.cai.common.domain.SysNoticeModel" />
+	<typeAlias alias="shopModel" type="com.cai.common.domain.ShopModel" />
+	<typeAlias alias="gameDescModel" type="com.cai.common.domain.GameDescModel" />
+	<typeAlias alias="mainUiNoticeModel" type="com.cai.common.domain.MainUiNoticeModel" />
+	<typeAlias alias="customerSerNoticeModel"
+		type="com.cai.common.domain.CustomerSerNoticeModel" />
+	<typeAlias alias="loginNoticeModel" type="com.cai.common.domain.LoginNoticeModel" />
+	<typeAlias alias="moneyShopModel" type="com.cai.common.domain.MoneyShopModel" />
+	<typeAlias alias="turntableSystemModel" type="com.cai.common.domain.TurntableSystemModel" />
+	<typeAlias alias="activityModel" type="com.cai.common.domain.ActivityModel" />
+	<typeAlias alias="activityPrizeModel"
+		type="com.cai.common.domain.activity.NewActivityPrizeModel" />
+	<typeAlias alias="continueLoginModel" type="com.cai.common.domain.ContinueLoginModel" />
+	<typeAlias alias="accountRecommendModel"
+		type="com.cai.common.domain.AccountRecommendModel" />
+	<typeAlias alias="hallRecommendModel" type="com.cai.common.domain.HallRecommendModel" />
+	<typeAlias alias="accountProxyModel" type="com.cai.common.domain.AccountProxyModel" />
+	<typeAlias alias="goodsModel" type="com.cai.common.domain.GoodsModel" />
+	<typeAlias alias="appshopModel" type="com.cai.common.domain.AppShopModel" />
+	<typeAlias alias="ipgroupModel" type="com.cai.common.domain.IPGroupModel" />
+	<typeAlias alias="accountGroupModel" type="com.cai.common.domain.AccountGroupModel" />
+	<typeAlias alias="appItem" type="com.cai.common.domain.AppItem" />
+	<typeAlias alias="clubModel" type="com.cai.common.domain.ClubModel" />
+	<typeAlias alias="clubAccountModel" type="com.cai.common.domain.ClubAccountModel" />
+	<typeAlias alias="clubGroupModel" type="com.cai.common.domain.ClubGroupModel" />
+	<typeAlias alias="clubRuleModel" type="com.cai.common.domain.ClubRuleModel" />
+	<typeAlias alias="clubMemberModel" type="com.cai.common.domain.ClubMemberModel" />
+	<typeAlias alias="agentRecommendModel" type="com.cai.common.domain.AgentRecommendModel" />
+	<typeAlias alias="gameRecommendIndexModel"
+		type="com.cai.common.domain.GameRecommendIndexModel" />
+	<typeAlias alias="gameTypeDBModel" type="com.cai.common.domain.GameTypeDBModel" />
+	<typeAlias alias="logicServerBalanceModule"
+		type="com.cai.common.domain.LogicServerBalanceModule" />
+	<typeAlias alias="gameTypeDBModel" type="com.cai.common.domain.GameTypeDBModel" />
+	<typeAlias alias="redPackageActivityModel"
+		type="com.cai.common.domain.RedPackageActivityModel" />
+	<typeAlias alias="redActivityModel" type="com.cai.common.domain.RedActivityModel" />
+	<typeAlias alias="gameGroupSetModel" type="com.cai.common.domain.GameGroupSetModel" />
+	<typeAlias alias="itemModel" type="com.cai.common.domain.ItemModel" />
+	<typeAlias alias="oldUserModel" type="com.cai.common.domain.OldUserModel" />
+	<typeAlias alias="accountMobileModel" type="com.cai.common.domain.AccountMobileModel" />
+	<typeAlias alias="matchBroadModel" type="com.cai.common.domain.MatchBroadModel" />
+	<typeAlias alias="clubExclusiveGoldModel"
+		type="com.cai.common.domain.ClubExclusiveGoldModel" />
+	<typeAlias alias="clubExclusiveActivityModel"
+		type="com.cai.common.domain.ClubExclusiveActivityModel" />
+	<typeAlias alias="accountPushModel" type="com.cai.common.domain.AccountPushModel" />
+	<typeAlias alias="specialAccountModel" type="com.cai.common.domain.SpecialAccountModel" />
+	<typeAlias alias="inviteActiveModel" type="com.cai.common.domain.InviteActiveModel" />
+	<typeAlias alias="turntableActiveModel" type="com.cai.common.domain.TurntableActiveModel" />
+	<typeAlias alias="turntablePrizeModel" type="com.cai.common.domain.TurntablePrizeModel" />
+	<typeAlias alias="coinGameType" type="com.cai.common.domain.coin.CoinGameType" />
+	<typeAlias alias="coinGameTypeIndex" type="com.cai.common.domain.coin.CoinGame" />
+	<typeAlias alias="coinGameTypeDetail" type="com.cai.common.domain.coin.CoinGameDetail" />
+	<typeAlias alias="coinRelief" type="com.cai.common.domain.coin.CoinRelief" />
+	<typeAlias alias="itemExchangeModel" type="com.cai.common.domain.ItemExchangeModel" />
+	<typeAlias alias="welfareExchangeModel" type="com.cai.common.domain.WelfareExchangeModel" />
+	<typeAlias alias="welfareGoodsTypeModel" type="com.cai.common.domain.WelfareGoodsTypeModel" />
+	<typeAlias alias="cardSecretInfo" type="com.cai.common.domain.info.CardSecretInfo" />
+
+	<typeAlias alias="reloadControlModel" type="com.cai.common.domain.ReloadControlModel" />
+	<typeAlias alias="recommendLimitModel" type="com.cai.common.domain.RecommendLimitModel" />
+	<typeAlias alias="gaoDeModel" type="com.cai.common.domain.GaoDeModel" />
+	<typeAlias alias="activityMissionModel" type="com.cai.common.domain.ActivityMissionModel" />
+	<typeAlias alias="activityMissionGroupModel" type="com.cai.common.domain.activity.ActivityMissionGroupModel" />
+	<typeAlias alias="recommendReceiveModel"
+		type="com.cai.common.domain.RecommendReceiveModel" />
+	<typeAlias alias="accountRedpacketPoolModel"
+		type="com.cai.common.domain.AccountRedpacketPoolModel" />
+	<typeAlias alias="activityRedpacketPoolModel"
+		type="com.cai.common.domain.ActivityRedpacketPoolModel" />
+	<typeAlias alias="hallGuideModel" type="com.cai.common.domain.HallGuideModel" />
+
+	<typeAlias alias="channelModel" type="com.cai.common.domain.ChannelModel" />
+	<typeAlias alias="pushInfoModel" type="com.cai.common.domain.PushInfoModel" />
+	<typeAlias alias="dailyCoinExchangeStatistics" type="com.cai.common.domain.statistics.DailyCoinExchangeStatistics" />
+	<typeAlias alias="addCardLog" type="com.cai.common.domain.AddCardLog" />
+	<typeAlias alias="accountBonusPointsModel" type="com.cai.common.domain.bonuspoints.AccountBonusPointsModel" />
+	<typeAlias alias="bonusPointsGoods" type="com.cai.common.domain.bonuspoints.BonusPointsGoods" />
+	<typeAlias alias="bonusPointsGoodsType" type="com.cai.common.domain.bonuspoints.BonusPointsGoodsType" />
+	<typeAlias alias="playerAddressModel" type="com.cai.common.domain.bonuspoints.PlayerAddressModel" />
+	<typeAlias alias="bonusPointsActivity" type="com.cai.common.domain.bonuspoints.BonusPointsActivity" />
+	<typeAlias alias="gameResourceModel" type="com.cai.common.domain.GameResourceModel" />
+	<typeAlias alias="rechargeModel" type="com.cai.common.domain.RechargeModel" />
+	<typeAlias alias="coinExciteModel" type="com.cai.common.domain.CoinExciteModel" />
+	<typeAlias alias="cardCategoryModel" type="com.cai.common.domain.CardCategoryModel" />
+	<typeAlias alias="activityDaysMission" type="com.cai.common.domain.activity.ActivityDaysMission" />
+	<typeAlias alias="clientUploadErWeiMaModel" type="com.cai.common.domain.ClientUploadErWeiMaModel" />
+	<typeAlias alias="inviteFriendsActivityModel" type="com.cai.common.domain.InviteFriendsActivityModel" />
+	<typeAlias alias="hallMainViewBackModel" type="com.cai.common.domain.HallMainViewBackModel" />
+	<typeAlias alias="sdkApp" type="com.cai.common.domain.sdk.SdkApp" />
+	<typeAlias alias="sdkAppShop" type="com.cai.common.domain.sdk.SdkShop" />
+	<typeAlias alias="coinCornucopiaModel" type="com.cai.common.domain.CoinCornucopiaModel"/>
+	<typeAlias alias="sdkDiamondShopModel" type="com.cai.common.domain.sdk.SdkDiamondShopModel"/>
+	<typeAlias alias="accountZZPromoterModel" type="com.cai.common.domain.zhuzhou.AccountZZPromoterModel"/>
+	<typeAlias alias="accountPromoterReceiveModel" type="com.cai.common.domain.zhuzhou.AccountPromoterReceiveModel"/>
+	<typeAlias alias="roomGeneratorModel" type="com.cai.common.domain.RoomGeneratorModel"/>
+	
+
+	<select id="getProxyGameServerModelList" resultClass="proxyGameServerModel">
+		select *
+		from proxy_game_server
+	</select>
+	<select id="getLogicGameServerModelList" resultClass="logicGameServerModel">
+		select *
+		from logic_game_server
+	</select>
+	<select id="getGateServerModelList" resultClass="gateServerModel">
+		select * from
+		gate_game_server
+	</select>
+
+	<select id="getMatchServerModelList" resultClass="matchServerModel">
+		select * from
+		match_game_server
+	</select>
+	<select id="getCoinServerModelList" resultClass="coinServerModel">
+		select * from
+		coin_game_server
+	</select>
+
+	<select id="getFoundationServerModelList" resultClass="foundationServerModel">
+		select *
+		from foundation_game_server
+	</select>
+
+	<select id="getAccountByGoldDesc" resultClass="accountModel">
+		SELECT * FROM
+		account ORDER BY gold LIMIT 10;
+	</select>
+	<select id="getAccountByMoneyDesc" resultClass="accountModel"
+		parameterClass="Integer">
+		SELECT * FROM account ORDER BY money LIMIT 10;
+	</select>
+	<select id="getAccountModelList" resultClass="accountModel">
+		select * from
+		account
+	</select>
+	<select id="getAccountById" resultClass="accountModel"
+		parameterClass="long">
+		select * from account where account_id=#account_id#
+	</select>
+	<select id="getAccountByAccountName" resultClass="accountModel"
+		parameterClass="String">
+		select * from account where account_name=#account_name#
+	</select>
+	<insert id="insertAccountModel" parameterClass="accountModel">
+		insert
+		account(pt,account_name,password,login_times,create_time,last_login_time,mobile_phone,history_pay_gold,gold,client_ip,client_ip2,banned,is_agent,today_online,history_online,last_client_flag,client_version,recommend_id,money,proxy_level,recommend_agent_id)
+		values(#pt#,#account_name#,#password#,#login_times#,#create_time#,#last_login_time#,#mobile_phone#,#history_pay_gold#,#gold#,#client_ip#,#client_ip2#,#banned#,#is_agent#,#today_online#,#history_online#,#last_client_flag#,#client_version#,
+		#recommend_id#,#money#,#proxy_level#,#recommend_agent_id#)
+		<selectKey resultClass="long" keyProperty="account_id">
+			select
+			last_insert_id()
+		</selectKey>
+	</insert>
+	<update id="updateAccountModel" parameterClass="accountModel">
+		update account
+		set
+		pt=#pt#,account_name=#account_name#,password=#password#,login_times=#login_times#,create_time=#create_time#,last_login_time=#last_login_time#,mobile_phone=#mobile_phone#,
+		history_pay_gold=#history_pay_gold#,gold=#gold#,client_ip=#client_ip#,client_ip2=#client_ip2#,banned=#banned#,is_agent=#is_agent#,today_online=#today_online#,history_online=#history_online#,last_client_flag=#last_client_flag#,client_version=#client_version#,
+		recommend_id=#recommend_id#,money=#money#,proxy_level=#proxy_level#,is_inner=#is_inner#,promote_level=#promote_level#,consum_total=#consum_total#,up_proxy=#up_proxy#,is_rebate=#is_rebate#,recommend_receive_income=#recommend_receive_income#,
+		rmb=#rmb#,receive_rmb=#receive_rmb#,history_rmb=#history_rmb#,recommend_history_income=#recommend_history_income#,recommend_remain_income=#recommend_remain_income#,recommend_yesterday_income=#recommend_yesterday_income#,recommend_level=#recommend_level#,login_reward=#login_reward#,
+		signature=#signature#,recommend_agent_id=#recommend_agent_id#,real_name=#real_name#,identity_card=#identity_card#,coin_play_time=#coin_play_time#,binded_mobile=#binded_mobile#,welfare=#welfare#,diamond=#diamond#
+		where
+		account_id=#account_id#
+	</update>
+	<update id="updateAccountIncome" parameterClass="accountModel">
+		update account
+		set
+		recommend_receive_income=#recommend_receive_income#,recommend_remain_income=#recommend_remain_income#
+		where
+		account_id=#account_id#
+	</update>
+	<!-- 零点调度，账号 -->
+	<update id="resetAccountZero">
+		update account set today_online=0
+	</update>
+	<!-- 零点调度，账号参数列表 -->
+	<update id="resetTodayAccountParam" parameterClass="java.util.List">
+		update account_param set val1=0,str1='',long1=0,date1=null
+		where type
+		in
+		<iterate open="(" close=")" conjunction=",">
+		<![CDATA[  
+		   #wid[]#
+		]]>
+		</iterate>
+	</update>
+
+	<!--查询用户总数 -->
+	<select id="getAccountNum" resultClass="Integer">
+		select count(*) from
+		account
+	</select>
+
+	<!-- 查询指定时间段的注册账号数量 -->
+	<select id="getAccountCreateNumByTime" parameterClass="java.util.Map"
+		resultClass="Integer">
+		<![CDATA[ 
+			select count(*) from account 
+			where create_time>=#beginTime# and create_time<#endTime# and pt='WX'
+		]]>
+	</select>
+
+	<!-- 查询指定时间段的活跃账号数量 -->
+	<select id="getAccountActiveOnlineNum" resultClass="Integer"
+		parameterClass="java.util.Map">
+		<![CDATA[ select count(*) from account where last_login_time>=#beginTime# and last_login_time<#endTime# ]]>
+	</select>
+
+	<select id="getAccountActivieByCreateTime" resultClass="int"
+		parameterClass="java.util.Map">
+		<![CDATA[ 
+			select count(*) from account where create_time>#beginTime# and create_time<=#endTime# and last_login_time>=#loginTime#
+		]]>
+	</select>
+
+	<!-- account_param -->
+	<insert id="insertAccountParamModel" parameterClass="accountParamModel">
+		insert
+		account_param(account_id,type,val1,str1,long1,date1)
+		values(#account_id#,#type#,#val1#,#str1#,#long1#,#date1#)
+	</insert>
+	<update id="updateAccountParamModel" parameterClass="accountParamModel">
+		update
+		account_param set val1=#val1#,str1=#str1#,long1=#long1#,date1=#date1#
+		where account_id=#account_id# and type=#type#
+	</update>
+	<select id="getAccountParamModelByAccountId" parameterClass="long"
+		resultClass="accountParamModel">
+		select * from account_param where account_id=#account_id#
+	</select>
+	<!-- sysParamModel -->
+	<insert id="insertSysParamModel" parameterClass="sysParamModel">
+		insert
+		sys_param(id,game_id,param_desc,val1,val2,val3,str1,str2,send_client)
+		values(#id#,#game_id#,#param_desc#,#val1#,#val2#,#val3#,#str1#,#str2#,#send_client#)
+	</insert>
+	<update id="updateSysParamModel" parameterClass="sysParamModel">
+		update sys_param
+		set
+		param_desc=#param_desc#,val1=#val1#,val2=#val2#,val3=#val3#,str1=#str1#,str2=#str2#,send_client=#send_client#,finish_time=#finish_time#
+		where id=#id# and game_id=#game_id#
+	</update>
+	<select id="getSysParamModelList" resultClass="sysParamModel">
+		select * from
+		sys_param
+	</select>
+	<select id="getSysParamServerModelList" resultClass="sysParamModel">
+		select *
+		from sys_param_server
+	</select>
+
+	<select id="getaccountWeixinModelByAccountId" parameterClass="long"
+		resultClass="accountWeixinModel">
+		select * from account_weixin where account_id=#account_id#
+	</select>
+	<insert id="insertAccountWeixinModel" parameterClass="accountWeixinModel">
+		insert
+		account_weixin(account_id,access_token,refresh_token,openid,scope,unionid,nickname,sex,province,city,country,headimgurl,privilege,last_flush_time,self_token,last_false_self_token)
+		values(#account_id#,#access_token#,#refresh_token#,#openid#,#scope#,#unionid#,#nickname#,#sex#,#province#,#city#,#country#,#headimgurl#,#privilege#,#last_flush_time#,#self_token#,#last_false_self_token#)
+	</insert>
+	<update id="updateAccountWeixinModel" parameterClass="accountWeixinModel">
+		update
+		account_weixin set
+		access_token=#access_token#,refresh_token=#refresh_token#,openid=#openid#,scope=#scope#,unionid=#unionid#,
+		nickname=#nickname#,sex=#sex#,province=#province#,city=#city#,country=#country#,headimgurl=#headimgurl#,privilege=#privilege#,last_flush_time=#last_flush_time#,
+		self_token=#self_token#,last_false_self_token=#last_false_self_token#
+		where account_id=#account_id#
+	</update>
+	<select id="getAccountWeixinModelByUnionid" parameterClass="String"
+		resultClass="accountWeixinModel">
+		select * from account_weixin where unionid=#unionid#
+	</select>
+
+	<select id="getGameNoticeModelList" resultClass="gameNoticeModel">
+		select * from
+		game_notice
+	</select>
+
+	<!-- 系统公告 -->
+	<select id="getSysNoticeModelList" resultClass="sysNoticeModel">
+		select * from
+		sys_notice
+	</select>
+
+	<!-- 获取有效商品 -->
+	<select id="getValidShopModelList" resultClass="shopModel">
+		select * from
+		shop where state=1
+	</select>
+
+	<!-- 获取有效app商品 -->
+	<select id="getValidAppShopModelList" resultClass="appshopModel">
+		select * from
+		app_shop where state=1
+	</select>
+
+	<select id="getGameDescModelList" resultClass="gameDescModel">
+		select * from
+		game_desc
+	</select>
+	<!-- 主界面公告 -->
+	<select id="getMainUiNoticeModelList" resultClass="mainUiNoticeModel">
+		select * from
+		main_ui_notice
+	</select>
+	<!-- 客服界面公告 -->
+	<select id="getCustomerSerNoticeModelList" resultClass="customerSerNoticeModel">
+		select *
+		from customer_service_notice
+	</select>
+
+
+	<!-- 登录公告 -->
+	<select id="getLoginNoticeModelList" resultClass="loginNoticeModel">
+		select * from
+		login_notice
+	</select>
+
+	<!-- 获取有效金币商品 -->
+	<select id="getValidMoneyShopModelList" resultClass="moneyShopModel">
+		select *
+		from money_shop where state=1
+	</select>
+
+	<select id="getTurntableSystemModelList" resultClass="turntableSystemModel">
+		select *
+		from t_turntable_goods
+	</select>
+
+	<!-- 获取有效道具商品 -->
+	<select id="getValidGoodsModelList" resultClass="goodsModel">
+		select * from
+		goods where state=1
+	</select>
+
+	<!-- 获取活动列表 -->
+	<select id="getActivityModelList" resultClass="activityModel">
+		select * from
+		activity
+	</select>
+
+	<!-- 获取精彩活动奖励列表，group一定为0 -->
+	<select id="getActivityPrizeModelList" resultClass="activityPrizeModel">
+		select * from
+		activity_prize where active_group=0
+	</select>
+	
+	<!-- 获取精彩活动任务组奖励 -->
+	<select id="getActivityMissionGroupPrizeModelList" resultClass="activityPrizeModel" parameterClass="Integer">
+		<![CDATA[ 
+			select * from
+			activity_prize where active_id=#activity_id# and active_group>0
+		]]>
+	</select>
+
+	<!-- 获取连续登录 -->
+	<select id="getContinueLoginModelList" resultClass="continueLoginModel">
+		select * from
+		continue_login
+	</select>
+
+	<select id="getItemModelList" resultClass="itemModel">
+		select * from bag_item
+	</select>
+
+	<!-- 推荐人 -->
+	<select id="getAccountRecommendModelListByAccountId"
+		resultClass="accountRecommendModel" parameterClass="Long">
+		select * from
+		account_recommend where account_id = #account_id#
+	</select>
+	<select id="getHallRecommendModelListByAccountId" resultClass="hallRecommendModel"
+		parameterClass="Long">
+		select * from hall_recommend where account_id =
+		#account_id#
+	</select>
+	<select id="getHallRecommendModelListByTargetAccountId"
+		resultClass="hallRecommendModel" parameterClass="Long">
+		select * from
+		hall_recommend where target_account_id = #target_account_id#
+	</select>
+	<select id="getAgentRecommendModelListByAccountId" resultClass="agentRecommendModel"
+		parameterClass="Long">
+		select * from agent_recommend where account_id =
+		#account_id#
+	</select>
+	<insert id="insertAccountRecommendModel" parameterClass="accountRecommendModel">
+		insert
+		account_recommend(account_id,target_account_id,create_time,gold_num)
+		values(#account_id#,#target_account_id#,#create_time#,#gold_num#)
+	</insert>
+	<insert id="insertHallRecommendModel" parameterClass="hallRecommendModel">
+		insert
+		hall_recommend(account_id,target_account_id,recommend_level,proxy_level,update_time,create_time)
+		values(#account_id#,#target_account_id#,#recommend_level#,#proxy_level#,#update_time#,#create_time#)
+	</insert>
+	<insert id="insertAgentRecommendModel" parameterClass="agentRecommendModel">
+		insert
+		agent_recommend(account_id,target_account_id,agent_level,create_time,update_time)
+		values(#account_id#,#target_account_id#,#agent_level#,#create_time#,#update_time#)
+	</insert>
+
+	<!-- 下级代理 -->
+	<select id="getAccountProxyModelListByAccountId" resultClass="accountProxyModel"
+		parameterClass="Long">
+		select * from account_proxy where account_id =
+		#account_id#
+	</select>
+	<insert id="insertAccountProxyModel" parameterClass="accountProxyModel">
+		insert
+		account_proxy(account_id,target_account_id,create_time,remark,apply,target_proxy_level)
+		values(#account_id#,#target_account_id#,#create_time#,#remark#,#apply#,#target_proxy_level#)
+		<selectKey resultClass="int" keyProperty="id">
+			select
+			last_insert_id()
+		</selectKey>
+	</insert>
+	<update id="updateAccountProxyModel" parameterClass="accountProxyModel">
+		update
+		account_proxy set
+		account_id=#account_id#,target_account_id=#target_account_id#,create_time=#create_time#,remark=#remark#,apply=#apply#
+		where id=#id#
+	</update>
+
+	<delete id="deleteAccountProxyModel" parameterClass="accountProxyModel">
+		delete from
+		account_proxy where id=#id#
+	</delete>
+
+	<delete id="deleteAccountRecommendModel" parameterClass="accountRecommendModel">
+		delete
+		from account_recommend where target_account_id=#target_account_id#
+	</delete>
+	<delete id="deleteHallRecommendModel" parameterClass="hallRecommendModel">
+		delete from
+		hall_recommend where target_account_id=#target_account_id#
+	</delete>
+	<delete id="deleteAgentRecommendModel" parameterClass="agentRecommendModel">
+		delete
+		from agent_recommend where target_account_id=#target_account_id#
+	</delete>
+
+	<!-- 统计相关 -->
+	<!-- 找出所有二级代理的代理玩家id与数量 -->
+	<select id="getProxyAccountByProxy" resultClass="java.util.HashMap">
+		<![CDATA[ 
+			SELECT a.account_id,count(a.gold_num) as c from (SELECT a1.* from account_recommend a1 INNER JOIN account a2 ON a1.target_account_id = a2.account_id and a2.is_agent = 1) a  GROUP BY a.account_id ORDER BY c desc
+		]]>
+	</select>
+	<!-- 代理的二级代理玩家 -->
+	<select id="getProxyAccountByProxyInfo" resultClass="Long"
+		parameterClass="Long">
+		<![CDATA[ 
+			SELECT a.target_account_id from account_recommend a where  a.account_id =#account_id# and a.target_account_id in (SELECT account_id from account where is_agent >= 1)
+		]]>
+	</select>
+	<!-- 找出所有代理 -->
+	<select id="getProxyAccountList" resultClass="accountModel">
+		select * from
+		account where is_agent > 0
+	</select>
+
+	<!-- 获取有效ip -->
+	<select id="getValidIPGroupModelList" resultClass="ipgroupModel">
+		select * from
+		ip_group where state=1
+	</select>
+	<!-- 更新推广员级别 -->
+	<update id="updateAccountRecommendLevel" parameterClass="accountRecommendModel">
+		update
+		account_recommend set
+		update_time=#update_time#,recommend_level=#recommend_level#,gold_num=#gold_num#
+		where
+		target_account_id=#target_account_id#
+	</update>
+	<update id="updateHallRecommendLevel" parameterClass="hallRecommendModel">
+		update
+		hall_recommend set
+		update_time=#update_time#,recommend_level=#recommend_level#,account_id=#account_id#,proxy_level=#proxy_level#,source=#source#
+		where target_account_id=#target_account_id#
+	</update>
+	<update id="updateHallAccountId" parameterClass="hallRecommendModel">
+		update
+		hall_recommend set account_id=#target_account_id# where
+		account_id=#account_id#
+	</update>
+	<update id="updateHallTargetAccountId" parameterClass="hallRecommendModel">
+		update
+		hall_recommend set target_account_id=#target_account_id# where
+		target_account_id=#account_id#
+	</update>
+	<update id="updateAgentRecommendLevel" parameterClass="agentRecommendModel">
+		update
+		agent_recommend set
+		update_time=#update_time#,agent_level=#agent_level# where
+		target_account_id=#target_account_id#
+	</update>
+	<select id="getRecommendAccountIdListByCreateTime" resultClass="Long"
+		parameterClass="java.util.HashMap">
+		<![CDATA[ 
+			select distinct account_id a from account_recommend where create_time<=#endTime# and create_time>=#startTime#
+		]]>
+	</select>
+
+
+	<select id="getAccountGroupModelListByAccountId" resultClass="accountGroupModel"
+		parameterClass="Long">
+		select * from account_group where account_id =
+		#account_id#
+	</select>
+
+
+	<delete id="deleteAccountGroupModel" parameterClass="accountGroupModel">
+		delete from
+		account_group where id=#id#
+	</delete>
+
+	<select id="getAccountGroupModelListByGroupId" resultClass="accountGroupModel"
+		parameterClass="String">
+		select * from account_group where groupId = #groupId#
+	</select>
+
+	<insert id="insertAccountGroupModel" parameterClass="accountGroupModel">
+		insert account_group(account_id,groupId,date,val)
+		values(#account_id#,#groupId#,#date#,#val#)
+		<selectKey resultClass="int" keyProperty="id">
+			select
+			last_insert_id()
+		</selectKey>
+	</insert>
+	<select id="getAppItemList" resultClass="appItem">
+		SELECT * FROM appItem
+		WHERE online=1 and id in (SELECT max(id) from appItem where online=1
+		GROUP BY appId) ;
+	</select>
+	<select id="getAppItemListByAppId" resultClass="AppItem"
+		parameterClass="Integer">
+		SELECT * FROM appItem where appId=#appId# and
+		online=1;;
+	</select>
+	<select id="getAllAppItem" resultClass="AppItem">
+		SELECT * FROM appItem
+		where online=1;
+	</select>
+	<insert id="insertAppItem" parameterClass="appItem">
+		insert
+		appItem(gameSeq,appId,appName,packagepath,packageDownPath,versions,iconUrl,t_status,orders,flag,packagesize,downUrl,size,game_type,online,operate_at)
+		values(#gameSeq#,#appId#,#appName#,#packagepath#,#packageDownPath#,#versions#,#iconUrl#,#t_status#,#orders#,#flag#,#packagesize#,#downUrl#,
+		#size#,#game_type#,#online#,#operate_at#)
+	</insert>
+	<update id="updateAppItem" parameterClass="appItem">
+		update
+		appItem set
+		gameSeq=#gameSeq#,appId=#appId#,appName=#appName#,packagepath=#packagepath#,versions=#versions#,
+		iconUrl=#iconUrl#,t_status=#t_status#,orders=#orders#,flag=#flag#,packagesize=#packagesize#,downUrl=#downUrl#,packageDownPath=#packageDownPath#,
+		size=#size#,game_type="game_type" where id=#id#
+	</update>
+
+	<select id="getGroupByClubId" resultClass="String"
+		parameterClass="Integer">
+		select group_id from club_group where club_id=#club_id#
+	</select>
+	<select id="getClubAccount" resultClass="clubAccountModel"
+		parameterClass="clubAccountModel">
+		select * from club_account where club_id=#club_id# and
+		account_id=#account_id#
+	</select>
+
+
+	<!-- app推荐位置相关 -->
+	<select id="getGameRecommendModelList" resultClass="gameRecommendIndexModel">
+		select * from
+		game_recommend_index
+	</select>
+	<!-- 跑得快 旧版数据 -->
+	<select id="getPDKOldData" resultClass="oldUserModel">
+		select * from t_user
+	</select>
+	<insert id="insertGameTypeDBModel" parameterClass="gameTypeDBModel">
+		insert
+		sys_game_type(game_type_index,gold_type,description,gameID,goldIndex,game_big_type,app_name)
+		values(#game_type_index#,#gold_type#,#description#,#gameID#,#goldIndex#,#game_big_type#,#app_name#)
+	</insert>
+	<select id="getGameTypeDBModelList" resultClass="gameTypeDBModel">
+		select * from
+		sys_game_type;
+	</select>
+	<!-- 指定app运行逻辑服相关 -->
+	<select id="getServerBalanceModelList" resultClass="logicServerBalanceModule">
+		select * from
+		logic_server_balance
+	</select>
+
+	<select id="getRedPackageModelList" resultClass="redPackageActivityModel">
+		select * from
+		red_package_activity where state = 1;
+	</select>
+	<insert id="insertRedActivityModel" parameterClass="redActivityModel">
+		insert
+		red_activity(account_id,all_money,receive_money)
+		values(#account_id#,#all_money#,#receive_money#)
+	</insert>
+	<update id="updateRedActivityModel" parameterClass="redActivityModel">
+		update
+		red_activity set all_money=#all_money#,receive_money=#receive_money#
+		where account_id=#account_id#
+	</update>
+	<select id="getRedActivityModelList" resultClass="redActivityModel">
+		select * from
+		red_activity where account_id=#account_id#;
+	</select>
+
+	<select id="getGameGroupSet" resultClass="gameGroupSetModel">
+		select * from
+		game_group_set where status = 1
+	</select>
+
+	<insert id="insertClubGroup" parameterClass="clubGroupModel">
+		insert
+		club_group(group_id,club_id,date)
+		values(#group_id#,#club_id#,now())
+	</insert>
+	<delete id="deleteClubGroup" parameterClass="clubGroupModel">
+		delete from
+		club_group where club_id=#club_id# and group_id = #group_id#
+	</delete>
+
+	<select id="getClubGroup" resultClass="clubGroupModel"
+		parameterClass="String">
+		select * from club_group where group_id=#group_id#
+	</select>
+	<select id="getClub" resultClass="clubModel" parameterClass="Integer">
+		SELECT a.*, IFNULL(b.headimgurl,"") AS avatar FROM club a LEFT JOIN
+		account_weixin b ON a.`account_id`=b.`account_id` where club_id =
+		#clubId#
+	</select>
+
+	<!-- 换靓号 -->
+	<update id="replaceAccountId" parameterClass="hallRecommendModel">
+		UPDATE account a
+		LEFT JOIN account_group b ON a.account_id = b.account_id LEFT JOIN
+		account_proxy c ON a.account_id = c.account_id LEFT JOIN account_param
+		d ON a.account_id = d.account_id
+		LEFT JOIN account_recommend e ON
+		a.account_id = e.account_id LEFT JOIN
+		account_weixin f ON a.account_id
+		= f.account_id
+		LEFT JOIN account_proxy i ON a.account_id =
+		i.target_account_id
+		LEFT JOIN account_recommend j ON a.account_id =
+		j.target_account_id
+		SET
+		a.account_id=#target_account_id#,b.account_id=#target_account_id#,c.account_id=#target_account_id#,
+		d.account_id=#target_account_id#,e.account_id=#target_account_id#,f.account_id=#target_account_id#,
+		j.target_account_id = #target_account_id#,i.target_account_id =
+		#target_account_id#
+		WHERE a.account_id=#account_id#
+	</update>
+	<update id="replaceRecommendId" parameterClass="hallRecommendModel">
+		UPDATE account
+		set recommend_id=#target_account_id# WHERE recommend_id=#account_id#
+	</update>
+	<select id="getOfflineItemModelList" resultClass="itemModel">
+		select * from
+		bag_item where `type`=3
+	</select>
+	<select id="getMaxSeqMatchSignUpList" resultClass="java.util.HashMap">
+		SELECT
+		itemId,MAX(sign_seq) as seq from match_sign_up GROUP BY itemId;
+	</select>
+	<select id="getNewClubPersonNum" resultClass="Long"
+		parameterClass="java.util.HashMap">
+	   <![CDATA[SELECT count(DISTINCT account_id) FROM club_account  where date<#endTime# and date>=#startTime#]]>
+	</select>
+	<select id="getNewClubNum" resultClass="Long" parameterClass="java.util.HashMap">
+	   <![CDATA[SELECT count(club_id) FROM club  where date<#endTime# and date>=#startTime#]]>
+	</select>
+	<select id="getClubAccountIdNotInGroup" resultClass="Long"
+		parameterClass="java.util.Map">
+		select account_id from club_account where
+		club_id=#clubId# and account_id
+		not in (select account_id from
+		account_group where groupId =
+		#groupId#)
+	</select>
+
+
+	<!-- 手机绑定 -->
+	<!-- <insert id="insertAccountPhoneModel" parameterClass="accountPhoneModel"> 
+		INSERT account_phone(accountId,identifyCode,phone,lastOperateDate) values(#accountId#,#identifyCode#,#phone#,now()) 
+		</insert> -->
+	<select id="getAccountMobileList" resultClass="accountMobileModel">
+		select
+		account_id,mobile_phone from
+		account
+	</select>
+	<!-- <update id="updateAccountPhone" parameterClass="accountPhoneModel"> 
+		UPDATE account_phone set phone=#phone#,lastOperateDate=#lastOperateDate#,realName=#realName#,identityCard=#identityCard# 
+		WHERE accountId=#accountId# </update> <delete id="deleteAccountPhone" parameterClass="accountPhoneModel"> 
+		delete from account_phone where accountId=#accountId# </delete> -->
+	<select id="getMatchBroadModelList" resultClass="matchBroadModel"
+		parameterClass="java.util.HashMap">
+		select * from match_broad
+	</select>
+	
+	<select id="turntableActiveList" resultClass="turntableActiveModel">
+		SELECT * from
+		turntable_active
+	</select>
+	<select id="turntablePrizeList" resultClass="turntablePrizeModel">
+		SELECT * from
+		turntable_prize
+	</select>
+
+	<!-- 俱乐部专属豆 -->
+	<select id="getExclusiveGoldModelList" resultClass="clubExclusiveGoldModel">
+		select * from
+		club_exclusive_gold
+	</select>
+	<update id="updateExclusiveGoldModel" parameterClass="clubExclusiveGoldModel">
+		update
+		club_exclusive_gold set
+		usedCount=#usedCount#,exclusiveGold=#exclusiveGold#,exclusiveBeginDate=#exclusiveBeginDate#,exclusiveEndDate=#exclusiveEndDate#,settings=#settings#
+		where accountId=#accountId# and gameId=#gameId#
+	</update>
+	<insert id="insertExclusiveGoldModel" parameterClass="clubExclusiveGoldModel">
+		insert
+		club_exclusive_gold(accountId,gameId,usedCount,exclusiveGold,exclusiveBeginDate,exclusiveEndDate,settings)
+		values(#accountId#,#gameId#,#usedCount#,#exclusiveGold#,#exclusiveBeginDate#,#exclusiveEndDate#,#settings#)
+	</insert>
+
+	<select id="getClubExclusiveActivityModelList" resultClass="clubExclusiveActivityModel">
+		select * from club_exclusive_activity
+	</select>
+
+	<insert id="insertAccountPushModel" parameterClass="accountPushModel">
+		insert account_push(account_id,equipment_id,plat)
+		values(#account_id#,#equipment_id#,#plat#)
+		ON DUPLICATE KEY UPDATE
+		`equipment_id`=#equipment_id#;
+		<selectKey resultClass="long" keyProperty="id">
+			select
+			last_insert_id()
+		</selectKey>
+	</insert>
+	<update id="updateAccountPushModel" parameterClass="accountPushModel">
+		UPDATE ignore
+		account_push
+		set equipment_id=#equipment_id#,plat=#plat# WHERE id=#id#
+	</update>
+	<select id="getAccountPushModelList" resultClass="accountPushModel">
+		select * from
+		account_push
+	</select>
+	<select id="getSpecialAccountModelList" resultClass="specialAccountModel">
+		select *
+		from special_account
+	</select>
+	<select id="getInviteActiveModelList" resultClass="inviteActiveModel">
+		select * from
+		invite_active where state=1
+	</select>
+	<select id="getGoldAndMoneyRemain" resultClass="java.util.HashMap">
+		select SUM(gold)
+		as totalGold,SUM(money) as totalMoney from account
+	</select>
+	<update id="updateAppItemZeroFlag" parameterClass="Integer">
+		UPDATE appItem
+		set flag=0 WHERE appId=#appId#
+	</update>
+	<update id="updateReloadControlModel" parameterClass="Integer">
+		UPDATE
+		reload_control set state=#state#"
+	</update>
+
+	<select id="getOpenAgentRankByDate" parameterClass="java.util.HashMap"
+		resultClass="java.util.HashMap">
+		select account_id,SUM(1) as totals from hall_recommend
+		WHERE recommend_level=0 and
+		proxy_level>0 and update_time BETWEEN
+		#begin# and #end# and account_id in
+		( SELECT target_account_id FROM
+		hall_recommend WHERE
+		account_id=#account_id# and recommend_level>0)
+		GROUP BY account_id ORDER BY totals DESC
+	</select>
+	<select id="getRecommendLimitModelList" resultClass="recommendLimitModel">
+		select *
+		from recommend_limit
+	</select>
+
+	<select id="coinGameTypeList" resultClass="coinGameType">
+		SELECT * from
+		coin_field_game_big_type
+	</select>
+	<select id="coinGameTypeIndexList" resultClass="coinGameTypeIndex">
+		SELECT * from
+		coin_field_game_type_index
+	</select>
+	<select id="coinGameTypeDetailList" resultClass="coinGameTypeDetail">
+		SELECT * from
+		coin_field_round_detail
+	</select>
+	<select id="coinReliefList" resultClass="coinRelief">
+		SELECT * from
+		coin_field_relief
+	</select>
+	<select id="getGaoDeCityCodeModelList" resultClass="gaoDeModel">
+		select * from
+		gaode_map_city
+	</select>
+	<select id="getActivityMissionModelList" resultClass="activityMissionModel">
+		select *
+		from activity_mission
+	</select>
+	<select id="getActivityMissionGroupModelList" resultClass="activityMissionGroupModel">
+		select *
+		from activity_misson_group
+	</select>
+
+	<select id="getItemExchangeModelList" resultClass="itemExchangeModel">
+		select * from
+		t_s_item_exchange
+	</select>
+
+	<select id="getWelfareExchangeModelList" resultClass="welfareExchangeModel">
+		select *
+		from t_s_welfare_exchange
+	</select>
+	<select id="getWelfareGoodsTypeList" resultClass="welfareGoodsTypeModel">
+		select *
+		from welfare_goods_type
+	</select>
+
+	<select id="getCardSecretInfoList" resultClass="cardSecretInfo">
+		select * from
+		card_secret_info where state = 1
+	</select>
+	<insert id="insertRecommendReceiveModel" parameterClass="recommendReceiveModel">
+		insert
+		recommend_receive(account_id,createTime,lastTime,receive,level)
+		values(#account_id#,#createTime#,#lastTime#,#receive#,#level#)
+	</insert>
+	<update id="updateRecommendReceiveModel" parameterClass="recommendReceiveModel">
+		update
+		recommend_receive
+		set
+		lastTime=#lastTime#,receive=#receive#,level=#level#
+		where
+		account_id=#account_id#
+	</update>
+	<select id="getRecommenderReceiveList" resultClass="recommendReceiveModel">
+		select * from
+		recommend_receive
+	</select>
+	<insert id="insertAccountRedpacketPoolModel" parameterClass="accountRedpacketPoolModel">
+		insert
+		account_redpacket_pool(account_id,create_time,money,operate_time)
+		values(#account_id#,#create_time#,#money#,#operate_time#)
+	</insert>
+	<update id="updateAccountRedpacketPoolModel" parameterClass="accountRedpacketPoolModel">
+		update
+		account_redpacket_pool
+		set
+		operate_time=#operate_time#,money=#money#
+		where
+		account_id=#account_id#
+	</update>
+	<select id="getAccountRedpacketPoolModelList" resultClass="accountRedpacketPoolModel">
+		select * from
+		account_redpacket_pool
+	</select>
+	<select id="getActivityRedpacketPoolModelList" resultClass="activityRedpacketPoolModel">
+		select * from
+		activity_redpacket_pool
+	</select>
+	<select id="getChannelDictModelList" resultClass="channelModel">
+		select *
+		from
+		channel_dict
+	</select>
+	<select id="getPushInfoModelList" resultClass="pushInfoModel">
+		select * from
+		push_info
+	</select>
+	<update id="updateAppItemOnline" parameterClass="Integer">
+		UPDATE appItem
+		set online=1 WHERE online=2
+	</update>
+	<!-- 查询指定时间段指定id的留存数量 -->
+	<!-- <select id="getTVActiveAccountNum" resultClass="Integer" parameterClass="java.util.Map"> 
+		<![CDATA[ select count(*) from account where account_id in #ids# and create_time>#beginTime# 
+		and create_time<=#endTime# and last_login_time>=#loginTime# ]]> </select> -->
+	<!-- 查询指定id的今日活跃账号数量 -->
+	<select id="getTVTodayActiveAccountNum" resultClass="Integer"
+		parameterClass="java.util.Map">
+		<![CDATA[ 
+		  select count(*) from account where account_id in
+	         ($ids$)
+			 and last_login_time>=#loginTime#
+		 ]]>
+	</select>
+	<select id="getTVActiveAccountNum" resultClass="Integer"
+		parameterClass="java.util.Map">
+	<![CDATA[
+	         select count(*) from account where account_id in
+	        ($ids$)
+       		 and create_time>#beginTime# and create_time<=#endTime# and last_login_time>=#loginTime#  
+         ]]>
+	</select>
+	<select id="getHallGuideModelList" resultClass="hallGuideModel">
+		select * from
+		hall_guide
+	</select>
+	<select id="getAccountAvgOnlineTime" resultClass="Long"
+		parameterClass="java.util.Map">
+		<![CDATA[ 
+		  select IFNULL(round(avg(today_online), 2),0) from account where  last_login_time>=#loginTime#
+		 ]]>
+	</select>
+	
+	<!-- MONGODB统计的每日金币兑换统计，插入到mysql中 -->
+	<insert id="insertDailyCoinExchangeStatistics" parameterClass="dailyCoinExchangeStatistics">
+		insert into
+		statistis_daily_coin_exchange values(#current_date#, #exchange_coin#, #dist_account#, #count#)
+	</insert>
+	
+	<!--  调用存储过程，统计每日在线数据 -->
+	<select id="callProcedureDailyOnlineTime" resultClass="Long"
+		parameterClass="java.util.Map">
+		<![CDATA[ 
+		  call proc_onlinetime_stats(#loginTime#);
+		 ]]>
+	</select>
+	
+	<!--  调用存储过程，统计金币和闲逸豆区间 -->
+	<select id="callProcedureDailyCurrency">
+		<![CDATA[ 
+		  call proc_currency_stats();
+		 ]]>
+	</select>
+	
+	<!-- 批量插入充值数据 -->
+    <insert id="insertAddcardLogBatch" parameterClass="java.util.List">
+    	<![CDATA[
+        	insert into statistis_recharge_temp (order_id, account_id, nick_name, shop_id, sell_type, recharge_gold, send_gold, rmb, create_time, finish_date) values
+        ]]>
+       <iterate conjunction=",">  
+        <![CDATA[ 
+            (#codes[].orderID#, #codes[].accountId#, #codes[].nickname#, #codes[].shopId#, #codes[].sellType#, 
+            	#codes[].cardNum#, #codes[].sendNum#, #codes[].rmb#, #codes[].create_time#, #codes[].finishDate#) 
+        ]]>  
+    	</iterate> 
+        
+    </insert>
+    <insert id="insertAddcardLog" parameterClass="rechargeModel">
+    	insert into statistis_recharge_temp (order_id, account_id, nick_name, shop_id, sell_type, recharge_gold, send_gold, rmb, create_time, finish_date) values
+    	(#order_id#, #account_id#, #nick_name#, #shop_id#, #sell_type#, #recharge_gold#,#send_gold#, #rmb#, #create_time#, #finish_date#)
+    </insert>
+    
+	<insert id="insertAccountBonusPointsModel" parameterClass="accountBonusPointsModel">
+		insert
+		account_bonus_points(account_id,score,history_score)
+		values(#account_id#,#score#,#history_score#)
+	</insert>
+	<update id="updateAccountBonusPointsModel" parameterClass="accountBonusPointsModel">
+		update
+		account_bonus_points
+		set
+		score=#score#,history_score=#history_score#
+		where
+		account_id=#account_id#
+	</update>
+	<select id="getBonusPointsGoodsList" resultClass="bonusPointsGoods">
+		select *
+		from bonus_points_goods where state=1 order by dis_order desc
+	</select>
+	<update id="updateBonusPointsGoodsModel" parameterClass="bonusPointsGoods">
+		update
+		bonus_points_goods
+		set
+		stock=#stock#
+		where
+		id=#id#
+	</update>
+	<select id="getBonusPointsGoodsTypeList" resultClass="bonusPointsGoodsType">
+		select *
+		from bonus_points_goods_type where online=1  order by dis_order desc
+	</select>
+	<insert id="insertPlayerAddressModel" parameterClass="playerAddressModel">
+		insert
+		player_address(account_id,name,phone,address,postcode)
+		values(#account_id#,#name#,#phone#,#address#,#postcode#)
+	</insert>
+	<update id="updatePlayerAddressModel" parameterClass="playerAddressModel">
+		update
+		player_address
+		set
+		name=#name#,phone=#phone#,address=#address#,postcode=#postcode#
+		where
+		account_id=#account_id#
+	</update>
+	<select id="getPlayerAddressModelList" resultClass="playerAddressModel">
+		select *
+		from player_address
+	</select>
+	<select id="getBonusPointsActivityList" resultClass="bonusPointsActivity">
+		select *
+		from bonus_points_activity
+	</select>
+	<select id="getAccountBonusPointsModelList" resultClass="accountBonusPointsModel">
+		select *
+		from account_bonus_points
+	</select>
+    <!--  调用存储过程，统计昨日充值（按充值档位汇总，按新用户充值分析） -->
+	<select id="callProcedureDailyRechargeStats">
+		<![CDATA[ 
+		  call proc_recharge_stats();
+		 ]]>
+	</select>
+	<select id="getAllBonusPointsGoodsList" resultClass="bonusPointsGoods">
+		select *
+		from bonus_points_goods order by dis_order desc
+	</select>
+	<select id="getGameResourceModelList" resultClass="gameResourceModel">
+		select *
+		from sub_game_resource
+	</select>
+
+	<select id="getCoinExciteModelList" resultClass="coinExciteModel">
+		SELECT * FROM coin_excite
+	</select>
+
+	<select id="getCardCategoryModelList" resultClass="cardCategoryModel">
+		SELECT * FROM card_category
+	</select>
+	<select id="getActivityDaysMissionList" resultClass="activityDaysMission">
+		SELECT * FROM activity_erveryday_mission
+	</select>
+	<select id="getEveryDayMissionPrizeModelList" resultClass="activityPrizeModel" parameterClass="Integer">
+		<![CDATA[ 
+			select * from
+			activity_prize where active_id=#activity_id# 
+		]]>
+	</select>
+	<!-- 玩家上传二维码的相关sql -->
+	<select id="getClientUploadErWeiMaModelList" resultClass="clientUploadErWeiMaModel">
+		select *
+		from client_upload_erweima
+	</select>
+	<insert id="insertClientUploadErWeiMaModel" parameterClass="clientUploadErWeiMaModel">
+		insert
+		client_upload_erweima(accountId,image,uploadStatus,uploadTime)
+		values(#accountId#,#image#,#uploadStatus#,#uploadTime#)
+		<selectKey resultClass="int" keyProperty="id">
+			select
+			last_insert_id()
+		</selectKey>
+	</insert>
+	<update id="updateClientUploadErWeiMaModel" parameterClass="clientUploadErWeiMaModel">
+		update
+		client_upload_erweima
+		set
+		image=#image#,uploadStatus=#uploadStatus#,uploadTime=#uploadTime#
+		where
+		id=#id#
+	</update>
+	<!-- 邀请好友活动 -->
+	<select id="getInviteFriendsActivityModelList" resultClass="inviteFriendsActivityModel">
+		select *
+		from invite_friends_activity where state=1
+	</select>
+	<!-- 大厅主界面背景资源 -->
+	<select id="getHallMainViewBackModelList" resultClass="hallMainViewBackModel">
+		select * from
+		hall_main_view_back
+	</select>
+	
+	<!-- 查询所有生效的第三方CP APP -->
+	<select id="getAllSdkApp" resultClass="sdkApp">
+		<![CDATA[
+			select * from sdk_app where state>0
+  		]]>
+	</select>
+	
+	<!-- 查询所有生效的第三方CP APP商城 -->
+	<select id="getAllSdkAppShop" resultClass="sdkAppShop">
+		<![CDATA[
+			select * from sdk_shop where state > 0
+		]]>
+	</select>
+	
+	<!-- 查询所有钻石商城 -->
+	<select id="getAllSdkDiamondShop" resultClass="sdkDiamondShopModel">
+		<![CDATA[
+			select * from sdk_diamond_shop
+		]]>
+	</select>
+
+
+	<select id="getCoinCornucopiaModel" resultClass="coinCornucopiaModel">
+		SELECT * FROM coin_cornucopia;
+	</select>
+	<select id="getAccountZZPromoterModel" resultClass="accountZZPromoterModel">
+		SELECT * FROM account_zz_promoter;
+	</select>
+	<select id="getAccountZZPromoterModelList" resultClass="accountZZPromoterModel"  parameterClass="java.util.Map">
+	  	SELECT * FROM account_zz_promoter where account_id=#account_id#  ORDER BY create_time desc limit #pageNumber#, #pageSize#;
+	</select>
+	<select id="getAccountPromoterReceiveModel" resultClass="accountPromoterReceiveModel">
+		SELECT * FROM account_promoter_receive;
+	</select>
+	<insert id="insertAccountZZPromoterModel" parameterClass="accountZZPromoterModel">
+		insert
+		account_zz_promoter(account_id,target_id,level,create_time)
+		values(#account_id#,#target_id#,#level#,#create_time#)
+	</insert>
+	<insert id="insertAccountPromoterReceiveModel" parameterClass="accountPromoterReceiveModel">
+		insert
+		account_promoter_receive(account_id,remain_money,history_money,draw_money,create_time)
+		values(#account_id#,#remain_money#,#history_money#,#draw_money#,#create_time#)
+	</insert>
+	<update id="updateAccountPromoterReceiveModel" parameterClass="accountPromoterReceiveModel">
+		update
+		account_promoter_receive
+		set
+		remain_money=#remain_money#,history_money=#history_money#,draw_money=#draw_money#
+		where
+		account_id=#account_id#
+	</update>
+	<delete id="deleteAccountZZPromoterModel" parameterClass="accountZZPromoterModel">
+		delete from
+		account_zz_promoter where target_id=#target_id#
+	</delete>
+	
+	<select id="getZZPromoterNum" resultClass="Integer" parameterClass="java.util.HashMap">
+		select count(id) from account_zz_promoter where account_id =#account_id# and create_time between #start# and #end#
+	</select>
+	
+	
+	
+	
+	<select id="getRoomGeneratorList" resultClass="roomGeneratorModel">
+		select * FROM room_generator
+	</select>
+	
+	
+	<update id="updateRoomGeneratorModel" parameterClass="roomGeneratorModel">
+		update
+		room_generator
+		set
+		room_index=#room_index#
+		where
+		room_id_type=#room_id_type#
+	</update>
+	
+	<insert id="insertRoomGeneratorModel" parameterClass="roomGeneratorModel">
+		insert
+		room_generator(room_id_type,roomd_ids,room_index)
+		values(#room_id_type#,#roomd_ids#,#room_index#)
+	</insert>
+
+	
+	
+</sqlMap>

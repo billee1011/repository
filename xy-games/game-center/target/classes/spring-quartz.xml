@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:p="http://www.springframework.org/schema/p" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+            http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+            http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+            ">
+
+
+	<!-- 启动触发器的配置开始 -->
+	<bean name="startQuertz" lazy-init="false" autowire="no" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref bean="zeroTrigger" />
+				<ref bean="zeroFiveTrigger" /> 
+				<ref bean="realTimeOrderStatisticsTrigger" />
+				<ref bean="accountBrandSummaryTrigger" />
+				<ref bean="dailyRechargeStatisticsTrigger" />
+			</list>
+		</property>
+		<property name="taskExecutor">
+			<ref bean="threadPoolTaskExecutor" />
+		</property>
+		
+	</bean>
+	<!-- 启动触发器的配置结束 -->
+
+	<!-- quartz-2.x的配置 -->
+	<!-- 0点  -->
+	<bean id="zeroTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail">
+			<ref bean="zeroDetail" />
+		</property>
+		<property name="cronExpression">
+			<!--middle night 24. do it -->
+			<value>30 0 0 * * ?</value>
+		</property>
+	</bean>
+	<!-- 5点 -->
+	<bean id="zeroFiveTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail">
+			<ref bean="zeroFiveDetail" />
+		</property>
+		<property name="cronExpression">
+			<!--middle night 24. do it -->
+			<value>30 0 5 * * ?</value>
+		</property>
+	</bean>
+
+	<!-- 实时订单统计查询 -->
+	<bean id="realTimeOrderStatisticsTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail">
+			<ref bean="realTimeOrderStatisticsDetail" />
+		</property>
+		<property name="cronExpression">
+			<value>0 0/5 * * * ?</value>
+		</property>
+	</bean>
+	
+	<!-- 0点前几秒执行，每日牌局类型玩家统计（去重）  -->
+	<bean id="accountBrandSummaryTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail">
+			<ref bean="accountBrandSummaryJob" />
+		</property>
+		<property name="cronExpression">
+			<!--middle night 24. do it -->
+			<value>50 59 23 * * ?</value>
+		</property>
+	</bean>
+	
+	<!-- 4点执行，避免高峰期 -->
+	<bean id="dailyRechargeStatisticsTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail">
+			<ref bean="dailyRechargeStatisticsJob" />
+		</property>
+		<property name="cronExpression">
+			<!--middle night 24. do it -->
+			<value>0 0 4 * * ?</value>
+		</property>
+	</bean>
+	<!-- 调度的配置结束 -->
+
+	<!-- job的配置开始 -->
+	<bean id="zeroDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject">
+			<ref bean="taskService" />
+		</property>
+		<property name="targetMethod">
+			<value>taskZero</value>
+		</property>
+	</bean>
+	<bean id="zeroFiveDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject">
+			<ref bean="taskService" />
+		</property>
+		<property name="targetMethod">
+			<value>taskZeroFive</value>
+		</property>
+	</bean>
+	<bean id="realTimeOrderStatisticsDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject">
+			<ref bean="centerStatisticsService" />
+		</property>
+		<property name="targetMethod">
+			<value>realTimeStatistics</value>
+		</property>
+	</bean>
+	<bean id="accountBrandSummaryJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject">
+			<ref bean="centerStatisticsService" />
+		</property>
+		<property name="targetMethod">
+			<value>brandStatistics</value>
+		</property>
+	</bean>
+	<bean id="dailyRechargeStatisticsJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject">
+			<ref bean="dailyRechargeStatisticsService" />
+		</property>
+		<property name="targetMethod">
+			<value>call</value>
+		</property>
+	</bean>
+	<!-- job的配置结束 -->
+	
+	<bean id="threadPoolTaskExecutor"
+      class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+      <!-- 核心线程数，默认为2 -->
+      <property name="corePoolSize" value="2" />
+
+      <!-- 最大线程数，默认为Integer.MAX_VALUE -->
+      <property name="maxPoolSize" value="4" />
+
+      <!-- 队列最大长度，一般需要设置值>=notifyScheduledMainExecutor.maxNum；默认为Integer.MAX_VALUE
+          <property name="queueCapacity" value="1000" /> -->
+
+      <!-- 线程池维护线程所允许的空闲时间，默认为60s -->
+      <property name="keepAliveSeconds" value="300" />
+
+      <!-- 线程池对拒绝任务（无线程可用）的处理策略，目前只支持AbortPolicy、CallerRunsPolicy；默认为后者 -->
+      <property name="rejectedExecutionHandler">
+          <!-- AbortPolicy:直接抛出java.util.concurrent.RejectedExecutionException异常 -->
+          <!-- CallerRunsPolicy:主线程直接执行该任务，执行完之后尝试添加下一个任务到线程池中，可以有效降低向线程池内添加任务的速度 -->
+          <!-- DiscardOldestPolicy:抛弃旧的任务、暂不支持；会导致被丢弃的任务无法再次被执行 -->
+          <!-- DiscardPolicy:抛弃当前任务、暂不支持；会导致被丢弃的任务无法再次被执行 -->
+          <bean class="java.util.concurrent.ThreadPoolExecutor$CallerRunsPolicy" />
+      </property>
+    </bean>
+
+
+
+</beans>
