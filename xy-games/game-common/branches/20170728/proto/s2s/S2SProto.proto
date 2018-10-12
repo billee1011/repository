@@ -1,0 +1,16 @@
+package s2s;
+
+option java_package = "protobuf.clazz.s2s";
+option java_outer_classname = "S2SProto";
+
+//logic->proxy,玩家已经成为观察子
+message PlayerStatus {
+	required int64 accountId = 1; //玩家id
+	required int32 status = 2; //玩家状态。1观战，2参战
+	optional int32 roomId = 3; //房间id
+}
+
+message S2SReq {
+	required int32 cmd = 1;
+	optional PlayerStatus status = 2;
+}

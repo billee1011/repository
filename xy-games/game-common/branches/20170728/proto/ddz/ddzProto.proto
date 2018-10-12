@@ -1,0 +1,13 @@
+package ddz;
+option java_package = "protobuf.clazz.ddz";
+option java_outer_classname = "DdzRsp";
+
+message DdzCallRsp{
+	optional int32 id = 1;
+	optional int32 result = 2;
+}
+
+message DdzCallReq{
+	optional int32 id = 1;
+	optional int32 result = 2;
+}

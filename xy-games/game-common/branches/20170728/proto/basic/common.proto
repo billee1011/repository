@@ -1,0 +1,7 @@
+option java_package = "protobuf.clazz";
+option java_outer_classname = "Common";
+
+message PairInt{
+	optional int32 v1 = 1;
+	optional int32 v2 = 2;
+}

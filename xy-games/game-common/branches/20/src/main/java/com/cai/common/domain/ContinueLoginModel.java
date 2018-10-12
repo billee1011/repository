@@ -1,0 +1,61 @@
+package com.cai.common.domain;
+
+import java.io.Serializable;
+
+/**
+ * 连续登录配置
+ *
+ */
+public class ContinueLoginModel implements Serializable {
+
+	
+	private static final long serialVersionUID = 6804423743954861325L;
+
+	private int id;
+
+	/**
+	 * 游戏ID
+	 */
+	private int game_id;
+	/**
+	 * 天数
+	 */
+	private int day;
+	/**
+	 * 内容
+	 */
+	private String reward;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public int getGame_id() {
+		return game_id;
+	}
+
+	public void setGame_id(int game_id) {
+		this.game_id = game_id;
+	}
+
+	public int getDay() {
+		return day;
+	}
+
+	public void setDay(int day) {
+		this.day = day;
+	}
+
+	public String getReward() {
+		return reward;
+	}
+
+	public void setReward(String reward) {
+		this.reward = reward;
+	}
+
+}
