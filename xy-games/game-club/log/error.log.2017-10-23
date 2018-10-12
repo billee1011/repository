@@ -1,0 +1,234 @@
+2017-10-23 12:05:07 [ERROR]-[com.cai.service.EmailService] 玩家《22367876》不存在==
+2017-10-23 12:05:07 [ERROR]-[com.cai.service.EmailService] 玩家《22367876》不存在==
+2017-10-23 12:07:12 [ERROR]-[com.cai.service.EmailService] 玩家《74929》不存在==
+2017-10-23 12:07:12 [ERROR]-[com.cai.service.EmailService] 玩家《74929》不存在==
+2017-10-23 12:15:28 [ERROR]-[com.cai.service.EmailService] 玩家《22367891》不存在==
+2017-10-23 12:15:28 [ERROR]-[com.cai.service.EmailService] 玩家《22367891》不存在==
+2017-10-23 12:16:26 [ERROR]-[com.cai.service.EmailService] 玩家《22367892》不存在==
+2017-10-23 12:16:26 [ERROR]-[com.cai.service.EmailService] 玩家《22367892》不存在==
+2017-10-23 12:16:46 [ERROR]-[com.cai.service.EmailService] 玩家《22367893》不存在==
+2017-10-23 12:16:46 [ERROR]-[com.cai.service.EmailService] 玩家《22367893》不存在==
+2017-10-23 12:23:39 [ERROR]-[com.cai.service.C2SHandlerService] 解析处理器出错!
+java.lang.ClassCastException: com.cai.handler.c2s.ItemHandler cannot be cast to com.xianyi.framework.handler.IClientHandler
+	at com.cai.service.C2SHandlerService.start(C2SHandlerService.java:72)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:67)
+	at GoClubServer.startService(GoClubServer.java:120)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:87)
+	at GoClubServer.main(GoClubServer.java:52)
+2017-10-23 12:24:10 [ERROR]-[com.cai.service.C2SHandlerService] 解析处理器出错!
+java.lang.ClassCastException: com.cai.handler.c2s.ItemHandler cannot be cast to com.xianyi.framework.handler.IClientHandler
+	at com.cai.service.C2SHandlerService.start(C2SHandlerService.java:72)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:67)
+	at GoClubServer.startService(GoClubServer.java:120)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:87)
+	at GoClubServer.main(GoClubServer.java:52)
+2017-10-23 12:24:21 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：1 的handler未定义，请检查!
+2017-10-23 12:24:26 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：15 的handler未定义，请检查!
+2017-10-23 12:24:27 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:24:27 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：20 的handler未定义，请检查!
+2017-10-23 12:24:32 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:24:37 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:24:41 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：15 的handler未定义，请检查!
+2017-10-23 12:24:41 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：15 的handler未定义，请检查!
+2017-10-23 12:24:42 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:24:47 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:24:52 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:24:57 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:25:02 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:25:07 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:25:08 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：20 的handler未定义，请检查!
+2017-10-23 12:25:12 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:25:17 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:25:22 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:25:27 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:25:32 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:25:32 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：20 的handler未定义，请检查!
+2017-10-23 12:25:37 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:25:42 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:25:47 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:25:50 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：15 的handler未定义，请检查!
+2017-10-23 12:25:50 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：15 的handler未定义，请检查!
+2017-10-23 12:25:52 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:25:57 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:26:02 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:26:07 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：20 的handler未定义，请检查!
+2017-10-23 12:26:07 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:26:12 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:26:17 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:26:22 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:26:27 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:26:32 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：15 的handler未定义，请检查!
+2017-10-23 12:26:32 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:26:37 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:26:42 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：15 的handler未定义，请检查!
+2017-10-23 12:26:42 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:26:45 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：20 的handler未定义，请检查!
+2017-10-23 12:26:47 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:26:52 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:26:57 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:26:59 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：15 的handler未定义，请检查!
+2017-10-23 12:27:02 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:27:03 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：15 的handler未定义，请检查!
+2017-10-23 12:27:03 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：20 的handler未定义，请检查!
+2017-10-23 12:27:07 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:27:11 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：12 的handler未定义，请检查!
+2017-10-23 12:27:12 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:27:17 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:27:20 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：15 的handler未定义，请检查!
+2017-10-23 12:27:22 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:27:27 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:27:32 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:27:37 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:27:42 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:28:11 [ERROR]-[com.cai.service.C2SHandlerService] 解析处理器出错!
+java.lang.ClassCastException: com.cai.handler.c2s.ItemHandler cannot be cast to com.xianyi.framework.handler.IClientHandler
+	at com.cai.service.C2SHandlerService.start(C2SHandlerService.java:72)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:67)
+	at GoClubServer.startService(GoClubServer.java:120)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:87)
+	at GoClubServer.main(GoClubServer.java:52)
+2017-10-23 12:28:23 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：1 的handler未定义，请检查!
+2017-10-23 12:28:29 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:28:30 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：15 的handler未定义，请检查!
+2017-10-23 12:28:31 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：20 的handler未定义，请检查!
+2017-10-23 12:28:34 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:28:35 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：12 的handler未定义，请检查!
+2017-10-23 12:28:39 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:28:44 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:28:49 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:28:54 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:28:59 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:29:04 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:29:09 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:29:14 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:29:19 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:29:24 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:29:29 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:29:34 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:29:39 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:29:44 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:29:49 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:29:54 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 12:29:59 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：3 的handler未定义，请检查!
+2017-10-23 14:19:59 [ERROR]-[com.cai.service.C2SHandlerService] 解析处理器出错!
+java.lang.ClassCastException: com.cai.handler.c2s.ItemHandler cannot be cast to com.xianyi.framework.handler.IClientHandler
+	at com.cai.service.C2SHandlerService.start(C2SHandlerService.java:72)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:67)
+	at GoClubServer.startService(GoClubServer.java:120)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:87)
+	at GoClubServer.main(GoClubServer.java:52)
+2017-10-23 14:20:11 [ERROR]-[com.xianyi.framework.handler.ReqExecutor] 消息id：1 的handler未定义，请检查!
+2017-10-23 14:20:39 [ERROR]-[com.cai.service.EmailService] 玩家《22367953》不存在==
+2017-10-23 14:20:39 [ERROR]-[com.cai.service.EmailService] 玩家《22367953》不存在==
+2017-10-23 14:21:13 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########玩家:22367953 请求[29]号协议，但没有找到相应的处理器!#########
+2017-10-23 14:21:13 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########玩家:22367953 请求[29]号协议，但没有找到相应的处理器!#########
+2017-10-23 14:21:14 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########玩家:22367953 请求[29]号协议，但没有找到相应的处理器!#########
+2017-10-23 14:38:34 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########玩家:22367953 请求[29]号协议，但没有找到相应的处理器!#########
+2017-10-23 14:38:44 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########玩家:22367953 请求[29]号协议，但没有找到相应的处理器!#########
+2017-10-23 17:22:28 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########玩家:22367893 请求[30]号协议，但没有找到相应的处理器!#########
+2017-10-23 17:24:05 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########处理消息错误,玩家:22368564,请求类型:31,e:{}
+java.lang.NullPointerException
+	at com.cai.service.EmailService.checkNewEmail(EmailService.java:250)
+	at com.cai.handler.client.RedHeartHandler.execute(RedHeartHandler.java:39)
+	at com.cai.handler.client.RedHeartHandler.execute(RedHeartHandler.java:1)
+	at com.xianyi.framework.handler.IClientExHandler.doExecute(IClientExHandler.java:43)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:33)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:1)
+	at com.xianyi.framework.handler.IClientHandler.doExecute(IClientHandler.java:41)
+	at com.xianyi.framework.handler.ReqExecutor.run(ReqExecutor.java:66)
+	at com.cai.common.util.GlobalExecutor.lambda$0(GlobalExecutor.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-23 17:24:09 [ERROR]-[com.cai.service.EmailService] 玩家《22368564》不存在==
+2017-10-23 17:24:09 [ERROR]-[com.cai.service.EmailService] 玩家《22368564》不存在==
+2017-10-23 17:27:22 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########处理消息错误,玩家:22368569,请求类型:31,e:{}
+java.lang.NullPointerException
+	at com.cai.service.EmailService.checkNewEmail(EmailService.java:250)
+	at com.cai.handler.client.RedHeartHandler.execute(RedHeartHandler.java:39)
+	at com.cai.handler.client.RedHeartHandler.execute(RedHeartHandler.java:1)
+	at com.xianyi.framework.handler.IClientExHandler.doExecute(IClientExHandler.java:43)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:33)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:1)
+	at com.xianyi.framework.handler.IClientHandler.doExecute(IClientHandler.java:41)
+	at com.xianyi.framework.handler.ReqExecutor.run(ReqExecutor.java:66)
+	at com.cai.common.util.GlobalExecutor.lambda$0(GlobalExecutor.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-23 17:27:27 [ERROR]-[com.cai.service.EmailService] 玩家《22368569》不存在==
+2017-10-23 17:27:27 [ERROR]-[com.cai.service.EmailService] 玩家《22368569》不存在==
+2017-10-23 17:27:27 [ERROR]-[com.cai.service.EmailService] 玩家《22368569》不存在==
+2017-10-23 17:28:02 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########处理消息错误,玩家:22368573,请求类型:31,e:{}
+java.lang.NullPointerException
+	at com.cai.service.EmailService.checkNewEmail(EmailService.java:250)
+	at com.cai.handler.client.RedHeartHandler.execute(RedHeartHandler.java:39)
+	at com.cai.handler.client.RedHeartHandler.execute(RedHeartHandler.java:1)
+	at com.xianyi.framework.handler.IClientExHandler.doExecute(IClientExHandler.java:43)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:33)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:1)
+	at com.xianyi.framework.handler.IClientHandler.doExecute(IClientHandler.java:41)
+	at com.xianyi.framework.handler.ReqExecutor.run(ReqExecutor.java:66)
+	at com.cai.common.util.GlobalExecutor.lambda$0(GlobalExecutor.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-23 17:29:02 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########处理消息错误,玩家:22368573,请求类型:31,e:{}
+java.lang.NullPointerException
+	at com.cai.service.EmailService.checkNewEmail(EmailService.java:250)
+	at com.cai.handler.client.RedHeartHandler.execute(RedHeartHandler.java:39)
+	at com.cai.handler.client.RedHeartHandler.execute(RedHeartHandler.java:1)
+	at com.xianyi.framework.handler.IClientExHandler.doExecute(IClientExHandler.java:43)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:33)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:1)
+	at com.xianyi.framework.handler.IClientHandler.doExecute(IClientHandler.java:41)
+	at com.xianyi.framework.handler.ReqExecutor.run(ReqExecutor.java:66)
+	at com.cai.common.util.GlobalExecutor.lambda$0(GlobalExecutor.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-23 17:29:33 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########处理消息错误,玩家:22368573,请求类型:31,e:{}
+java.lang.NullPointerException
+	at com.cai.service.EmailService.checkNewEmail(EmailService.java:250)
+	at com.cai.handler.client.RedHeartHandler.execute(RedHeartHandler.java:39)
+	at com.cai.handler.client.RedHeartHandler.execute(RedHeartHandler.java:1)
+	at com.xianyi.framework.handler.IClientExHandler.doExecute(IClientExHandler.java:43)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:33)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:1)
+	at com.xianyi.framework.handler.IClientHandler.doExecute(IClientHandler.java:41)
+	at com.xianyi.framework.handler.ReqExecutor.run(ReqExecutor.java:66)
+	at com.cai.common.util.GlobalExecutor.lambda$0(GlobalExecutor.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-23 17:33:03 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########处理消息错误,玩家:22368573,请求类型:31,e:{}
+java.lang.NullPointerException
+	at com.cai.service.EmailService.checkNewEmail(EmailService.java:250)
+	at com.cai.handler.client.RedHeartHandler.execute(RedHeartHandler.java:39)
+	at com.cai.handler.client.RedHeartHandler.execute(RedHeartHandler.java:1)
+	at com.xianyi.framework.handler.IClientExHandler.doExecute(IClientExHandler.java:43)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:33)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:1)
+	at com.xianyi.framework.handler.IClientHandler.doExecute(IClientHandler.java:41)
+	at com.xianyi.framework.handler.ReqExecutor.run(ReqExecutor.java:66)
+	at com.cai.common.util.GlobalExecutor.lambda$0(GlobalExecutor.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-23 17:33:45 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########处理消息错误,玩家:22368573,请求类型:31,e:{}
+java.lang.NullPointerException
+	at com.cai.service.EmailService.checkNewEmail(EmailService.java:250)
+	at com.cai.handler.client.RedHeartHandler.execute(RedHeartHandler.java:39)
+	at com.cai.handler.client.RedHeartHandler.execute(RedHeartHandler.java:1)
+	at com.xianyi.framework.handler.IClientExHandler.doExecute(IClientExHandler.java:43)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:33)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:1)
+	at com.xianyi.framework.handler.IClientHandler.doExecute(IClientHandler.java:41)
+	at com.xianyi.framework.handler.ReqExecutor.run(ReqExecutor.java:66)
+	at com.cai.common.util.GlobalExecutor.lambda$0(GlobalExecutor.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-23 18:05:43 [ERROR]-[com.cai.service.EmailService] 玩家《22368573》不存在==
+2017-10-23 18:05:43 [ERROR]-[com.cai.service.EmailService] 玩家《22368573》不存在==
+2017-10-23 18:05:43 [ERROR]-[com.cai.service.EmailService] 玩家《22368573》不存在==

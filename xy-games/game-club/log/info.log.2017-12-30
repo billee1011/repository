@@ -1,0 +1,16 @@
+2017-12-30 15:48:44 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-30 15:48:50 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-30 15:48:56 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-30 15:49:02 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[192.168.1.10:30081] successfully!
+2017-12-30 16:22:57 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-30 16:23:03 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-30 16:23:09 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-30 16:23:14 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[192.168.1.10:30081] successfully!
+2017-12-30 16:41:01 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-30 16:41:07 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-30 16:41:13 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-30 16:41:19 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[192.168.1.10:30081] successfully!
+2017-12-30 17:33:05 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-30 17:33:11 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-30 17:33:17 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-30 17:33:23 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[192.168.1.10:30081] successfully!

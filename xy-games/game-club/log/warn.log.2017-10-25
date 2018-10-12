@@ -1,0 +1,10 @@
+2017-10-25 10:57:36 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2017-10-25 10:57:36 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2017-10-25 11:27:45 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2017-10-25 11:27:45 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2017-10-25 12:43:01 [WARN]-[org.springframework.remoting.rmi.RmiProxyFactoryBean] Could not connect to RMI service [rmi://127.0.0.1:30010/centerRMIServer] - retrying
+2017-10-25 12:45:01 [WARN]-[org.springframework.remoting.rmi.RmiProxyFactoryBean] Could not connect to RMI service [rmi://127.0.0.1:30010/centerRMIServer] - retrying
+2017-10-25 16:30:53 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2017-10-25 16:30:53 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2017-10-25 16:39:15 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2017-10-25 16:39:15 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/

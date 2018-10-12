@@ -1,0 +1,163 @@
+2017-12-19 16:52:55 [INFO]-[com.cai.common.util.ServerListenUtil] 
+=================系统信息==========================
+	启动时间 => Tue Dec 19 16:52:55 CST 2017
+	hostAddress =>192.168.1.49
+	rmiAddress =>null
+	user.dir =>F:\workplace\game-club
+	defaultCharset =>UTF-8
+	maxMemory =>3628M
+	user.timezone =>Asia/Shanghai
+=================================================
+2017-12-19 16:52:55 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-12-19 16:52:55 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2eda0940: startup date [Tue Dec 19 16:52:55 CST 2017]; root of context hierarchy
+2017-12-19 16:52:55 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-12-19 16:52:55 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-ibatis-club.xml]
+2017-12-19 16:52:55 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-12-19 16:52:55 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-12-19 16:52:56 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-12-19 16:52:56 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-12-19 16:52:57 [INFO]-[com.alibaba.druid.pool.DruidDataSource] {dataSource-1} inited
+2017-12-19 16:52:58 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-12-19 16:53:00 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-12-19 16:53:00 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'clubRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-12-19 16:53:00 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#2e570ded'
+2017-12-19 16:53:00 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-12-19 16:53:00 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(5190ms)==============================
+2017-12-19 16:53:00 [INFO]-[com.cai.dictionary.SysGameTypeDict] redis缓存加载字典SysGameTypeDict(63ms)
+2017-12-19 16:53:00 [INFO]-[com.cai.dictionary.SysParamServerDict] club cfg:ClubCfg [ownerClubMax=10, clubRuleMax=5, ruleTableMax=13, clubMemberMax=500, open=true]
+2017-12-19 16:53:00 [INFO]-[com.cai.dictionary.SysParamServerDict] redis缓存加载加载字典sys_param(23ms)
+2017-12-19 16:53:00 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.S2SHandlerService
+2017-12-19 16:53:00 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.ClubService
+2017-12-19 16:53:00 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.ClientHandlerService
+2017-12-19 16:53:00 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.RMIHandlerServiceImp
+2017-12-19 16:53:00 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.SessionService
+2017-12-19 16:53:00 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.ItemService
+2017-12-19 16:53:00 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.C2SHandlerService
+2017-12-19 16:53:00 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.PlayerService
+2017-12-19 16:53:00 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.MongoDBServiceImpl
+2017-12-19 16:53:00 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.EmailService
+2017-12-19 16:53:00 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.GroupClubMemberService
+2017-12-19 16:53:00 [INFO]-[com.xianyi.framework.core.service.ServiceManager] ========服务初始化完成========
+2017-12-19 16:53:00 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.ClientTransmitHandler
+2017-12-19 16:53:00 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.PingHandler
+2017-12-19 16:53:00 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.ClubProxyRequestHandler
+2017-12-19 16:53:00 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.RoomStatusHandler
+2017-12-19 16:53:00 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.PlayerStatusHandler
+2017-12-19 16:53:00 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.ClubGameRecordHandler
+2017-12-19 16:53:00 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.ServerLoginHandler
+2017-12-19 16:53:00 [INFO]-[com.cai.service.C2SHandlerService] ========Club server 注册c2s Handlers完成========
+2017-12-19 16:53:00 [INFO]-[com.cai.service.S2SHandlerService] ========Club S2S 注册Handlers完成========
+2017-12-19 16:53:01 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[192.168.1.10:30081] successfully!
+2017-12-19 16:53:01 [INFO]-[com.cai.common.util.GateUtil] [this->gate],###### add Connector:NettySocketConnector [channel=[id: 0x9605fc03, /192.168.1.49:45812 => /192.168.1.10:30081], address=192.168.1.10:30081, status=ACTIVE, reConnect=true] #######
+2017-12-19 16:53:01 [INFO]-[com.cai.service.SessionService] [club->gate],###### init or reload Connector, Connectors:{1=NettySocketConnector [channel=[id: 0x9605fc03, /192.168.1.49:45812 => /192.168.1.10:30081], address=192.168.1.10:30081, status=ACTIVE, reConnect=true]} #######
+2017-12-19 16:53:05 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.constant.item.ItemOffLineMatch
+2017-12-19 16:53:05 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.constant.item.ItemOrdinary
+2017-12-19 16:53:05 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.constant.item.ItemOnlineMatch
+2017-12-19 16:53:05 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.Client2ClubTestHandler
+2017-12-19 16:53:05 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ItemHandler
+2017-12-19 16:53:05 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.RedHeartHandler
+2017-12-19 16:53:05 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubMiniReqHandler
+2017-12-19 16:53:05 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.SceneReqHandler
+2017-12-19 16:53:05 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.EmailReqHandler
+2017-12-19 16:53:05 [INFO]-[com.cai.service.ClientHandlerService] ========Club client 注册Handlers完成========
+2017-12-19 16:53:05 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.EmailRMIHandler
+2017-12-19 16:53:05 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.ItemRMIHandler
+2017-12-19 16:53:05 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.ClubSSheRMIHandler
+2017-12-19 16:53:05 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.HelloRMIHandler
+2017-12-19 16:53:05 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.RmiClubHandler
+2017-12-19 16:53:05 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.ClubRuleTableRMIHandler
+2017-12-19 16:53:05 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.GroupToClubHandler
+2017-12-19 16:53:05 [INFO]-[com.cai.service.RMIHandlerServiceImp] ========LOGIC RMI 注册Handlers完成========
+2017-12-19 16:53:05 [INFO]-[com.cai.dictionary.DirtyWordDict] redis缓存加载字典SysGameTypeDict(11ms)
+2017-12-19 16:53:05 [INFO]-[com.cai.dictionary.ItemDict] redis缓存加载字典ItemDict(19ms)
+2017-12-19 16:53:06 [INFO]-[GoClubServer] Netty service start success,listening at port[30061]!!!
+2017-12-19 16:53:06 [INFO]-[com.cai.net.core.ClubAcceptorListener] [[Client->Club]]新加入链接:[id: 0x6a85e715, /127.0.0.1:45816 => /127.0.0.1:30061]
+2017-12-19 16:53:06 [INFO]-[com.cai.service.SessionService] [PROXY<->club] ###### online, channel:[id: 0x6a85e715, /127.0.0.1:45816 => /127.0.0.1:30061],serverIndex:9!
+2017-12-19 16:53:06 [INFO]-[org.eclipse.jetty.util.log] Logging initialized @11588ms
+2017-12-19 16:53:06 [INFO]-[com.cai.service.SessionService] account[22444979] status:ONLINE ,fromProxy:9
+2017-12-19 16:53:06 [INFO]-[com.cai.service.SessionService] account[22444996] status:ONLINE ,fromProxy:9
+2017-12-19 16:53:06 [INFO]-[org.eclipse.jetty.server.Server] jetty-9.3.13.M0
+2017-12-19 16:53:06 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2017-12-19 16:53:06 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2017-12-19 16:53:06 [INFO]-[org.eclipse.jetty.webapp.StandardDescriptorProcessor] NO JSP Support for /gameClub, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2017-12-19 16:53:06 [INFO]-[/gameClub] Initializing Spring FrameworkServlet 'oss'
+2017-12-19 16:53:06 [INFO]-[org.springframework.web.servlet.DispatcherServlet] FrameworkServlet 'oss': initialization started
+2017-12-19 16:53:06 [INFO]-[org.springframework.web.context.support.XmlWebApplicationContext] Refreshing WebApplicationContext for namespace 'oss-servlet': startup date [Tue Dec 19 16:53:06 CST 2017]; root of context hierarchy
+2017-12-19 16:53:06 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/oss-servlet.xml]
+2017-12-19 16:53:06 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/list]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.list(javax.servlet.http.HttpServletRequest,long,javax.servlet.http.HttpServletResponse)
+2017-12-19 16:53:06 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/bind]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.bind(javax.servlet.http.HttpServletRequest,java.lang.String,int,javax.servlet.http.HttpServletResponse,long)
+2017-12-19 16:53:06 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/unbind]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.unbind(javax.servlet.http.HttpServletRequest,java.lang.String,int,javax.servlet.http.HttpServletResponse)
+2017-12-19 16:53:06 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/lucky]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.lucky(javax.servlet.http.HttpServletRequest,int,int,javax.servlet.http.HttpServletResponse)
+2017-12-19 16:53:06 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/updateAccountId]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.updateAccountId(javax.servlet.http.HttpServletRequest,int,int,javax.servlet.http.HttpServletResponse)
+2017-12-19 16:53:06 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/bindAccountId]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.bindAccountId(javax.servlet.http.HttpServletRequest,long,java.lang.String,javax.servlet.http.HttpServletResponse,java.lang.String,long)
+2017-12-19 16:53:06 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/bindId]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.bindId(javax.servlet.http.HttpServletRequest,long,int,javax.servlet.http.HttpServletResponse)
+2017-12-19 16:53:06 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/exist/userId]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.existId(javax.servlet.http.HttpServletRequest,long,int,javax.servlet.http.HttpServletResponse)
+2017-12-19 16:53:06 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/club/detail]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.existId(javax.servlet.http.HttpServletRequest,int,javax.servlet.http.HttpServletResponse)
+2017-12-19 16:53:06 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/data/key]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.DataController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-19 16:53:06 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/data/hunan]}" onto public void com.cai.http.action.DataController.data(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,int)
+2017-12-19 16:53:06 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/data/fls]}" onto public void com.cai.http.action.DataController.fls(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,int)
+2017-12-19 16:53:06 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/data/lhq]}" onto public void com.cai.http.action.DataController.lhq(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,int)
+2017-12-19 16:53:06 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/data/loadEmailData]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.DataController.loadEmailData(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-12-19 16:53:06 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/web/list]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.SendGoldController.list(javax.servlet.http.HttpServletRequest,long,int,java.lang.String,java.lang.String)
+2017-12-19 16:53:06 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/web/active]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.SendGoldController.bind(javax.servlet.http.HttpServletRequest)
+2017-12-19 16:53:06 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/web/receive]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.SendGoldController.receiveSendGold(javax.servlet.http.HttpServletRequest,long,java.lang.String,java.lang.String,java.lang.String)
+2017-12-19 16:53:07 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] Looking for @ControllerAdvice: WebApplicationContext for namespace 'oss-servlet': startup date [Tue Dec 19 16:53:06 CST 2017]; root of context hierarchy
+2017-12-19 16:53:07 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] Looking for @ControllerAdvice: WebApplicationContext for namespace 'oss-servlet': startup date [Tue Dec 19 16:53:06 CST 2017]; root of context hierarchy
+2017-12-19 16:53:07 [INFO]-[org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-12-19 16:53:07 [INFO]-[org.springframework.web.servlet.DispatcherServlet] FrameworkServlet 'oss': initialization completed in 1030 ms
+2017-12-19 16:53:07 [INFO]-[org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@56b751b1{/gameClub,file:///F:/workplace/game-club/webapp/,AVAILABLE}
+2017-12-19 16:53:07 [INFO]-[org.eclipse.jetty.server.AbstractConnector] Started ServerConnector@252d8df6{HTTP/1.1,[http/1.1]}{0.0.0.0:7002}
+2017-12-19 16:53:07 [INFO]-[org.eclipse.jetty.server.Server] Started @12905ms
+2017-12-19 16:53:42 [INFO]-[com.cai.service.SessionService] account[22444996] status:OFFLINE ,fromProxy:9
+2017-12-19 16:53:44 [INFO]-[com.cai.service.SessionService] account[22445039] status:ONLINE ,fromProxy:9
+2017-12-19 16:54:01 [INFO]-[com.cai.service.SessionService] account[22445039] status:OFFLINE ,fromProxy:9
+2017-12-19 16:57:34 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-19 16:57:40 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-19 16:57:46 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-19 16:57:52 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[192.168.1.10:30081] successfully!
+2017-12-19 17:00:46 [INFO]-[com.cai.service.SessionService] account[22444979] status:ONLINE ,fromProxy:9
+2017-12-19 17:00:47 [INFO]-[com.cai.service.SessionService] account[22444979] status:OFFLINE ,fromProxy:9
+2017-12-19 17:00:50 [INFO]-[com.cai.service.SessionService] account[22445062] status:ONLINE ,fromProxy:9
+2017-12-19 17:01:07 [INFO]-[com.cai.service.SessionService] account[22445062] status:OFFLINE ,fromProxy:9
+2017-12-19 17:01:10 [INFO]-[com.cai.service.SessionService] account[22445065] status:ONLINE ,fromProxy:9
+2017-12-19 17:04:41 [INFO]-[com.cai.service.SessionService] account[22445065] status:ONLINE ,fromProxy:9
+2017-12-19 17:04:43 [INFO]-[com.cai.service.SessionService] account[22445065] status:OFFLINE ,fromProxy:9
+2017-12-19 17:04:45 [INFO]-[com.cai.service.SessionService] account[22445076] status:ONLINE ,fromProxy:9
+2017-12-19 17:05:00 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-19 17:05:06 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-19 17:05:12 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-19 17:05:17 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[192.168.1.10:30081] successfully!
+2017-12-19 17:06:44 [INFO]-[com.cai.service.SessionService] account[22445076] status:OFFLINE ,fromProxy:9
+2017-12-19 17:06:48 [INFO]-[com.cai.service.SessionService] account[22445088] status:ONLINE ,fromProxy:9
+2017-12-19 17:06:56 [INFO]-[com.cai.service.SessionService] account[22445090] status:ONLINE ,fromProxy:9
+2017-12-19 17:07:49 [INFO]-[com.cai.service.SessionService] account[22445088] status:OFFLINE ,fromProxy:9
+2017-12-19 17:07:53 [INFO]-[com.cai.service.SessionService] account[22445094] status:ONLINE ,fromProxy:9
+2017-12-19 17:12:08 [INFO]-[com.cai.service.SessionService] account[22445094] status:OFFLINE ,fromProxy:9
+2017-12-19 17:12:12 [INFO]-[com.cai.service.SessionService] account[22445110] status:ONLINE ,fromProxy:9
+2017-12-19 17:12:56 [INFO]-[com.cai.service.SessionService] account[22445110] status:OFFLINE ,fromProxy:9
+2017-12-19 17:13:00 [INFO]-[com.cai.service.SessionService] account[22445118] status:ONLINE ,fromProxy:9
+2017-12-19 17:14:26 [INFO]-[com.cai.service.SessionService] account[22445118] status:OFFLINE ,fromProxy:9
+2017-12-19 17:14:31 [INFO]-[com.cai.service.SessionService] account[22445131] status:ONLINE ,fromProxy:9
+2017-12-19 17:15:37 [INFO]-[com.cai.service.SessionService] account[22445131] status:OFFLINE ,fromProxy:9
+2017-12-19 17:15:39 [INFO]-[com.cai.service.SessionService] account[22445136] status:ONLINE ,fromProxy:9
+2017-12-19 17:19:11 [INFO]-[com.cai.service.SessionService] account[22445136] status:OFFLINE ,fromProxy:9
+2017-12-19 17:19:14 [INFO]-[com.cai.service.SessionService] account[22445157] status:ONLINE ,fromProxy:9
+2017-12-19 17:23:12 [INFO]-[com.cai.service.SessionService] account[22445157] status:OFFLINE ,fromProxy:9
+2017-12-19 17:23:15 [INFO]-[com.cai.service.SessionService] account[22445167] status:ONLINE ,fromProxy:9
+2017-12-19 17:24:03 [INFO]-[com.cai.service.SessionService] account[22445167] status:OFFLINE ,fromProxy:9
+2017-12-19 17:24:12 [INFO]-[com.cai.service.SessionService] account[22445169] status:ONLINE ,fromProxy:9
+2017-12-19 17:24:50 [INFO]-[com.cai.service.SessionService] account[22445169] status:OFFLINE ,fromProxy:9
+2017-12-19 17:25:06 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-19 17:25:12 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-19 17:25:18 [INFO]-[com.cai.service.SessionService] account[22445174] status:ONLINE ,fromProxy:9
+2017-12-19 17:25:18 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-19 17:25:24 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[192.168.1.10:30081] successfully!
+2017-12-19 17:26:02 [INFO]-[com.cai.service.SessionService] account[22445174] status:OFFLINE ,fromProxy:9
+2017-12-19 17:26:04 [INFO]-[com.cai.service.SessionService] account[22445178] status:ONLINE ,fromProxy:9
+2017-12-19 17:26:23 [INFO]-[com.cai.service.SessionService] account[22445178] status:OFFLINE ,fromProxy:9
+2017-12-19 17:26:26 [INFO]-[com.cai.service.SessionService] account[22445180] status:ONLINE ,fromProxy:9
+2017-12-19 17:47:40 [INFO]-[com.cai.service.SessionService] account[22445180] status:OFFLINE ,fromProxy:9
+2017-12-19 17:48:13 [INFO]-[com.cai.service.SessionService] account[22445203] status:ONLINE ,fromProxy:9
+2017-12-19 17:49:05 [INFO]-[com.cai.service.SessionService] account[22445203] status:OFFLINE ,fromProxy:9
+2017-12-19 17:49:09 [INFO]-[com.cai.service.SessionService] account[22445204] status:ONLINE ,fromProxy:9
+2017-12-19 17:49:22 [INFO]-[com.cai.service.SessionService] account[22445204] status:OFFLINE ,fromProxy:9

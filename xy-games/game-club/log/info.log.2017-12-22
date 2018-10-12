@@ -1,0 +1,13 @@
+2017-12-22 10:02:32 [INFO]-[com.cai.service.SessionService] account[22448248] status:OFFLINE ,fromProxy:9
+2017-12-22 10:02:33 [INFO]-[com.cai.service.SessionService] account[22448249] status:OFFLINE ,fromProxy:9
+2017-12-22 10:02:36 [INFO]-[com.cai.service.SessionService] account[22448254] status:OFFLINE ,fromProxy:9
+2017-12-22 10:03:28 [INFO]-[com.cai.service.SessionService] account[22448255] status:OFFLINE ,fromProxy:9
+2017-12-22 10:57:18 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-22 10:57:24 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-22 10:57:30 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-22 10:57:36 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[192.168.1.10:30081], try connect after 5s
+2017-12-22 10:57:41 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[192.168.1.10:30081] successfully!
+2017-12-22 11:24:59 [INFO]-[com.cai.service.SessionService] account[22448678] status:ONLINE ,fromProxy:9
+2017-12-22 11:26:38 [WARN]-[org.springframework.remoting.rmi.RmiProxyFactoryBean] Could not connect to RMI service [rmi://127.0.0.1:30010/centerRMIServer] - retrying
+2017-12-22 11:26:38 [INFO]-[com.cai.net.core.ClubAcceptorListener] [[Client->Club]]断开链接:[id: 0x9013f204, /127.0.0.1:40402 :> /127.0.0.1:30061]
+2017-12-22 11:26:38 [INFO]-[com.cai.service.SessionService] [PROXY<->club] ###### offline, channel:[id: 0x9013f204, /127.0.0.1:40402 :> /127.0.0.1:30061],serverIndex:9!

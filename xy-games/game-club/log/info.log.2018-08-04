@@ -1,0 +1,744 @@
+2018-08-04 14:41:20 [INFO]-[com.cai.common.util.ServerListenUtil] 
+=================系统信息==========================
+	启动时间 => Sat Aug 04 14:41:20 CST 2018
+	hostAddress =>192.168.1.49
+	rmiAddress =>null
+	user.dir =>F:\workplace\game-club
+	defaultCharset =>UTF-8
+	maxMemory =>3628M
+	user.timezone =>Asia/Shanghai
+=================================================
+2018-08-04 14:41:20 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2018-08-04 14:41:21 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4148db48: startup date [Sat Aug 04 14:41:21 CST 2018]; root of context hierarchy
+2018-08-04 14:41:21 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2018-08-04 14:41:23 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-ibatis-club.xml]
+2018-08-04 14:41:23 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2018-08-04 14:41:23 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2018-08-04 14:41:23 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2018-08-04 14:41:24 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2018-08-04 14:41:26 [INFO]-[com.alibaba.druid.pool.DruidDataSource] {dataSource-1} inited
+2018-08-04 14:41:27 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2018-08-04 14:41:28 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2018-08-04 14:41:28 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'clubRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2018-08-04 14:41:29 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#1c852c0f'
+2018-08-04 14:41:29 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2018-08-04 14:41:29 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(8153ms)==============================
+2018-08-04 14:41:29 [INFO]-[com.cai.dictionary.SysGameTypeDict] redis缓存加载字典SysGameTypeDict(40ms)
+2018-08-04 14:41:29 [INFO]-[com.cai.dictionary.SysParamServerDict] club cfg:ClubCfg [ownerClubMax=10, clubRuleMax=5, ruleTableMax=30, clubMemberMax=700, open=true, managerMax=10, syncGoldUpdateImmediate=false, checkSeat=true, activityOpen=true, activityMaxTime=360, activityMinTime=1, showHistoryTime=360, activityLimit=50, tableCountWhenHideSetting=8, ruleUpdateSubGameIds=[0, 24001, 24002, 30083, 24003, 30052, 9001, 9002, 30091, 30044], useNewGetClubWay=true, saveClubEventDB=true, useOwnThreadSyncRoomStatus=false, ignoreInviteTime=0, delRedisCache=false, checkRoomId=false, useNewGetClubMemRecordWay=false, canDelStartedRoom=false, tip=null, delRedisCacheTip=0, useReserveWorker=false, accessLimit=false, offlineGames=[], offlineGameTip=该游戏已经下线，详情请咨询客服!, useOldRecordSaveWay=false, useOldTireWay=false, useOldRecordInsertWay=false, isBanChat=false, isBanBulletin=false, isBanMarquee=false, clubMatchMinStartMinute=11, clubMatchWillStartMinute=10, useNewClubRuleRecordGetWay=false, clubMatchLogicIndexs=null]
+2018-08-04 14:41:29 [INFO]-[com.cai.dictionary.SysParamServerDict] redis缓存加载加载字典sys_param(196ms)
+2018-08-04 14:41:29 [INFO]-[com.cai.dictionary.SysParamDict] 围观特性子游戏Id:[0, 1, 202303, 202302, 202301, 202307, 202306, 202305, 202304, 202311, 202310, 202309, 202308, 201803, 202315, 201802, 202314, 201801, 202313, 202312, 201807, 202319, 201806, 202318, 201805, 202317, 201804, 202316, 201811, 201810, 201809, 201808, 201815, 201814, 201813, 201812, 201819, 201818, 201817, 201816, 17001, 17002, 17003, 201903, 201902, 201901, 201907, 201906, 201905, 201904, 201911, 201910, 201909, 201908, 201403, 201915, 201402, 201914, 201401, 201913, 201912, 201407, 201919, 201406, 201918, 201405, 201917, 201404, 201916, 201411, 201410, 201409, 201408, 201415, 201414, 201413, 201412, 201419, 201418, 201417, 201416, 12001, 12002, 202503, 202502, 202501, 202507, 202506, 202505, 202504, 202511, 202510, 202509, 202508, 202003, 202515, 202002, 202514, 202001, 202513, 202512, 202007, 202519, 202006, 202518, 202005, 202517, 202004, 202516, 202011, 202010, 202009, 202008, 201503, 202015, 201502, 202014, 201501, 202013, 202012, 201507, 202019, 201506, 202018, 201505, 202017, 201504, 202016, 201511, 201510, 201509, 201508, 201515, 9001, 201514, 9002, 201513, 9003, 201512, 9004, 201519, 9005, 201518, 9006, 201517, 9007, 201516, 9010, 9011, 30004, 30005, 9020, 9021, 9022, 9023, 9030, 9050, 9051, 9052, 9053, 9054, 9060, 8043, 9070, 8056, 8057, 8058, 8059, 8060, 8061, 8062, 8063, 8064, 201603, 8065, 201602, 8066, 201601, 8067, 8068, 201607, 8069, 201606, 8070, 201605, 8071, 201604, 8072, 201611, 8073, 201610, 201609, 201608, 201615, 201614, 201613, 201612, 201619, 201618, 201617, 201616, 5016, 23001, 201703, 201702, 201701, 201707, 201706, 201705, 201704, 201711, 201710, 201709, 201708, 201715, 22001, 201714, 22002, 201713, 201712, 201719, 201718, 201717, 201716]
+2018-08-04 14:41:29 [INFO]-[com.cai.common.util.ClubRangeCostUtil] clubrangeCost:{Pair{first=9003, second=10}=[ClubCostRange [rangeCost=(1,30]:0, begin=2, end=30, value=0], ClubCostRange [rangeCost=(51,60]:60, begin=52, end=60, value=0]], Pair{first=9002, second=10}=[ClubCostRange [rangeCost=(1,30]:0, begin=2, end=30, value=0], ClubCostRange [rangeCost=(51,60]:60, begin=52, end=60, value=0]], Pair{first=9001, second=10}=[ClubCostRange [rangeCost=(1,30]:0, begin=2, end=30, value=0], ClubCostRange [rangeCost=(51,60]:60, begin=52, end=60, value=0]], Pair{first=9012, second=10}=[ClubCostRange [rangeCost=(1,30]:0, begin=2, end=30, value=0], ClubCostRange [rangeCost=(51,60]:60, begin=52, end=60, value=0]], Pair{first=9007, second=10}=[ClubCostRange [rangeCost=(1,30]:0, begin=2, end=30, value=0], ClubCostRange [rangeCost=(51,60]:60, begin=52, end=60, value=0]], Pair{first=9006, second=10}=[ClubCostRange [rangeCost=(1,30]:0, begin=2, end=30, value=0], ClubCostRange [rangeCost=(51,60]:60, begin=52, end=60, value=0]], Pair{first=9005, second=10}=[ClubCostRange [rangeCost=(1,30]:0, begin=2, end=30, value=0], ClubCostRange [rangeCost=(51,60]:60, begin=52, end=60, value=0]], Pair{first=9004, second=10}=[ClubCostRange [rangeCost=(1,30]:0, begin=2, end=30, value=0], ClubCostRange [rangeCost=(51,60]:60, begin=52, end=60, value=0]], Pair{first=9011, second=10}=[ClubCostRange [rangeCost=(1,30]:0, begin=2, end=30, value=0], ClubCostRange [rangeCost=(51,60]:60, begin=52, end=60, value=0]], Pair{first=9010, second=10}=[ClubCostRange [rangeCost=(1,30]:0, begin=2, end=30, value=0], ClubCostRange [rangeCost=(51,60]:60, begin=52, end=60, value=0]], Pair{first=9009, second=10}=[ClubCostRange [rangeCost=(1,30]:0, begin=2, end=30, value=0], ClubCostRange [rangeCost=(51,60]:60, begin=52, end=60, value=0]], Pair{first=9008, second=10}=[ClubCostRange [rangeCost=(1,30]:0, begin=2, end=30, value=0], ClubCostRange [rangeCost=(51,60]:60, begin=52, end=60, value=0]]}
+2018-08-04 14:41:29 [INFO]-[com.cai.dictionary.SysParamDict] redis缓存加载加载字典sys_param(71ms)
+2018-08-04 14:41:29 [INFO]-[com.cai.dictionary.DirtyWordDict] redis缓存加载字典SysGameTypeDict(22ms)
+2018-08-04 14:41:29 [INFO]-[com.cai.dictionary.ItemDict] redis缓存加载字典ItemDict(1ms)
+2018-08-04 14:41:29 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.ClubCacheService
+2018-08-04 14:41:29 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.C2SHandlerService
+2018-08-04 14:41:29 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.ClientHandlerService
+2018-08-04 14:41:29 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.ClubDataLogService
+2018-08-04 14:41:29 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.MongoDBServiceImpl
+2018-08-04 14:41:29 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.ClubService
+2018-08-04 14:41:29 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.PlayerService
+2018-08-04 14:41:29 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.RMIHandlerServiceImp
+2018-08-04 14:41:29 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.S2SHandlerService
+2018-08-04 14:41:29 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.GroupClubMemberService
+2018-08-04 14:41:29 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.SessionService
+2018-08-04 14:41:29 [INFO]-[com.xianyi.framework.core.service.ServiceManager] ========服务初始化完成========
+2018-08-04 14:41:30 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.RoomStatusHandler
+2018-08-04 14:41:30 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.PlayerStatusHandler
+2018-08-04 14:41:30 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.ClubMemberInfoUpdateHandler
+2018-08-04 14:41:30 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.RoomGameOverNotifyHandler
+2018-08-04 14:41:30 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.PingHandler
+2018-08-04 14:41:30 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.ClubGameRecordHandler
+2018-08-04 14:41:30 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.ClientTransmitHandler
+2018-08-04 14:41:30 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.ClubProxyRequestHandler
+2018-08-04 14:41:30 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.ServerLoginHandler
+2018-08-04 14:41:30 [INFO]-[com.cai.service.C2SHandlerService] ========Club server 注册c2s Handlers完成========
+2018-08-04 14:41:30 [INFO]-[com.cai.service.S2SHandlerService] ========Club S2S 注册Handlers完成========
+2018-08-04 14:41:30 [INFO]-[com.cai.common.util.GateUtil] [this->gate],###### add Connector:NettySocketConnector [channel=null, address=192.168.1.10:30081, status=NONE, reConnect=true,description=服务器网关1] #######
+2018-08-04 14:41:30 [INFO]-[com.cai.service.SessionService] [club->gate],###### init or reload Connector, Connectors:{1=NettySocketConnector [channel=null, address=192.168.1.10:30081, status=NONE, reConnect=true,description=服务器网关1]} #######
+2018-08-04 14:41:30 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[1021822] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:110)
+	at com.cai.service.ClubService.lambda$12(ClubService.java:300)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:298)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[1021822] 子游戏:8044,玩法gameId找不到
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[1853297] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:110)
+	at com.cai.service.ClubService.lambda$12(ClubService.java:300)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:298)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[1853297] 子游戏:8044,玩法gameId找不到
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[1872458] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:110)
+	at com.cai.service.ClubService.lambda$12(ClubService.java:300)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:298)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[1872458] 子游戏:8044,玩法gameId找不到
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:2516297 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[2863390] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:110)
+	at com.cai.service.ClubService.lambda$12(ClubService.java:300)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:298)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[2863390] 子游戏:8044,玩法gameId找不到
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:3119899 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[3202277] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:110)
+	at com.cai.service.ClubService.lambda$12(ClubService.java:300)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:298)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[3202277] 子游戏:8044,玩法gameId找不到
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[3309335] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:110)
+	at com.cai.service.ClubService.lambda$12(ClubService.java:300)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:298)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[3309335] 子游戏:8044,玩法gameId找不到
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[3325802] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:110)
+	at com.cai.service.ClubService.lambda$12(ClubService.java:300)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:298)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[3325802] 子游戏:8044,玩法gameId找不到
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[5786986] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:110)
+	at com.cai.service.ClubService.lambda$12(ClubService.java:300)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:298)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[5786986] 子游戏:8044,玩法gameId找不到
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[6142560] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:110)
+	at com.cai.service.ClubService.lambda$12(ClubService.java:300)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:298)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[6142560] 子游戏:8044,玩法gameId找不到
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:6206404 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:6982894 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:6990270 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7006656 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7006955 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7008112 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7009767 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7011141 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7013549 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7022828 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7027391 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7029007 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7032372 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7034602 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7055012 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7057471 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7064361 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7066081 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7105828 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7134429 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7143085 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7151493 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7162536 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7164268 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7175064 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7176483 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7176890 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7177140 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7178305 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7180975 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7182914 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7199357 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7199910 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7200076 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7204596 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7207451 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7208105 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7213672 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7226887 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7228584 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7228681 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7231309 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7258093 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7263911 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7264383 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7270039 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7271544 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7281682 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7282704 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7283247 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7296092 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7296481 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7309567 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7315576 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7319670 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7323884 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7330814 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7338607 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7343465 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7343936 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7348279 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7350657 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7359345 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7371150 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7381353 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7388979 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7390848 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7393054 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7400277 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7402380 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7406725 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7407814 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7411369 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7423049 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7443281 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7446953 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7452559 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7460189 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7468609 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7470704 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7483902 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7489792 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7510484 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7517982 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7522766 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7538654 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7538758 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7555150 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7559561 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7566747 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7569711 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7575030 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7583135 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7585847 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7587439 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7588897 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7590894 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7591127 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7595501 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7605465 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7610790 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7616237 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7619520 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7620435 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7620521 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7625337 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7626708 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7627372 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7649922 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7660668 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7673565 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7677061 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7681750 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7682064 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7685328 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7686362 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7690896 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7709783 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7714532 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7716375 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7733688 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7743927 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7751598 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7767606 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7798220 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7806545 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7807259 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7814766 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7827202 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7832464 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7843716 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7844184 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7851602 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7864403 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7865507 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7874409 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7893212 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7899445 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7903074 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7911365 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7913671 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7914824 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7918247 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7920868 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7921390 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7926090 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7944784 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7954323 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7964507 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7977779 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7983382 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7985165 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:7985769 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8007545 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8009340 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8022582 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8023180 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8035386 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8038886 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8045122 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8050961 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8057975 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8069871 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8073560 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8085761 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8085965 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8087493 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8093880 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8097733 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8107106 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8112584 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8118043 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8125368 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8126342 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8126995 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8129485 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8135670 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8137816 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8153810 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8159188 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8166097 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8167477 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8169454 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8172388 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8177493 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8179404 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8181682 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8196560 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8204353 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8214486 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8218794 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8237839 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8238275 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8247920 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8252106 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8258471 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8259224 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8260211 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8270077 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8277547 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8285989 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8290239 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8290741 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8300904 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8303093 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8307777 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8310034 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8319825 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8320210 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8320549 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8329205 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8339594 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8344180 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8345051 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8346877 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8353455 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8353646 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8357923 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8366831 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8369410 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8370426 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8372814 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8379222 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8380690 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8389722 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8394617 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8428560 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8435878 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8454627 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8455315 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8462824 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8466030 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8472752 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8491453 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8522473 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8525888 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[8525982] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:110)
+	at com.cai.service.ClubService.lambda$12(ClubService.java:300)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:298)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[8525982] 子游戏:8044,玩法gameId找不到
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8525982 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8536405 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8538240 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8538652 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8552335 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8555398 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8558126 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8567454 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8571420 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8571745 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8571776 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8572841 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8573221 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8575555 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[8579548] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:110)
+	at com.cai.service.ClubService.lambda$12(ClubService.java:300)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:298)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[8579548] 子游戏:8044,玩法gameId找不到
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8579548 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8579584 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8582535 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8583888 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8584393 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8585526 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8585615 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8585724 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8592200 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8592542 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8594123 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8604081 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8606681 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8609487 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8610550 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8627199 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8632544 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8644608 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8647657 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8658504 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8668021 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8672584 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8674391 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8678438 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8678507 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8698461 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8707222 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8722194 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8728583 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8728708 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8751091 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8759028 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8759516 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8765592 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8770084 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8781707 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8791826 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8801566 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8812044 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[8812471] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:110)
+	at com.cai.service.ClubService.lambda$12(ClubService.java:300)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:298)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[8812471] 子游戏:8044,玩法gameId找不到
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8812471 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8820884 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8822555 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8825916 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8842229 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8849164 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8849607 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8850720 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8851855 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8853307 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8862984 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8870143 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8871605 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8886140 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8888888 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8897053 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8914620 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8923494 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8926776 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8935462 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8936597 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8937367 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8942851 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8943682 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8948034 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8965307 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8970990 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8974219 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8974883 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8985319 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8992500 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:8998859 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9003608 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9010141 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9013738 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9023749 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9024084 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9028325 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9032486 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9041671 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9051532 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9061224 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9062144 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9066607 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9069385 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9072681 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9074658 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9080437 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9081698 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9090126 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9090362 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9093327 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9103246 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9103486 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9103995 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9119029 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9129568 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9146244 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9151103 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9152439 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9157613 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9158545 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9166347 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9189275 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9190638 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9191064 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9191638 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9209538 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9212829 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9222867 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9231238 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9236524 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9238063 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9244090 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9246672 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9251800 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9263771 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9265153 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9269614 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9273273 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9276075 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9285069 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9286931 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9288274 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9302281 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9304891 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9312109 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9316477 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9327151 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9332481 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9339994 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9344538 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9346255 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9351907 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9360178 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9363959 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9369685 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9374975 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9375568 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9377661 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9382772 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9392820 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9400163 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9401375 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9404510 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9404523 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9409245 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9413912 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈:9414347 成员数据为空！
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[9480568] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:110)
+	at com.cai.service.ClubService.lambda$12(ClubService.java:300)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:298)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[9480568] 子游戏:8044,玩法gameId找不到
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[9647045] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:110)
+	at com.cai.service.ClubService.lambda$12(ClubService.java:300)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:298)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-08-04 14:41:35 [ERROR]-[com.cai.service.ClubService] 亲友圈[9647045] 子游戏:8044,玩法gameId找不到
+2018-08-04 14:41:35 [WARN]-[com.cai.service.ClubService] 亲友圈活动[clubId:678,id:12]，亲友圈可能已经删除了！ 
+2018-08-04 14:41:35 [WARN]-[com.cai.service.ClubService] 亲友圈活动[clubId:678,id:13]，亲友圈可能已经删除了！ 
+2018-08-04 14:41:35 [WARN]-[com.cai.service.ClubService] 亲友圈活动[clubId:678,id:14]，亲友圈可能已经删除了！ 
+2018-08-04 14:41:35 [WARN]-[com.cai.service.ClubService] 亲友圈活动[clubId:9090362,id:125]，亲友圈可能已经删除了！ 
+2018-08-04 14:41:35 [INFO]-[com.cai.service.ClubService] ------ 亲友圈数据初始化完成，总耗时:4967 ms
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubCreateMatchHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubCreateActivityHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubMatchEnrollHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubClearPlayerLimitRoundHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubRecordUpvoteHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubRuleRecordReqHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubTableDisbandInRoomReqHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubInviteJoinTableHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubSettingReqHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.SceneReqHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubTableSetPassportHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubApplyQuitMsgHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubActivityRankSnapshotHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubRequstModifyTireMsgHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.Client2ClubTestHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubDailyCostHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubBanSwitchReqHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubRuleOLMemberHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubDelActivityHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubMemberRecordModifyHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubPlayerLeftLimitRoundReqHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubMatchTableInfoReqHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.PlayerEnterClubMatchRoomReqHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubActivityInfoHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubAssignmentHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubSetBulletinHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubPlayerLimitRoundReqHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubMatchManagerSetAttendHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubMatchWillStartReqHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.CityReportHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubMatchInfoHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubMemberAvatarHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubSetPlayerLimitRoundHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubMiniReqHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubSceneTagHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubBanPlayerHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubBanPlayerListReqHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubBulletinInfoHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubMatchSetAttendListReqHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubMatchRankDataReqHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubApplyQuitRejectHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubMatchRecordReqHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubChatGetUniqueIdHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubIgnoreInviteHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubHashAcitivityHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubRequestRecordHandler
+2018-08-04 14:41:37 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.client.ClubApplyJoinMsgHandler
+2018-08-04 14:41:40 [INFO]-[com.cai.service.ClientHandlerService] ========Club client 注册Handlers完成========
+2018-08-04 14:41:40 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.ClubMatchBlacklistRMIHandler
+2018-08-04 14:41:40 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.ClubRoomStatusSyncRMIHandler
+2018-08-04 14:41:40 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.ClubExclusiveActUpdateRMIHandler
+2018-08-04 14:41:40 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.ClubHasAccountRMIHandler
+2018-08-04 14:41:40 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.ClubSSheRMIHandler
+2018-08-04 14:41:40 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.RmiClubHandler
+2018-08-04 14:41:40 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.SSHEClubTireInfoQueryRMIHandler
+2018-08-04 14:41:40 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.GroupToClubHandler
+2018-08-04 14:41:40 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.ClubDelGameTypeIndexRMIHandler
+2018-08-04 14:41:40 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.UpdateClubIdRMIHandler
+2018-08-04 14:41:40 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.ClubCreatorGoldUpdateRMIHandler
+2018-08-04 14:41:40 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.ClubActivitySnapshotRMIHandler
+2018-08-04 14:41:40 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.SSHEClubMiniHandler
+2018-08-04 14:41:40 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.ClubExclusiveSSHEBatchRMIHandler
+2018-08-04 14:41:40 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.ClubRuleTableRMIHandler
+2018-08-04 14:41:40 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.TvActivityClubHandler
+2018-08-04 14:41:40 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.SSHEBulletinRMIHandler
+2018-08-04 14:41:40 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.rmi.handler.HelloRMIHandler
+2018-08-04 14:41:40 [INFO]-[com.cai.service.RMIHandlerServiceImp] ========LOGIC RMI 注册Handlers完成========
+2018-08-04 14:41:40 [INFO]-[GoClubServer] Netty service start success,listening at port[30061]!!!
+2018-08-04 14:41:43 [INFO]-[org.eclipse.jetty.util.log] Logging initialized @23285ms
+2018-08-04 14:41:43 [INFO]-[com.cai.net.core.ClubAcceptorListener] [[Client->Club]]新加入链接:[id: 0xb6229601, L:/127.0.0.1:30061 - R:/127.0.0.1:36359]
+2018-08-04 14:41:43 [INFO]-[org.eclipse.jetty.server.Server] jetty-9.3.13.M0
+2018-08-04 14:41:43 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2018-08-04 14:41:43 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2018-08-04 14:41:43 [INFO]-[com.cai.service.SessionService] [LOGIC<->club] ###### online, channel:[id: 0xb6229601, L:/127.0.0.1:30061 - R:/127.0.0.1:36359],serverIndex:9!
+2018-08-04 14:41:44 [INFO]-[org.eclipse.jetty.webapp.StandardDescriptorProcessor] NO JSP Support for /gameClub, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2018-08-04 14:41:44 [INFO]-[/gameClub] Initializing Spring FrameworkServlet 'oss'
+2018-08-04 14:41:44 [INFO]-[org.springframework.web.servlet.DispatcherServlet] FrameworkServlet 'oss': initialization started
+2018-08-04 14:41:44 [INFO]-[org.springframework.web.context.support.XmlWebApplicationContext] Refreshing WebApplicationContext for namespace 'oss-servlet': startup date [Sat Aug 04 14:41:44 CST 2018]; root of context hierarchy
+2018-08-04 14:41:44 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/oss-servlet.xml]
+2018-08-04 14:41:45 [INFO]-[com.cai.net.core.ClubAcceptorListener] [[Client->Club]]新加入链接:[id: 0x5f308be7, L:/127.0.0.1:30061 - R:/127.0.0.1:36361]
+2018-08-04 14:41:45 [INFO]-[com.cai.service.SessionService] [PROXY<->club] ###### online, channel:[id: 0x5f308be7, L:/127.0.0.1:30061 - R:/127.0.0.1:36361],serverIndex:9!
+2018-08-04 14:41:45 [WARN]-[com.xianyi.framework.handler.ReqExecutor] 耗时任务 cmd[ 3 ],handler[ class com.cai.handler.c2s.PingHandler ] ,耗时[ 416ms ] ,执行线程[ xy-game-global-thread-1 ]
+2018-08-04 14:41:45 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/list]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.list(javax.servlet.http.HttpServletRequest,long,javax.servlet.http.HttpServletResponse)
+2018-08-04 14:41:45 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/bind]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.bind(javax.servlet.http.HttpServletRequest,java.lang.String,int,javax.servlet.http.HttpServletResponse,long)
+2018-08-04 14:41:45 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/unbind]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.unbind(javax.servlet.http.HttpServletRequest,java.lang.String,int,javax.servlet.http.HttpServletResponse)
+2018-08-04 14:41:45 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/lucky]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.lucky(javax.servlet.http.HttpServletRequest,int,int,javax.servlet.http.HttpServletResponse)
+2018-08-04 14:41:45 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/updateAccountId]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.updateAccountId(javax.servlet.http.HttpServletRequest,int,int,javax.servlet.http.HttpServletResponse)
+2018-08-04 14:41:45 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/bindAccountId]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.bindAccountId(javax.servlet.http.HttpServletRequest,long,java.lang.String,javax.servlet.http.HttpServletResponse,java.lang.String,long)
+2018-08-04 14:41:45 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/bindId]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.bindId(javax.servlet.http.HttpServletRequest,long,int,javax.servlet.http.HttpServletResponse)
+2018-08-04 14:41:45 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/exist/userId]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.existId(javax.servlet.http.HttpServletRequest,long,int,javax.servlet.http.HttpServletResponse)
+2018-08-04 14:41:45 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/club/detail]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.existId(javax.servlet.http.HttpServletRequest,int,javax.servlet.http.HttpServletResponse)
+2018-08-04 14:41:45 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/data/key]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.DataController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-04 14:41:45 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/data/hunan]}" onto public void com.cai.http.action.DataController.data(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,int)
+2018-08-04 14:41:45 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/data/fls]}" onto public void com.cai.http.action.DataController.fls(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,int)
+2018-08-04 14:41:45 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/data/lhq]}" onto public void com.cai.http.action.DataController.lhq(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,int)
+2018-08-04 14:41:45 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/web/list]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.SendGoldController.list(javax.servlet.http.HttpServletRequest,long,int,java.lang.String,java.lang.String)
+2018-08-04 14:41:45 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/web/active]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.SendGoldController.bind(javax.servlet.http.HttpServletRequest)
+2018-08-04 14:41:45 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/web/receive]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.SendGoldController.receiveSendGold(javax.servlet.http.HttpServletRequest,long,java.lang.String,java.lang.String,java.lang.String)
+2018-08-04 14:41:45 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] Looking for @ControllerAdvice: WebApplicationContext for namespace 'oss-servlet': startup date [Sat Aug 04 14:41:44 CST 2018]; root of context hierarchy
+2018-08-04 14:41:46 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] Looking for @ControllerAdvice: WebApplicationContext for namespace 'oss-servlet': startup date [Sat Aug 04 14:41:44 CST 2018]; root of context hierarchy
+2018-08-04 14:41:46 [INFO]-[org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-08-04 14:41:46 [INFO]-[org.springframework.web.servlet.DispatcherServlet] FrameworkServlet 'oss': initialization completed in 2666 ms
+2018-08-04 14:41:46 [INFO]-[org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@48ae9e8b{/gameClub,file:///F:/workplace/game-club/webapp/,AVAILABLE}
+2018-08-04 14:41:46 [INFO]-[org.eclipse.jetty.server.AbstractConnector] Started ServerConnector@39374689{HTTP/1.1,[http/1.1]}{0.0.0.0:7002}
+2018-08-04 14:41:46 [INFO]-[org.eclipse.jetty.server.Server] Started @26514ms
+2018-08-04 14:41:52 [INFO]-[com.cai.service.SessionService] account[66784] status:ONLINE ,fromProxy:9
+2018-08-04 14:42:02 [INFO]-[com.cai.service.SessionService] account[66784] status:ONLINE ,fromProxy:9
+2018-08-04 14:42:02 [WARN]-[com.xianyi.framework.handler.ReqExecutor] 耗时任务 cmd[ 5 ],handler[ class com.cai.handler.c2s.ClubProxyRequestHandler ] ,耗时[ 200ms ] ,执行线程[ xy-game-global-thread-4 ]
+2018-08-04 14:42:10 [INFO]-[com.cai.service.SessionService] account[66784] status:ONLINE ,fromProxy:9
+2018-08-04 14:42:10 [WARN]-[com.cai.utils.ClubEventLog] 俱乐部[6676199]，玩家[66784] 创建俱乐部!
+2018-08-04 14:42:10 [WARN]-[com.xianyi.framework.handler.ReqExecutor] 耗时任务 cmd[ 5 ],handler[ class com.cai.handler.c2s.ClubProxyRequestHandler ] ,耗时[ 240ms ] ,执行线程[ xy-game-global-thread-1 ]
+2018-08-04 14:42:20 [INFO]-[com.cai.service.SessionService] account[66784] status:ONLINE ,fromProxy:9
+2018-08-04 14:42:44 [INFO]-[com.cai.service.SessionService] account[66784] status:ONLINE ,fromProxy:9
+2018-08-04 14:42:46 [INFO]-[com.cai.service.SessionService] account[66784] status:ONLINE ,fromProxy:9
+2018-08-04 14:42:57 [INFO]-[com.cai.service.SessionService] account[66784] status:ONLINE ,fromProxy:9
+2018-08-04 14:43:16 [INFO]-[com.cai.service.SessionService] account[66784] status:ONLINE ,fromProxy:9
+2018-08-04 14:43:17 [WARN]-[com.cai.utils.ClubEventLog] 俱乐部[6676199]，玩家[66784] 添加玩法[id:4408,gameTypeIndex:30002]!
+2018-08-04 14:43:17 [INFO]-[com.cai.service.SessionService] account[66784] status:ONLINE ,fromProxy:9
+2018-08-04 14:43:17 [INFO]-[com.cai.service.SessionService] account[66784] status:ONLINE ,fromProxy:9
+2018-08-04 14:44:04 [INFO]-[com.cai.service.SessionService] account[66784] status:ONLINE ,fromProxy:9
+2018-08-04 14:45:09 [INFO]-[com.cai.service.SessionService] account[66784] status:ONLINE ,fromProxy:9
+2018-08-04 14:45:16 [INFO]-[com.cai.service.SessionService] account[66784] status:ONLINE ,fromProxy:9
+2018-08-04 14:45:16 [INFO]-[com.cai.service.SessionService] account[66784] status:ONLINE ,fromProxy:9
+2018-08-04 14:45:17 [INFO]-[com.cai.service.SessionService] account[66784] status:ONLINE ,fromProxy:9
+2018-08-04 14:45:49 [INFO]-[com.cai.net.core.ClubAcceptorListener] [[Client->Club]]断开链接:[id: 0x5f308be7, L:/127.0.0.1:30061 ! R:/127.0.0.1:36361]
+2018-08-04 14:45:49 [INFO]-[com.cai.service.SessionService] [PROXY<->club] ###### offline, channel:[id: 0x5f308be7, L:/127.0.0.1:30061 ! R:/127.0.0.1:36361],serverIndex:9!

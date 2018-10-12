@@ -1,0 +1,42 @@
+2017-12-25 11:17:56 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2017-12-25 11:17:56 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2017-12-25 12:17:38 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2017-12-25 12:17:38 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2017-12-25 14:16:32 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2017-12-25 14:16:32 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2017-12-25 16:08:11 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2017-12-25 16:08:11 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2017-12-25 16:20:39 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2017-12-25 16:20:39 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2017-12-25 16:49:15 [ERROR]-[org.springframework.data.redis.listener.RedisMessageListenerContainer] Connection failure occurred. Restarting subscription task after 5000 ms
+2017-12-25 16:55:07 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2017-12-25 16:55:07 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2017-12-25 18:59:00 [WARN]-[com.alibaba.druid.pool.DruidDataSource] get/close not same thread
+2017-12-25 18:59:00 [ERROR]-[com.alibaba.druid.pool.DruidDataSource] abandon connection, open stackTrace
+	at java.lang.Thread.getStackTrace(Thread.java:1559)
+	at com.alibaba.druid.pool.DruidDataSource.getConnectionDirect(DruidDataSource.java:942)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:882)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:872)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:97)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.execute(SqlMapClientTemplate.java:183)
+	at org.springframework.orm.ibatis.SqlMapClientTemplate.insert(SqlMapClientTemplate.java:368)
+	at com.cai.dao.CoreDao.insertObject(CoreDao.java:119)
+	at com.cai.dao.ClubDao.insertClubRule(ClubDao.java:288)
+	at com.cai.service.ClubService.createRule(ClubService.java:1282)
+	at com.cai.service.ClubService.updateClub(ClubService.java:1233)
+	at com.cai.handler.c2s.ClubProxyRequestHandler$ClubRqType$9.exe(ClubProxyRequestHandler.java:385)
+	at com.cai.handler.c2s.ClubProxyRequestHandler.execute(ClubProxyRequestHandler.java:78)
+	at com.cai.handler.c2s.ClubProxyRequestHandler.execute(ClubProxyRequestHandler.java:1)
+	at com.xianyi.framework.handler.IClientHandler.doExecute(IClientHandler.java:41)
+	at com.xianyi.framework.handler.ReqExecutor.run(ReqExecutor.java:66)
+	at com.cai.common.util.GlobalExecutor.lambda$0(GlobalExecutor.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+

@@ -1,0 +1,2 @@
+2017-11-03 10:16:52 [INFO]-[com.cai.net.core.ClubAcceptorListener] [[Client->Club]]断开链接:[id: 0x9af5f128, /127.0.0.1:4661 :> /127.0.0.1:30061]
+2017-11-03 10:16:52 [INFO]-[com.cai.service.SessionService] [PROXY<->club] ###### offline, channel:[id: 0x9af5f128, /127.0.0.1:4661 :> /127.0.0.1:30061],serverIndex:9!

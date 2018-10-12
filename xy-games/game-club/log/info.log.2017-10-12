@@ -1,0 +1,131 @@
+2017-10-12 18:35:29 [INFO]-[com.cai.common.util.ServerListenUtil] 
+=================系统信息==========================
+	启动时间 => Thu Oct 12 18:35:29 CST 2017
+	hostAddress =>192.168.1.49
+	user.dir =>F:\workplace\game-club
+	defaultCharset =>UTF-8
+	maxMemory =>3628M
+	user.timezone =>Asia/Shanghai
+=================================================
+2017-10-12 18:35:29 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-10-12 18:35:29 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7276c8cd: startup date [Thu Oct 12 18:35:29 CST 2017]; root of context hierarchy
+2017-10-12 18:35:29 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-10-12 18:35:29 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-ibatis-club.xml]
+2017-10-12 18:35:29 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-10-12 18:35:29 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-10-12 18:35:29 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-10-12 18:35:29 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-10-12 18:35:30 [INFO]-[com.alibaba.druid.pool.DruidDataSource] {dataSource-1} inited
+2017-10-12 18:35:30 [WARN]-[org.springframework.context.support.ClassPathXmlApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clubDao': Unsatisfied dependency expressed through method 'setSqlMapClient2' parameter 0: Error creating bean with name 'sqlMapClient' defined in class path resource [spring-ibatis-club.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Error occurred.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/sqlMap'.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: org.xml.sax.SAXParseException; lineNumber: 124; columnNumber: 2; 元素内容必须由格式正确的字符数据或标记组成。; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlMapClient' defined in class path resource [spring-ibatis-club.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Error occurred.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/sqlMap'.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: org.xml.sax.SAXParseException; lineNumber: 124; columnNumber: 2; 元素内容必须由格式正确的字符数据或标记组成。
+2017-10-12 18:35:30 [INFO]-[com.alibaba.druid.pool.DruidDataSource] {dataSource-1} closed
+2017-10-12 18:37:26 [INFO]-[com.cai.common.util.ServerListenUtil] 
+=================系统信息==========================
+	启动时间 => Thu Oct 12 18:37:26 CST 2017
+	hostAddress =>192.168.1.49
+	user.dir =>F:\workplace\game-club
+	defaultCharset =>UTF-8
+	maxMemory =>3628M
+	user.timezone =>Asia/Shanghai
+=================================================
+2017-10-12 18:37:26 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-10-12 18:37:26 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7276c8cd: startup date [Thu Oct 12 18:37:26 CST 2017]; root of context hierarchy
+2017-10-12 18:37:26 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-10-12 18:37:26 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-ibatis-club.xml]
+2017-10-12 18:37:26 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-10-12 18:37:26 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-10-12 18:37:26 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-10-12 18:37:26 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-10-12 18:37:27 [INFO]-[com.alibaba.druid.pool.DruidDataSource] {dataSource-1} inited
+2017-10-12 18:37:27 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#19e4653c'
+2017-10-12 18:37:27 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-10-12 18:37:27 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(1914ms)==============================
+2017-10-12 18:37:27 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.S2SHandlerService
+2017-10-12 18:37:27 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.ItemService
+2017-10-12 18:37:27 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.SessionService
+2017-10-12 18:37:27 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.C2SHandlerService
+2017-10-12 18:37:27 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.ClubService
+2017-10-12 18:37:27 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.MongoDBServiceImpl
+2017-10-12 18:37:28 [INFO]-[com.xianyi.framework.core.service.ServiceManager] ========服务初始化完成========
+2017-10-12 18:37:29 [INFO]-[com.cai.service.S2SHandlerService] ========Club S2S 注册Handlers完成========
+2017-10-12 18:37:29 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.ServerLoginHandler
+2017-10-12 18:37:29 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.ClubGameRecordHandler
+2017-10-12 18:37:29 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.ClubProxyRequestHandler
+2017-10-12 18:37:29 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.ItemHandler
+2017-10-12 18:37:29 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.PingHandler
+2017-10-12 18:37:29 [INFO]-[com.cai.service.C2SHandlerService] ========Club server 注册c2s Handlers完成========
+2017-10-12 18:37:29 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.constant.item.ItemOffLineMatch
+2017-10-12 18:37:29 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.constant.item.ItemOnlineMatch
+2017-10-12 18:37:29 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.constant.item.ItemOrdinary
+2017-10-12 18:37:29 [INFO]-[com.cai.dictionary.SysGameTypeDict] redis缓存加载字典SysGameTypeDict(26ms)
+2017-10-12 18:37:29 [INFO]-[com.cai.dictionary.DirtyWordDict] redis缓存加载字典SysGameTypeDict(0ms)
+2017-10-12 18:37:29 [INFO]-[com.cai.dictionary.ItemDict] redis缓存加载字典ItemDict(17ms)
+2017-10-12 18:37:29 [INFO]-[GoClubServer] Netty service start success,listening at port[30061]!!!
+2017-10-12 18:39:46 [INFO]-[com.cai.common.util.ServerListenUtil] 
+=================系统信息==========================
+	启动时间 => Thu Oct 12 18:39:46 CST 2017
+	hostAddress =>192.168.1.49
+	user.dir =>F:\workplace\game-club
+	defaultCharset =>UTF-8
+	maxMemory =>3628M
+	user.timezone =>Asia/Shanghai
+=================================================
+2017-10-12 18:39:46 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-10-12 18:39:46 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7276c8cd: startup date [Thu Oct 12 18:39:46 CST 2017]; root of context hierarchy
+2017-10-12 18:39:46 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-10-12 18:39:46 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-ibatis-club.xml]
+2017-10-12 18:39:46 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-10-12 18:39:46 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-10-12 18:39:46 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-10-12 18:39:46 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-10-12 18:39:47 [INFO]-[com.alibaba.druid.pool.DruidDataSource] {dataSource-1} inited
+2017-10-12 18:39:48 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#19e4653c'
+2017-10-12 18:39:48 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-10-12 18:39:48 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(1911ms)==============================
+2017-10-12 18:39:48 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.SessionService
+2017-10-12 18:39:48 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.S2SHandlerService
+2017-10-12 18:39:48 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.C2SHandlerService
+2017-10-12 18:39:48 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.ClubService
+2017-10-12 18:39:48 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.ItemService
+2017-10-12 18:39:48 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.service.MongoDBServiceImpl
+2017-10-12 18:39:48 [INFO]-[com.xianyi.framework.core.service.ServiceManager] ========服务初始化完成========
+2017-10-12 18:39:49 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.PingHandler
+2017-10-12 18:39:49 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.ClubProxyRequestHandler
+2017-10-12 18:39:49 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.ItemHandler
+2017-10-12 18:39:49 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.ServerLoginHandler
+2017-10-12 18:39:49 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.handler.c2s.ClubGameRecordHandler
+2017-10-12 18:39:49 [INFO]-[com.cai.service.C2SHandlerService] ========Club server 注册c2s Handlers完成========
+2017-10-12 18:39:49 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.constant.item.ItemOrdinary
+2017-10-12 18:39:49 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.constant.item.ItemOffLineMatch
+2017-10-12 18:39:49 [INFO]-[com.cai.common.util.LoadPackageClasses] Found class:com.cai.constant.item.ItemOnlineMatch
+2017-10-12 18:39:49 [INFO]-[com.cai.service.S2SHandlerService] ========Club S2S 注册Handlers完成========
+2017-10-12 18:39:49 [INFO]-[com.cai.dictionary.SysGameTypeDict] redis缓存加载字典SysGameTypeDict(18ms)
+2017-10-12 18:39:49 [INFO]-[com.cai.dictionary.DirtyWordDict] redis缓存加载字典SysGameTypeDict(15ms)
+2017-10-12 18:39:49 [INFO]-[com.cai.dictionary.ItemDict] redis缓存加载字典ItemDict(0ms)
+2017-10-12 18:39:49 [INFO]-[GoClubServer] Netty service start success,listening at port[30061]!!!
+2017-10-12 18:39:49 [INFO]-[org.eclipse.jetty.util.log] Logging initialized @3947ms
+2017-10-12 18:39:49 [INFO]-[org.eclipse.jetty.server.Server] jetty-9.3.13.M0
+2017-10-12 18:39:49 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2017-10-12 18:39:49 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2017-10-12 18:39:50 [INFO]-[org.eclipse.jetty.webapp.StandardDescriptorProcessor] NO JSP Support for /gameClub, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2017-10-12 18:39:50 [INFO]-[/gameClub] Initializing Spring FrameworkServlet 'oss'
+2017-10-12 18:39:50 [INFO]-[org.springframework.web.servlet.DispatcherServlet] FrameworkServlet 'oss': initialization started
+2017-10-12 18:39:50 [INFO]-[org.springframework.web.context.support.XmlWebApplicationContext] Refreshing WebApplicationContext for namespace 'oss-servlet': startup date [Thu Oct 12 18:39:50 CST 2017]; root of context hierarchy
+2017-10-12 18:39:50 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/oss-servlet.xml]
+2017-10-12 18:39:50 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/list]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.list(javax.servlet.http.HttpServletRequest,int,javax.servlet.http.HttpServletResponse)
+2017-10-12 18:39:50 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/bind]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.bind(javax.servlet.http.HttpServletRequest,java.lang.String,int,javax.servlet.http.HttpServletResponse,long)
+2017-10-12 18:39:50 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/unbind]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.unbind(javax.servlet.http.HttpServletRequest,java.lang.String,int,javax.servlet.http.HttpServletResponse)
+2017-10-12 18:39:50 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/lucky]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.lucky(javax.servlet.http.HttpServletRequest,int,int,javax.servlet.http.HttpServletResponse)
+2017-10-12 18:39:50 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/updateAccountId]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.updateAccountId(javax.servlet.http.HttpServletRequest,int,int,javax.servlet.http.HttpServletResponse)
+2017-10-12 18:39:50 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/club/bindAccountId]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.ClubController.bindAccountId(javax.servlet.http.HttpServletRequest,long,java.lang.String,javax.servlet.http.HttpServletResponse,java.lang.String,long)
+2017-10-12 18:39:50 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/data/wmq]}" onto public void com.cai.http.action.DataController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,int)
+2017-10-12 18:39:50 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/data/key]}" onto public org.springframework.web.servlet.ModelAndView com.cai.http.action.DataController.list(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-12 18:39:50 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] Mapped "{[/data/hn]}" onto public void com.cai.http.action.DataController.hn(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,int)
+2017-10-12 18:39:50 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] Looking for @ControllerAdvice: WebApplicationContext for namespace 'oss-servlet': startup date [Thu Oct 12 18:39:50 CST 2017]; root of context hierarchy
+2017-10-12 18:39:50 [INFO]-[org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] Looking for @ControllerAdvice: WebApplicationContext for namespace 'oss-servlet': startup date [Thu Oct 12 18:39:50 CST 2017]; root of context hierarchy
+2017-10-12 18:39:50 [INFO]-[org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-10-12 18:39:50 [INFO]-[org.springframework.web.servlet.DispatcherServlet] FrameworkServlet 'oss': initialization completed in 699 ms
+2017-10-12 18:39:50 [INFO]-[org.eclipse.jetty.server.handler.ContextHandler] Started o.e.j.w.WebAppContext@543b0737{/gameClub,file:///F:/workplace/game-club/webapp/,AVAILABLE}
+2017-10-12 18:39:50 [INFO]-[org.eclipse.jetty.server.AbstractConnector] Started ServerConnector@67d5ac2f{HTTP/1.1,[http/1.1]}{0.0.0.0:7002}
+2017-10-12 18:39:50 [INFO]-[org.eclipse.jetty.server.Server] Started @4842ms
+2017-10-12 20:04:50 [INFO]-[com.cai.redis.listener.TopicAllMessageDelegate] 收到redis消息更新SysGameTypeDict字典
+2017-10-12 20:04:50 [INFO]-[com.cai.dictionary.SysGameTypeDict] redis缓存加载字典SysGameTypeDict(0ms)

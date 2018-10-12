@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game>
+	<debug>true</debug>
+	<port>30021</port>
+	<index>1</index>
+
+	<!-- 逻辑服节点 -->
+	<logicServers>
+		<hostNode>127.0.0.1:30071</hostNode>
+	</logicServers>
+</game>	

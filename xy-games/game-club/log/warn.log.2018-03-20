@@ -1,0 +1,46 @@
+2018-03-20 18:20:04 [WARN]-[com.cai.service.ClubService] 俱乐部活动[clubId:678,id:12]，俱乐部可能已经删除了！ 
+2018-03-20 18:20:04 [WARN]-[com.cai.service.ClubService] 俱乐部活动[clubId:678,id:13]，俱乐部可能已经删除了！ 
+2018-03-20 18:20:04 [WARN]-[com.cai.service.ClubService] 俱乐部活动[clubId:678,id:14]，俱乐部可能已经删除了！ 
+2018-03-20 18:20:04 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[2223671]->活动[id:128,name:活动测试01]加入调度中 --------
+2018-03-20 18:20:04 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[2223671]->活动[id:129,name:112]加入调度中 --------
+2018-03-20 18:20:04 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[9882414]->活动[id:132,name:大师傅]加入调度中 --------
+2018-03-20 18:20:04 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[1107503]->活动[id:135,name:撒的发撒的发]加入调度中 --------
+2018-03-20 18:20:04 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[1107503]->活动[id:136,name:撒的发撒的发是否]加入调度中 --------
+2018-03-20 18:20:04 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[1107503]->活动[id:137,name:asdf ]加入调度中 --------
+2018-03-20 18:20:04 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[1107503]->活动[id:138,name:asdf asd]加入调度中 --------
+2018-03-20 18:20:04 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[1107503]->活动[id:139,name:sdf sdf ]加入调度中 --------
+2018-03-20 18:20:06 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2018-03-20 18:20:06 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2018-03-20 18:20:32 [WARN]-[com.cai.service.ClubService] 玩家:[22495943]创建俱乐部[1067267]!
+2018-03-20 18:20:53 [WARN]-[com.cai.service.ClubService] 俱乐部[1067267] 创建包间:[3462],操作者[22495943]!
+2018-03-20 18:36:42 [WARN]-[com.cai.service.ClubService] 玩家:[22496077]创建俱乐部[6661876]!
+2018-03-20 18:38:02 [WARN]-[com.cai.service.ClubService] 俱乐部活动[clubId:678,id:12]，俱乐部可能已经删除了！ 
+2018-03-20 18:38:02 [WARN]-[com.cai.service.ClubService] 俱乐部活动[clubId:678,id:13]，俱乐部可能已经删除了！ 
+2018-03-20 18:38:02 [WARN]-[com.cai.service.ClubService] 俱乐部活动[clubId:678,id:14]，俱乐部可能已经删除了！ 
+2018-03-20 18:38:02 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[2223671]->活动[id:128,name:活动测试01]加入调度中 --------
+2018-03-20 18:38:02 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[2223671]->活动[id:129,name:112]加入调度中 --------
+2018-03-20 18:38:02 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[9882414]->活动[id:132,name:大师傅]加入调度中 --------
+2018-03-20 18:38:02 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[1107503]->活动[id:135,name:撒的发撒的发]加入调度中 --------
+2018-03-20 18:38:02 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[1107503]->活动[id:136,name:撒的发撒的发是否]加入调度中 --------
+2018-03-20 18:38:02 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[1107503]->活动[id:137,name:asdf ]加入调度中 --------
+2018-03-20 18:38:02 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[1107503]->活动[id:138,name:asdf asd]加入调度中 --------
+2018-03-20 18:38:02 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[1107503]->活动[id:139,name:sdf sdf ]加入调度中 --------
+2018-03-20 18:38:03 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2018-03-20 18:38:03 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2018-03-20 18:38:43 [WARN]-[com.cai.service.ClubService] 玩家:[22496082]创建俱乐部[8825384]!
+2018-03-20 18:38:51 [WARN]-[com.cai.service.ClubService] 俱乐部[8825384] 创建包间:[3463],操作者[22496082]!
+2018-03-20 18:46:53 [WARN]-[com.cai.service.ClubService] 俱乐部活动[clubId:678,id:12]，俱乐部可能已经删除了！ 
+2018-03-20 18:46:53 [WARN]-[com.cai.service.ClubService] 俱乐部活动[clubId:678,id:13]，俱乐部可能已经删除了！ 
+2018-03-20 18:46:53 [WARN]-[com.cai.service.ClubService] 俱乐部活动[clubId:678,id:14]，俱乐部可能已经删除了！ 
+2018-03-20 18:46:53 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[2223671]->活动[id:128,name:活动测试01]加入调度中 --------
+2018-03-20 18:46:53 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[2223671]->活动[id:129,name:112]加入调度中 --------
+2018-03-20 18:46:53 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[9882414]->活动[id:132,name:大师傅]加入调度中 --------
+2018-03-20 18:46:53 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[1107503]->活动[id:135,name:撒的发撒的发]加入调度中 --------
+2018-03-20 18:46:53 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[1107503]->活动[id:136,name:撒的发撒的发是否]加入调度中 --------
+2018-03-20 18:46:53 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[1107503]->活动[id:137,name:asdf ]加入调度中 --------
+2018-03-20 18:46:53 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[1107503]->活动[id:138,name:asdf asd]加入调度中 --------
+2018-03-20 18:46:53 [WARN]-[com.cai.constant.ClubActivityWrap] --------俱乐部[1107503]->活动[id:139,name:sdf sdf ]加入调度中 --------
+2018-03-20 18:46:53 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2018-03-20 18:46:53 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2018-03-20 18:47:15 [WARN]-[com.cai.service.ClubService] 玩家:[22496107]创建俱乐部[2438741]!
+2018-03-20 18:47:27 [WARN]-[com.cai.service.ClubService] 俱乐部[2438741] 创建包间:[3464],操作者[22496107]!

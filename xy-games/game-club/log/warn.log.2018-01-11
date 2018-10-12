@@ -1,0 +1,3 @@
+2018-01-11 18:11:49 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2018-01-11 18:11:49 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2018-01-11 18:12:21 [WARN]-[com.cai.handler.c2s.RoomStatusHandler] [clubid:2881264,ruleId:2891,index:0] 房间id不相同!cacheRoomId:0,reqRoomId:240493

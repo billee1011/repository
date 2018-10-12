@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="ServerInfo">
+	<typeAlias alias="clubModel" type="com.cai.common.domain.ClubModel" />
+	<typeAlias alias="clubAccountModel" type="com.cai.common.domain.ClubAccountModel" />
+	<typeAlias alias="clubGroupModel" type="com.cai.common.domain.ClubGroupModel" />
+	<typeAlias alias="clubRuleModel" type="com.cai.common.domain.ClubRuleModel" />
+	<typeAlias alias="clubMemberModel" type="com.cai.common.domain.ClubMemberModel" />
+	<typeAlias alias="gameTypeDBModel" type="com.cai.common.domain.GameTypeDBModel" />
+	<typeAlias alias="oldUserModel" type="com.cai.common.domain.OldUserModel" />
+	<typeAlias alias="matchSignUpModel" type="com.cai.common.domain.MatchSignUpModel" />
+	<typeAlias alias="accountGroupModel" type="com.cai.common.domain.AccountGroupModel" />
+	<typeAlias alias="sysEmailModel" type="com.cai.common.domain.SysEmailModel" />
+	<typeAlias alias="playerEmailModel" type="com.cai.common.domain.PlayerEmailModel" />
+	<typeAlias alias="clubActivityModel" type="com.cai.common.domain.ClubActivityModel" />
+	<typeAlias alias="cityCodeModel" type="com.cai.common.domain.CityCodeModel"/>
+	<typeAlias alias="clubBulletinModel" type="com.cai.common.domain.ClubBulletinModel"/>
+	<typeAlias alias="clubMemberRecordModel" type="com.cai.common.domain.ClubMemberRecordModel"/>
+	<typeAlias alias="clubBanPlayerModel" type="com.cai.common.domain.ClubBanPlayerModel"/>
+	<typeAlias alias="clubMatchModel" type="com.cai.common.domain.ClubMatchModel"/>
+	<typeAlias alias="clubDataModel" type="com.cai.common.domain.ClubDataModel"/>
+	<typeAlias alias="clubRuleRecordModel" type="com.cai.common.domain.ClubRuleRecordModel"/>
+	<typeAlias alias="clubWelfareSwitchModel" type="com.cai.common.domain.ClubWelfareSwitchModel"/>
+	<typeAlias alias="clubWelfareRewardModel" type="com.cai.common.domain.ClubWelfareRewardModel"/>
+	<typeAlias alias="clubWelfareLotteryInfo" type="com.cai.common.domain.ClubWelfareLotteryInfo"/>
+
+	<select id="getClubIdListByAccount" resultClass="Integer" parameterClass="Long">
+		select club_id from club_account where account_id = #accountId# and status = 1;
+	</select>
+	
+	<select id="getClubList" resultClass="clubModel">
+		SELECT a.*, IFNULL(b.headimgurl,"") AS avatar FROM club a LEFT JOIN account_weixin b ON a.`account_id`=b.`account_id`
+	</select>
+	<update id="updateClub" parameterClass="clubModel">
+		update club set account_id=#account_id#,club_name=#club_name#,`desc`=#desc#,gameCount=#gameCount#,consumeGold=#consumeGold#,datas=#datas#,
+		settingStatus=#settingStatus#,notice=#notice#,chatMsgs=#chatMsgs#,exclusiveGold=#exclusiveGold#,totalClubWelfare=#totalClubWelfare#,clubWelfareGetCount=#clubWelfareGetCount#
+		 where club_id=#club_id#
+	</update> 
+	
+	<update id="updateClubLuckyId" parameterClass="java.util.Map">
+		 UPDATE club a LEFT JOIN club_rule b ON a.club_id = b.club_id LEFT JOIN club_account c ON a.club_id = c.club_id
+		   LEFT JOIN club_group d ON a.club_id = d.club_id 
+           SET a.club_id = #new_id#,b.club_id = #new_id#,c.club_id = #new_id#, d.club_id = #new_id# WHERE a.club_id = #club_id#
+	</update> 
+	
+	<update id="updateClubAccountId" parameterClass="java.util.Map">
+	    UPDATE club SET account_id = #new_id# where account_id = #account_id#
+	</update> 
+	<update id="updateClubAccountId2" parameterClass="java.util.Map">
+	     UPDATE club_account SET account_id = #new_id# where account_id = #account_id#
+	</update> 
+	<update id="updateClubAccountRemark" parameterClass="java.util.Map">
+	     UPDATE club_account SET remark = #remark#,remark_ext = #remark_ext# where account_id = #account_id# and club_id=#club_id#
+	</update>
+	<update id="updateClubAccountIdentity" parameterClass="clubMemberModel">
+	     UPDATE club_account SET identity = #identity# where account_id = #account_id# and club_id=#club_id#
+	</update>
+	
+	<insert id="insertClub" parameterClass="clubModel">
+		insert club(club_id,club_name,account_id,date,`desc`,datas)  
+		values(#club_id#,#club_name#,#account_id#,#date#,#desc#,#datas#)
+	</insert>
+	<delete id="deleteClub" parameterClass="Integer">
+	    delete from club where club_id=#club_id#
+	</delete>
+	
+	<select id="getClubAccount" resultClass="clubAccountModel"  parameterClass="clubAccountModel">
+	    select * from club_account where club_id=#club_id# and account_id=#account_id#
+	</select>
+	
+	<select id="getClubAccountCount" resultClass="Integer"  parameterClass="Integer">
+	    select count(1) from club_account where club_id=#club_id#
+	</select>
+	
+	<select id="getClubAccountCountByStatus" resultClass="Integer"  parameterClass="java.util.Map">
+	    select count(1) from club_account where club_id=#clubId# and status = #status#
+	</select>
+	
+    <select id="getClubMemberByPage" resultClass="clubMemberModel"  parameterClass="java.util.Map">
+	    SELECT a.club_id,a.account_id,a.status,IFNULL(b.gold,0) as gold,IFNULL(c.nickname,"") AS nickname,IFNULL(c.headimgurl,"") AS avatar,a.game_count,a.big_win_count as winCount
+	     FROM (club_account a LEFT JOIN account b ON  a.account_id = b.account_id) LEFT JOIN account_weixin c ON
+         a.account_id = c.account_id WHERE a.club_id = #clubId# LIMIT #start#,#end#
+	</select> 
+	
+	<select id="getAllClubMembers" resultClass="clubMemberModel"  parameterClass="Integer">
+	    SELECT a.club_id,a.account_id,a.status,a.remark,a.remark_ext,a.identity,IFNULL(b.gold,0) as gold,b.last_login_time as lastLoginDate,IFNULL(c.nickname,b.account_name) AS nickname,IFNULL(c.headimgurl,"") AS avatar,a.date,a.game_count,a.big_win_count as winCount 
+	     ,a.roundLimitData,a.isPartner,a.parentId,a.clubWelfare
+	     FROM (club_account a LEFT JOIN account b ON  a.account_id = b.account_id) LEFT JOIN account_weixin c ON
+         a.account_id = c.account_id
+	</select> 
+	
+		<select id="getClubMembers" resultClass="clubMemberModel"  parameterClass="Integer">
+	    SELECT a.club_id,a.account_id,a.status,a.remark,a.remark_ext,a.identity,IFNULL(b.gold,0) as gold,b.last_login_time as lastLoginDate,IFNULL(c.nickname,b.account_name) AS nickname,IFNULL(c.headimgurl,"") AS avatar,a.date,a.game_count,a.big_win_count as winCount
+			,a.roundLimitData,a.isPartner,a.parentId,a.clubWelfare
+	     FROM (club_account a LEFT JOIN account b ON  a.account_id = b.account_id) LEFT JOIN account_weixin c ON
+         a.account_id = c.account_id WHERE a.club_id = #club_id#
+	</select>
+	
+	<select id="getClubMemberByPageAndStatus" resultClass="clubMemberModel"  parameterClass="java.util.Map">
+	    SELECT a.account_id,a.status,a.game_count,b.gold,IFNULL(c.nickname,"") AS nickname,IFNULL(c.headimgurl,"") AS avatar,a.game_count,a.big_win_count as winCount
+	     FROM (club_account a LEFT JOIN account b ON  a.account_id = b.account_id) LEFT JOIN account_weixin c ON
+         a.account_id = c.account_id WHERE a.club_id = #clubId# and a.status=#status# LIMIT #start#,#end#
+	</select> 
+	
+	<select id="searchClubMember" resultClass="clubMemberModel"  parameterClass="java.util.Map">
+	    SELECT a.account_id,a.status,a.game_count,b.gold,IFNULL(c.nickname,"") AS nickname,IFNULL(c.headimgurl,"") AS avatar,a.game_count,a.big_win_count as winCount
+	     FROM (club_account a LEFT JOIN account b ON  a.account_id = b.account_id) LEFT JOIN account_weixin c ON
+         a.account_id = c.account_id WHERE a.club_id = #clubId# and a.account_id = #accountId#
+	</select> 
+	
+	
+	<insert id="insertClubAccount" parameterClass="clubAccountModel">
+		insert club_account(club_id,account_id,status,date)  
+		values(#club_id#,#account_id#,#status#,now())
+	</insert>
+	<update id="updateClubAccount" parameterClass="clubMemberModel">
+		update club_account set game_count=#game_count#,big_win_count=#winCount#,remark=#remark#,remark_ext=#remark_ext#,identity=#identity# 
+		where club_id=#club_id# and account_id = #account_id#
+	</update>
+	<delete id="deleteClubAccount" parameterClass="clubAccountModel">
+	    delete from club_account where club_id=#club_id# and account_id = #account_id#
+	</delete>
+	<delete id="deleteClubAllAccount" parameterClass="Integer">
+	    delete from club_account where club_id=#club_id#
+	</delete>
+	<update id="updateClubAccountGameCount" parameterClass="clubMemberModel">
+		update club_account set game_count =#game_count#,big_win_count=#winCount#,roundLimitData=#roundLimitData#
+		where club_id=#club_id# and account_id =#account_id#
+	</update>
+	
+	<update id="agreeEnterClubAccountBatch" parameterClass="java.util.Map">
+		update club_account set status = 1 where club_id=#clubId# and account_id in ($accountIds$)
+	</update>
+	<delete id="deleteClubAllAccountBatch" parameterClass="java.util.Map">
+	    delete from club_account where club_id=#clubId# and account_id in ($accountIds$)
+	</delete>
+	<!-- 修改俱乐部id -->
+	<update id="updateClubAccountClubId" parameterClass="java.util.Map">
+		update club_account set club_id = #new_club_id# where club_id=#old_club_id# and account_id=#account_id#
+	</update>
+	<update id="updateClubId" parameterClass="java.util.Map">
+		update club set club_id = #new_club_id# where club_id=#old_club_id#
+	</update>	
+	
+	
+	<insert id="insertClubGroup" parameterClass="clubGroupModel">
+		insert club_group(group_id,club_id,date)  
+		values(#group_id#,#club_id#,now())
+	</insert>
+	<delete id="deleteClubGroup" parameterClass="java.util.Map">
+	    delete from club_group where club_id=#club_id# and group_id = #group_id#
+	</delete>
+	<delete id="deleteClubAllGroup" parameterClass="Integer">
+	    delete from club_group where club_id=#club_id#
+	</delete>
+	<select id="getClubGroup" resultClass="clubGroupModel"  parameterClass="String">
+	    select * from club_group where group_id=#group_id#
+	</select>
+	<select id="getClubGroupList" resultClass="clubGroupModel" >
+	    select * from club_group 
+	</select>
+	<select id="getGroupByClubId" resultClass="clubGroupModel"  parameterClass="Integer">
+	    select * from club_group where club_id=#club_id#
+	</select>
+	<select id="getGroupByUserId" resultClass="clubGroupModel"  parameterClass="Long">
+	     select b.* from club a LEFT join club_group b on a.club_id = b.club_id  where a.account_id = #userId# and b.group_id is not null
+	</select>
+	
+	<select id="getRuleByClubId" resultClass="clubRuleModel"  parameterClass="Integer">
+	    select * from club_rule where club_id=#club_id#
+	</select>
+	
+	<select id="getAllClubRule" resultClass="clubRuleModel"  parameterClass="Integer">
+	    select * from club_rule
+	</select>
+	
+	<insert id="insertClubRule" parameterClass="clubRuleModel">
+		insert club_rule(club_id,game_type_index,data,game_round,date,settingStatus,remark,tireValue,tablePassports,limitRound,showType,lotteryCost,limitWelfare)
+		values(#club_id#,#game_type_index#,#data#,#game_round#,now(),#settingStatus#,#remark#,#tireValue#,#tablePassports#,#limitRound#,#showType#,#lotteryCost#,#limitWelfare#)
+		<selectKey resultClass="int" keyProperty="id">
+			select last_insert_id()
+		</selectKey>
+	</insert>
+	<update id="updateClubRule" parameterClass="clubRuleModel">
+		update club_rule set game_round = #game_round#,data = #data#,game_type_index=#game_type_index#,remark=#remark#,settingStatus=#settingStatus#,
+		  tireValue=#tireValue#,tablePassports=#tablePassports#,limitRound=#limitRound#,showType=#showType#,lotteryCost=#lotteryCost#,limitWelfare=#limitWelfare#
+		  where id= #id#
+	</update>
+	<delete id="deleteClubRule" parameterClass="Integer">
+	    delete from club_rule where club_id=#club_id#
+	</delete>
+	
+	<delete id="deleteClubRuleWithRuleId" parameterClass="Integer">
+	    delete from club_rule where id=#id#
+	</delete>
+	
+	<select id="getPersonItems" resultClass="String">
+		select item from t_package_item where account_id=#accountId#
+	</select>
+	<update id="updatePersonItems">
+		UPDATE t_package_item set item=#item# where account_id=#accountId#
+	</update>
+	<insert id="createPersonItems">
+		INSERT INTO t_package_item(account_id, item) values(#accountId#,#item#)
+	</insert>
+	
+	<select id="getHuNanUser" resultClass="oldUserModel">
+		select * from t_user_hunan where status = 0
+	</select>
+	
+	<update id="updateHunanStatus" parameterClass="oldUserModel">
+		update t_user_hunan set status = 1
+	</update>
+	
+	<select id="getFlsUser" resultClass="oldUserModel">
+		select * from t_user_fls where status = 0
+	</select>
+	
+	<update id="updateFlsStatus" parameterClass="oldUserModel">
+		update t_user_fls set status = 1
+	</update>
+	
+	<select id="getLiuHuQiangUser" resultClass="oldUserModel">
+		select * from t_user_lhq where status = 0
+	</select>
+	
+	<update id="updateLiuHuQiangStatus" parameterClass="oldUserModel">
+		update t_user_lhq set status = 1
+	</update>
+	
+	<insert id="insertMatchSignUp" parameterClass="matchSignUpModel">
+		insert into match_sign_up(match_id, match_type, sign_type, sign_seq, account_id, nick_name, name, mobile, id_card, headUrl, upgrade_state, create_time, itemId)
+		values(#match_id#, #match_type#, #sign_type#, #sign_seq#, #account_id#, #nick_name#, #name#, #mobile#, #id_card#, #headUrl#, #upgrade_state#, #create_time#, #itemId#)
+	</insert>
+	<select id="getSignSeq" resultClass="Integer">
+		select sign_seq from match_sign_up order by sign_seq desc limit 1
+	</select>
+	<select id="getMatchSignUp" resultClass="matchSignUpModel">
+		select * from match_sign_up where account_id = #accountId# and create_time=#useTime#
+	</select>
+	
+	 <!-- 获取系统邮件信息 -->
+	<select id="sysEmailModelList" resultClass="sysEmailModel">
+		SELECT * from sys_email
+	</select> 
+	
+	<!-- 单条加载系统邮件信息 -->
+	<select id="loadSysEmailModel" resultClass="sysEmailModel">
+		SELECT * from sys_email where id = #id#
+	</select> 
+	
+	<!-- 系统邮件玩家信息 -->
+	<select id="sysEmailPlayerModelList" resultClass="String">
+		SELECT sys_email from account_sysemail where account_id =#accountId#
+	</select> 
+	
+	<!--新增玩家系统邮件  -->
+	<insert id="creatPlayerSysEmailModel">
+		INSERT INTO account_sysemail(account_id, sys_email) values(#accountId#,#sysEmail#)
+	</insert>
+	
+	<!-- 修改玩家系统邮件 -->
+	<update id="updatePlayerSysEmailModel">
+		UPDATE account_sysemail set sys_email=#sysEmail# where account_id=#accountId#
+	</update> 
+	
+	<insert id="updateOrInsertData">
+		INSERT INTO data(`key`,`data`) VALUES(#key#,#data#) ON DUPLICATE KEY UPDATE `data`=#data#;
+	</insert>
+	
+		<select id="getDataByKey" resultClass="java.util.HashMap" parameterClass="String">
+		SELECT `data` from `data` where `key`=#key#
+	</select> 
+	
+	<!-- 修改发送状态 -->
+	<update id="updateSysEmailState">
+		UPDATE sys_email set send_state=#sendState# where id=#id#
+	</update> 
+
+	 <!-- 获取个人玩家邮件信息 -->
+	<select id="getPlayerEmailModelList" resultClass="playerEmailModel">
+		SELECT * from player_email where  receiverID = #accountId#
+	</select> 
+	
+	<!-- 修改个人邮件 状态 -->
+	<update id="updatePlayerEmailState">
+		UPDATE player_email set extraType=#extraType# 
+		,isOpen =#isOpen#  where mailID=#mailId#
+	</update> 
+	
+	<!-- 添加个人邮件  -->
+	<insert id="creatPlayerEmailModel" >
+		INSERT INTO player_email(receiverID, senderID,sendTime,expireTime,title,content,extraType,extraData,isOpen) 
+		values(#receiverID#,#senderID#,#sendTime#,#expireTime#,#title#,#content#,#extraType#,#extraData#,#isOpen#)
+		<selectKey resultClass="int" type="post" keyProperty="mailID" >     
+        	select LAST_INSERT_ID() as value     
+   		</selectKey>   
+	</insert> 
+	<insert id="insertAccountGroupModel" parameterClass="accountGroupModel">
+		insert account_group(account_id,groupId,date,val)  
+		values(#account_id#,#groupId#,#date#,#val#)
+	</insert>  
+	<select id="getAccountGroupModelListByGroupId" resultClass="accountGroupModel" parameterClass="String">
+		select * from account_group where groupId = #groupId#
+	</select>   
+	<select id="getGroupAccountIdNotInClub" resultClass="Long" parameterClass="java.util.Map">
+		select account_id from account_group where groupId = #groupId# and account_id not in (select account_id from club_account where club_id=#clubId#) 
+	</select>
+	<select id="getClubAccountIdNotInGroup" resultClass="Long" parameterClass="java.util.Map">
+		select account_id from club_account  where club_id=#clubId# and account_id not in (select account_id from account_group where groupId = #groupId#) 
+	</select>
+	
+	<!-- 俱乐部活动 -->
+	<select id="getClubActivityModelList" resultClass="clubActivityModel">
+		SELECT * FROM club_activity WHERE status = 1
+	</select> 
+	<delete id="deleteClubActivity" parameterClass="java.util.Map">
+	    DELETE FROM club_activity where id=#id# AND clubId=#clubId#
+	</delete>
+	<delete id="deleteAllClubActivity" parameterClass="Integer">
+	    DELETE FROM club_activity where clubId=#clubId#
+	</delete>
+	<insert id="updateOrInsertClubActivity">
+		INSERT INTO club_activity(`id`,`clubId`,`activityName`,`activityType`,`activityStartDate`,`activityEndDate`,`creatorId`,`status`,`remark`) VALUES(#id#,#clubId#,#activityName#,#activityType#,#activityStartDate#,#activityEndDate#,#creatorId#,#status#,#remark#) 
+		ON DUPLICATE KEY UPDATE `clubId`=#clubId#,`activityName`=#activityName#,`activityType`=#activityType#,`activityStartDate`=#activityStartDate#,`activityEndDate`=#activityEndDate#,`creatorId`=#creatorId#,`status`=#status#,`remark`=#remark#;
+		<selectKey resultClass="long" keyProperty="id">
+			select last_insert_id()
+		</selectKey>
+	</insert>
+	<select id="getCityCodeModelList" resultClass="cityCodeModel">
+		SELECT * from city_code;
+	</select> 
+	
+	<!-- 俱乐部公告 -->
+	<select id="getClubBulletinModelList" resultClass="clubBulletinModel">
+		SELECT * FROM club_bulletin;
+	</select> 
+	<insert id="insertClubBulletin" parameterClass="clubBulletinModel">
+		INSERT INTO club_bulletin(`id`,`clubId`,`startDate`,`endDate`,`creatorId`,`text`,`status`,`category`) VALUES(#id#,#clubId#,#startDate#,#endDate#,#creatorId#,#text#,#status#,#category#);
+		<selectKey resultClass="long" keyProperty="id">
+			select last_insert_id()
+		</selectKey>
+	</insert>
+	<update id="updateClubBulletin" parameterClass="clubBulletinModel">
+		UPDATE club_bulletin
+		set clubId=#clubId#,startDate=#startDate#,endDate=#endDate#,creatorId=#creatorId#,text=#text#,status=#status#,category=#category#
+		where id=#id#
+	</update>
+	
+	
+	<!-- 俱乐部玩家记录 -->
+	<select id="getAllClubMemberRecord" resultClass="clubMemberRecordModel">
+		SELECT * FROM club_member_record;
+	</select> 
+	<insert id="insertClubMemberRecord" parameterClass="clubMemberRecordModel">
+		insert club_member_record(clubId,accountId,day,gameCount,bigWinCount,tireValue,isLike,accuTireValue)
+		values(#clubId#,#accountId#,#day#,#gameCount#,#bigWinCount#,#tireValue#,#isLike#,#accuTireValue#)
+		
+		<selectKey resultClass="long" keyProperty="id">
+			select last_insert_id()
+		</selectKey>
+		
+	</insert>
+	
+	<update id="updateClubMemberRecord" parameterClass="clubMemberRecordModel">
+		UPDATE club_member_record
+		set day=#day#,gameCount=#gameCount#,bigWinCount=#bigWinCount#,tireValue=#tireValue#,isLike=#isLike#,accuTireValue=#accuTireValue#
+		where id=#id#
+	</update>
+	<delete id="deleteClubAllMemberRecord" parameterClass="Integer">   
+	    delete from club_member_record where clubId=#clubId#
+	</delete>
+	
+	<delete id="deleteClubMemberRecord" parameterClass="java.util.Map">
+	    delete from club_member_record where clubId=#clubId# and accountId = #accountId#
+	</delete>
+	
+	<delete id="deleteClubMemberRecordById" parameterClass="clubMemberRecordModel">
+	    delete from club_member_record where id = #id#
+	</delete>
+	
+	<select id="getAllClubMemberBanPlayer" resultClass="clubBanPlayerModel">
+	    select * from club_ban_player
+	</select>
+	
+	<insert id="updateOrInsertClubMemberBanPlayer">
+		INSERT INTO club_ban_player(`clubId`,`accountId`,`banPlayers`) VALUES(#clubId#,#accountId#,#banPlayers#) 
+		ON DUPLICATE KEY UPDATE `clubId`=#clubId#,`accountId`=#accountId#,`banPlayers`=#banPlayers#;
+	</insert>
+	<delete id="deleteClubAllMemberBanPlayer" parameterClass="Integer">   
+	    delete from club_ban_player where clubId=#clubId#
+	</delete>
+	<delete id="deleteClubMemberBanPlayer" parameterClass="java.util.Map">
+	    delete from club_ban_player where clubId=#clubId# and accountId = #accountId#
+	</delete>
+	
+	
+	
+	<select id="getAllClubMatch" resultClass="clubMatchModel">
+		SELECT * FROM club_match;
+	</select> 
+	<insert id="insertClubMatchModel" parameterClass="clubMatchModel">
+		insert club_match(clubId,matchName,matchType,maxPlayerCount,startDate,endDate,creatorId,status,remark,enrollAccountIds,reward,gameRuleJson,
+		costGold,gameCount,datas,openType,attendCondition,conditionValue,minPlayerCount)
+		values(#clubId#,#matchName#,#matchType#,#maxPlayerCount#,#startDate#,#endDate#,#creatorId#,#status#,#remark#,#enrollAccountIds#,
+		#reward#,#gameRuleJson#,#costGold#,#gameCount#,#datas#,#openType#,#attendCondition#,#conditionValue#,#minPlayerCount#)
+		
+		<selectKey resultClass="long" keyProperty="id">
+			select last_insert_id()
+		</selectKey>
+	</insert>
+	<update id="updateClubMatchModel" parameterClass="clubMatchModel">
+		update club_match
+		set enrollAccountIds=#enrollAccountIds# ,gameCount=#gameCount#, status=#status# ,costGold=#costGold#, datas=#datas#, startDate=#startDate#, endDate=#endDate#,
+        isBanEnroll=#isBanEnroll#, banPlayers=#banPlayers#, matchName=#matchName#, maxPlayerCount=#maxPlayerCount#, minPlayerCount=#minPlayerCount#, reward=#reward#
+        where id=#id#
+	</update>
+	<delete id="deleteClubMatchModel" parameterClass="clubMatchModel">
+	    delete from club_match where id = #id#
+	</delete>
+	
+	<select id="getClubDataList" resultClass="clubDataModel">
+		SELECT * FROM club_data
+	</select> 
+	<insert id="insertClubDataModel" parameterClass="clubDataModel">
+		insert club_data(clubId,matchCreateNum,matchEndNum,exclusiveCost,goldCost,datas)  
+		values(#clubId#,#matchCreateNum#,#matchEndNum#,#exclusiveCost#,#goldCost#,#datas#)
+	</insert>
+	<update id="updateClubDataModel" parameterClass="clubDataModel">
+		update club_data set clubId=#clubId#,matchCreateNum=#matchCreateNum#,matchEndNum=#matchEndNum#,
+			exclusiveCost=#exclusiveCost#,goldCost=#goldCost#,datas=#datas#
+		 where clubId=#clubId#
+	</update> 
+	
+	<delete id="deleteClubAllMatch" parameterClass="Integer">
+	    delete from club_match where clubId=#clubId#
+	</delete>
+	<delete id="deleteClubDataModel" parameterClass="Integer">
+	    delete from club_data where clubId=#clubId#
+	</delete>
+	
+	
+	<select id="getClubRuleRecordList" resultClass="clubRuleRecordModel">
+		SELECT * FROM club_rule_record
+	</select> 
+	<insert id="insertClubRuleRecordModel" parameterClass="clubRuleRecordModel">
+		insert club_rule_record(clubId,ruleId,recordDate,isTotal,gameCount,exclusiveGold,gold)  
+		values(#clubId#,#ruleId#,#recordDate#,#isTotal#,#gameCount#,#exclusiveGold#,#gold#)
+	</insert>
+	<update id="updateClubRuleRecordModel" parameterClass="clubRuleRecordModel">
+		update club_rule_record set gameCount=#gameCount#,exclusiveGold=#exclusiveGold#,gold=#gold#
+		 where clubId=#clubId# and ruleId=#ruleId# and recordDate=#recordDate#
+	</update> 
+	<delete id="deleteClubRuleRecordModel" parameterClass="clubRuleRecordModel">
+	    delete from club_rule_record where clubId=#clubId# and ruleId=#ruleId# and recordDate=#recordDate#
+	</delete>
+	<delete id="deleteClubAllRuleRecordModel" parameterClass="Integer">
+	    delete from club_rule_record where clubId=#clubId#
+	</delete>
+
+	<update id="updateClubAccountPartner" parameterClass="clubMemberModel">
+		UPDATE club_account SET isPartner = #isPartner#, parentId = #parentId# where account_id = #account_id# and club_id=#club_id#
+	</update>
+
+	<update id="updateClubAccountWelfare" parameterClass="clubMemberModel">
+		UPDATE club_account SET clubWelfare = #clubWelfare# where account_id = #account_id# and club_id=#club_id#
+	</update>
+	<select id="getClubWelfareSwitchModel" resultClass="clubWelfareSwitchModel">
+		SELECT * FROM club_welfare_switch
+	</select>
+	<select id="getAllClubWelfareRewardModel" resultClass="clubWelfareRewardModel">
+		SELECT * FROM club_welfare_reward
+	</select>
+    <select id="getAllClubWelfareLotteryInfo" resultClass="clubWelfareLotteryInfo">
+        SELECT * FROM club_welfare_lottery_info
+    </select>
+	<insert id="insertClubWelfareLotteryInfo" parameterClass="clubWelfareLotteryInfo">
+		insert club_welfare_lottery_info(rewardId,itemId,lotteryCount)
+		values(#rewardId#,#itemId#,#lotteryCount#)
+	</insert>
+	<update id="updateClubWelfareLotteryInfo" parameterClass="clubWelfareLotteryInfo">
+		UPDATE club_welfare_lottery_info SET lotteryCount = #lotteryCount# where rewardId=#rewardId#
+	</update>
+
+    <update id="updateClubWelfareLastLotteryTime" parameterClass="clubWelfareSwitchModel">
+        UPDATE club_welfare_switch SET lastLotteryTime = #lastLotteryTime#
+    </update>
+</sqlMap>

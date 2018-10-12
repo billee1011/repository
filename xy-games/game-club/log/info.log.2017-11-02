@@ -1,0 +1,2 @@
+2017-11-02 19:42:26 [INFO]-[com.cai.redis.listener.TopicAllMessageDelegate] 收到redis消息更新SysGameTypeDict字典
+2017-11-02 19:42:26 [INFO]-[com.cai.dictionary.SysGameTypeDict] redis缓存加载字典SysGameTypeDict(31ms)

@@ -1,0 +1,58 @@
+2018-07-23 05:30:30 [INFO]-[com.cai.redis.listener.TopicAllMessageDelegate] 收到redis消息更新SYS_PARAM_SERVER_VALUE字典
+2018-07-23 05:30:30 [INFO]-[com.cai.dictionary.SysParamServerDict] club cfg:ClubCfg [ownerClubMax=10, clubRuleMax=5, ruleTableMax=30, clubMemberMax=700, open=true, managerMax=10, syncGoldUpdateImmediate=false, checkSeat=true, activityOpen=true, activityMaxTime=360, activityMinTime=1, showHistoryTime=360, activityLimit=50, tableCountWhenHideSetting=8, ruleUpdateSubGameIds=[0, 30052, 9001, 9002, 30091, 30044], useNewGetClubWay=true, saveClubEventDB=true, useOwnThreadSyncRoomStatus=false, ignoreInviteTime=0, delRedisCache=false, checkRoomId=false, useNewGetClubMemRecordWay=false, canDelStartedRoom=false, tip=null, delRedisCacheTip=0, useReserveWorker=false, accessLimit=false, offlineGames=[], offlineGameTip=该游戏已经下线，详情请咨询客服!, useOldRecordSaveWay=false, useOldTireWay=false, useOldRecordInsertWay=false, isBanChat=false, isBanBulletin=false, isBanMarquee=false, clubMatchMinStartMinute=11, clubMatchWillStartMinute=10]
+2018-07-23 05:30:30 [INFO]-[com.cai.dictionary.SysParamServerDict] redis缓存加载加载字典sys_param(14ms)
+2018-07-23 05:30:31 [INFO]-[com.cai.redis.listener.TopicAllMessageDelegate] 收到redis消息更新SERVER_LOGIC_VALUE字典
+2018-07-23 05:30:34 [INFO]-[com.cai.redis.listener.TopicAllMessageDelegate] 收到redis消息更新GAME_GROUP_RULE_VALUE字典
+2018-07-23 05:30:34 [INFO]-[com.cai.redis.listener.TopicAllMessageDelegate] 收到redis消息更新SysGameTypeDict字典
+2018-07-23 05:30:34 [INFO]-[com.cai.dictionary.SysGameTypeDict] redis缓存加载字典SysGameTypeDict(3ms)
+2018-07-23 05:30:34 [INFO]-[com.cai.redis.listener.TopicAllMessageDelegate] 收到redis消息更新SYS_PARAM_SERVER_VALUE字典
+2018-07-23 05:30:34 [INFO]-[com.cai.dictionary.SysParamServerDict] club cfg:ClubCfg [ownerClubMax=10, clubRuleMax=5, ruleTableMax=30, clubMemberMax=700, open=true, managerMax=10, syncGoldUpdateImmediate=false, checkSeat=true, activityOpen=true, activityMaxTime=360, activityMinTime=1, showHistoryTime=360, activityLimit=50, tableCountWhenHideSetting=8, ruleUpdateSubGameIds=[0, 30052, 9001, 9002, 30091, 30044], useNewGetClubWay=true, saveClubEventDB=true, useOwnThreadSyncRoomStatus=false, ignoreInviteTime=0, delRedisCache=false, checkRoomId=false, useNewGetClubMemRecordWay=false, canDelStartedRoom=false, tip=null, delRedisCacheTip=0, useReserveWorker=false, accessLimit=false, offlineGames=[], offlineGameTip=该游戏已经下线，详情请咨询客服!, useOldRecordSaveWay=false, useOldTireWay=false, useOldRecordInsertWay=false, isBanChat=false, isBanBulletin=false, isBanMarquee=false, clubMatchMinStartMinute=11, clubMatchWillStartMinute=10]
+2018-07-23 05:30:34 [INFO]-[com.cai.dictionary.SysParamServerDict] redis缓存加载加载字典sys_param(2ms)
+2018-07-23 05:30:37 [INFO]-[com.cai.redis.listener.TopicAllMessageDelegate] 收到redis消息更新GAME_GROUP_RULE_VALUE字典
+2018-07-23 05:30:37 [INFO]-[com.cai.redis.listener.TopicAllMessageDelegate] 收到redis消息更新SERVER_LOGIC_VALUE字典
+2018-07-23 05:30:39 [INFO]-[com.cai.redis.listener.TopicAllMessageDelegate] 收到redis消息更新SERVER_LOGIC_VALUE字典
+2018-07-23 05:30:39 [INFO]-[com.cai.redis.listener.TopicAllMessageDelegate] 收到redis消息更新SysGameTypeDict字典
+2018-07-23 05:30:39 [INFO]-[com.cai.dictionary.SysGameTypeDict] redis缓存加载字典SysGameTypeDict(1ms)
+2018-07-23 05:30:42 [INFO]-[com.cai.redis.listener.TopicAllMessageDelegate] 收到redis消息更新GAME_GROUP_RULE_VALUE字典
+2018-07-23 18:26:20 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:26:20 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:26:20 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:26:20 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:26:20 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:26:20 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:26:20 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:26:20 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:26:20 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:26:20 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:26:20 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:26:20 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:26:20 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:26:20 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:26:20 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:26:20 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:26:20 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:26:21 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[服务器网关1,192.168.1.10:30081], try connect after 5s
+2018-07-23 18:26:27 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[服务器网关1,192.168.1.10:30081], try connect after 5s
+2018-07-23 18:26:33 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[服务器网关1,192.168.1.10:30081], try connect after 5s
+2018-07-23 18:26:39 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[服务器网关1,192.168.1.10:30081], try connect after 5s
+2018-07-23 18:26:45 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[服务器网关1,192.168.1.10:30081], try connect after 5s
+2018-07-23 18:26:51 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[服务器网关1,192.168.1.10:30081], try connect after 5s
+2018-07-23 18:26:57 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[服务器网关1,192.168.1.10:30081], try connect after 5s
+2018-07-23 18:27:02 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:28:06 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:28:07 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[服务器网关1,192.168.1.10:30081], try connect after 5s
+2018-07-23 18:28:13 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[服务器网关1,192.168.1.10:30081], try connect after 5s
+2018-07-23 18:28:19 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[服务器网关1,192.168.1.10:30081], try connect after 5s
+2018-07-23 18:28:25 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[服务器网关1,192.168.1.10:30081], try connect after 5s
+2018-07-23 18:28:31 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[服务器网关1,192.168.1.10:30081], try connect after 5s
+2018-07-23 18:28:37 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[服务器网关1,192.168.1.10:30081], try connect after 5s
+2018-07-23 18:28:42 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:39:21 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:39:21 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!
+2018-07-23 18:39:23 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[服务器网关1,192.168.1.10:30081], try connect after 5s
+2018-07-23 18:39:29 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[服务器网关1,192.168.1.10:30081], try connect after 5s
+2018-07-23 18:39:35 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[服务器网关1,192.168.1.10:30081], try connect after 5s
+2018-07-23 18:39:41 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[服务器网关1,192.168.1.10:30081], try connect after 5s
+2018-07-23 18:39:47 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[服务器网关1,192.168.1.10:30081], try connect after 5s
+2018-07-23 18:39:53 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Failed to connect to server[服务器网关1,192.168.1.10:30081], try connect after 5s
+2018-07-23 18:39:58 [INFO]-[com.xianyi.framework.core.transport.netty.NettySocketConnector] ##### Connect to server[服务器网关1,192.168.1.10:30081] successfully!

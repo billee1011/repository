@@ -1,0 +1,294 @@
+2017-10-27 10:28:25 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2017-10-27 10:28:25 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2017-10-27 10:43:00 [WARN]-[org.springframework.remoting.rmi.RmiProxyFactoryBean] Could not connect to RMI service [rmi://127.0.0.1:30010/centerRMIServer] - retrying
+2017-10-27 10:44:03 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2017-10-27 10:44:03 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2017-10-27 12:31:12 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2017-10-27 12:31:12 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2017-10-27 12:32:00 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22393749》不存在
+2017-10-27 12:32:00 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22393749》不存在
+2017-10-27 12:32:09 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22393749》不存在
+2017-10-27 12:32:09 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22393749》不存在
+2017-10-27 12:32:32 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22393749》不存在
+2017-10-27 12:32:32 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22393749》不存在
+2017-10-27 12:33:09 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22393750》不存在
+2017-10-27 12:33:09 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22393750》不存在
+2017-10-27 12:35:59 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22393750》不存在
+2017-10-27 12:35:59 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22393750》不存在
+2017-10-27 12:36:23 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22393751》不存在
+2017-10-27 12:36:23 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22393751》不存在
+2017-10-27 12:40:24 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22393752》不存在
+2017-10-27 12:40:24 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22393752》不存在
+2017-10-27 12:40:39 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22393752》不存在
+2017-10-27 12:40:39 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22393752》不存在
+2017-10-27 12:41:16 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22393752》不存在
+2017-10-27 12:41:16 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22393752》不存在
+2017-10-27 14:21:37 [WARN]-[org.springframework.remoting.rmi.RmiProxyFactoryBean] Could not connect to RMI service [rmi://127.0.0.1:30010/centerRMIServer] - retrying
+2017-10-27 14:31:00 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2017-10-27 14:31:00 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2017-10-27 16:44:17 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22391459》不存在
+2017-10-27 16:44:17 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22391459》不存在
+2017-10-27 16:51:08 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########处理消息错误,玩家:22393526,请求类型:29,e:{}
+java.lang.RuntimeException: 系统异常，获取道具物品失败，道具ID：10011
+	at com.cai.service.ItemService.getRealItem(ItemService.java:313)
+	at com.cai.service.ItemService.addPersonItem(ItemService.java:215)
+	at com.cai.service.ItemService.tokenPersonItems(ItemService.java:168)
+	at com.cai.handler.client.ItemHandler.view(ItemHandler.java:79)
+	at com.cai.handler.client.ItemHandler.execute(ItemHandler.java:37)
+	at com.cai.handler.client.ItemHandler.execute(ItemHandler.java:1)
+	at com.xianyi.framework.handler.IClientExHandler.doExecute(IClientExHandler.java:43)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:33)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:1)
+	at com.xianyi.framework.handler.IClientHandler.doExecute(IClientHandler.java:41)
+	at com.xianyi.framework.handler.ReqExecutor.run(ReqExecutor.java:66)
+	at com.cai.common.util.GlobalExecutor.lambda$0(GlobalExecutor.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-27 16:51:10 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########处理消息错误,玩家:22393526,请求类型:29,e:{}
+java.lang.RuntimeException: 系统异常，获取道具物品失败，道具ID：10011
+	at com.cai.service.ItemService.getRealItem(ItemService.java:313)
+	at com.cai.service.ItemService.addPersonItem(ItemService.java:215)
+	at com.cai.service.ItemService.tokenPersonItems(ItemService.java:168)
+	at com.cai.handler.client.ItemHandler.view(ItemHandler.java:79)
+	at com.cai.handler.client.ItemHandler.execute(ItemHandler.java:37)
+	at com.cai.handler.client.ItemHandler.execute(ItemHandler.java:1)
+	at com.xianyi.framework.handler.IClientExHandler.doExecute(IClientExHandler.java:43)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:33)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:1)
+	at com.xianyi.framework.handler.IClientHandler.doExecute(IClientHandler.java:41)
+	at com.xianyi.framework.handler.ReqExecutor.run(ReqExecutor.java:66)
+	at com.cai.common.util.GlobalExecutor.lambda$0(GlobalExecutor.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-27 16:51:20 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########处理消息错误,玩家:22394085,请求类型:29,e:{}
+java.lang.RuntimeException: 系统异常，获取道具物品失败，道具ID：10011
+	at com.cai.service.ItemService.getRealItem(ItemService.java:313)
+	at com.cai.service.ItemService.addPersonItem(ItemService.java:215)
+	at com.cai.service.ItemService.tokenPersonItems(ItemService.java:168)
+	at com.cai.handler.client.ItemHandler.view(ItemHandler.java:79)
+	at com.cai.handler.client.ItemHandler.execute(ItemHandler.java:37)
+	at com.cai.handler.client.ItemHandler.execute(ItemHandler.java:1)
+	at com.xianyi.framework.handler.IClientExHandler.doExecute(IClientExHandler.java:43)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:33)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:1)
+	at com.xianyi.framework.handler.IClientHandler.doExecute(IClientHandler.java:41)
+	at com.xianyi.framework.handler.ReqExecutor.run(ReqExecutor.java:66)
+	at com.cai.common.util.GlobalExecutor.lambda$0(GlobalExecutor.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-27 16:51:29 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########处理消息错误,玩家:22367916,请求类型:29,e:{}
+java.lang.RuntimeException: 系统异常，获取道具物品失败，道具ID：10011
+	at com.cai.service.ItemService.getRealItem(ItemService.java:313)
+	at com.cai.service.ItemService.addPersonItem(ItemService.java:215)
+	at com.cai.service.ItemService.tokenPersonItems(ItemService.java:168)
+	at com.cai.service.ItemService.delPersonItem(ItemService.java:130)
+	at com.cai.service.ItemService.delPersonItem(ItemService.java:102)
+	at com.cai.handler.client.ItemHandler.delItem(ItemHandler.java:91)
+	at com.cai.handler.client.ItemHandler.execute(ItemHandler.java:43)
+	at com.cai.handler.client.ItemHandler.execute(ItemHandler.java:1)
+	at com.xianyi.framework.handler.IClientExHandler.doExecute(IClientExHandler.java:43)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:33)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:1)
+	at com.xianyi.framework.handler.IClientHandler.doExecute(IClientHandler.java:41)
+	at com.xianyi.framework.handler.ReqExecutor.run(ReqExecutor.java:66)
+	at com.cai.common.util.GlobalExecutor.lambda$0(GlobalExecutor.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-27 16:51:31 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########处理消息错误,玩家:22367916,请求类型:29,e:{}
+java.lang.RuntimeException: 使用道具错误，在背包中未找到对应的道具，道具ID：10004
+	at com.cai.service.ItemService.use(ItemService.java:260)
+	at com.cai.handler.client.ItemHandler.useItem(ItemHandler.java:99)
+	at com.cai.handler.client.ItemHandler.execute(ItemHandler.java:46)
+	at com.cai.handler.client.ItemHandler.execute(ItemHandler.java:1)
+	at com.xianyi.framework.handler.IClientExHandler.doExecute(IClientExHandler.java:43)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:33)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:1)
+	at com.xianyi.framework.handler.IClientHandler.doExecute(IClientHandler.java:41)
+	at com.xianyi.framework.handler.ReqExecutor.run(ReqExecutor.java:66)
+	at com.cai.common.util.GlobalExecutor.lambda$0(GlobalExecutor.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-27 16:54:42 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########处理消息错误,玩家:22394090,请求类型:29,e:{}
+java.lang.RuntimeException: 系统异常，获取道具物品失败，道具ID：10011
+	at com.cai.service.ItemService.getRealItem(ItemService.java:313)
+	at com.cai.service.ItemService.addPersonItem(ItemService.java:215)
+	at com.cai.service.ItemService.tokenPersonItems(ItemService.java:168)
+	at com.cai.handler.client.ItemHandler.view(ItemHandler.java:79)
+	at com.cai.handler.client.ItemHandler.execute(ItemHandler.java:37)
+	at com.cai.handler.client.ItemHandler.execute(ItemHandler.java:1)
+	at com.xianyi.framework.handler.IClientExHandler.doExecute(IClientExHandler.java:43)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:33)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:1)
+	at com.xianyi.framework.handler.IClientHandler.doExecute(IClientHandler.java:41)
+	at com.xianyi.framework.handler.ReqExecutor.run(ReqExecutor.java:66)
+	at com.cai.common.util.GlobalExecutor.lambda$0(GlobalExecutor.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-27 16:57:54 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2017-10-27 16:57:54 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2017-10-27 17:03:11 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394103》不存在
+2017-10-27 17:03:11 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394103》不存在
+2017-10-27 17:03:11 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394103》不存在
+2017-10-27 17:03:11 [ERROR]-[com.cai.handler.c2s.ClientTransmitHandler] ##########处理消息错误,玩家:22394103,请求类型:30,e:{}
+java.lang.NullPointerException
+	at com.cai.service.EmailService.buildEmailTable(EmailService.java:203)
+	at com.cai.handler.client.EmailReqHandler.getEmailTable(EmailReqHandler.java:63)
+	at com.cai.handler.client.EmailReqHandler.execute(EmailReqHandler.java:35)
+	at com.cai.handler.client.EmailReqHandler.execute(EmailReqHandler.java:1)
+	at com.xianyi.framework.handler.IClientExHandler.doExecute(IClientExHandler.java:43)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:33)
+	at com.cai.handler.c2s.ClientTransmitHandler.execute(ClientTransmitHandler.java:1)
+	at com.xianyi.framework.handler.IClientHandler.doExecute(IClientHandler.java:41)
+	at com.xianyi.framework.handler.ReqExecutor.run(ReqExecutor.java:66)
+	at com.cai.common.util.GlobalExecutor.lambda$0(GlobalExecutor.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+2017-10-27 17:04:39 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2017-10-27 17:04:39 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/
+2017-10-27 17:05:13 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394114》不存在
+2017-10-27 17:05:13 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394114》不存在
+2017-10-27 17:05:13 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394114》不存在
+2017-10-27 17:06:02 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394116》不存在
+2017-10-27 17:06:02 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394116》不存在
+2017-10-27 17:06:02 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394116》不存在
+2017-10-27 17:06:08 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394116》不存在
+2017-10-27 17:06:08 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394116》不存在
+2017-10-27 17:06:08 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394116》不存在
+2017-10-27 17:06:08 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394116》不存在
+2017-10-27 17:23:28 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394175》不存在
+2017-10-27 17:23:28 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394175》不存在
+2017-10-27 17:23:28 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394175》不存在
+2017-10-27 17:23:57 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394177》不存在
+2017-10-27 17:23:57 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394177》不存在
+2017-10-27 17:23:57 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394177》不存在
+2017-10-27 17:24:50 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394180》不存在
+2017-10-27 17:24:50 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394180》不存在
+2017-10-27 17:24:50 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394180》不存在
+2017-10-27 17:25:03 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394182》不存在
+2017-10-27 17:25:03 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394182》不存在
+2017-10-27 17:25:03 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394182》不存在
+2017-10-27 17:25:11 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:25:25 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394183》不存在
+2017-10-27 17:25:25 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394183》不存在
+2017-10-27 17:25:25 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394183》不存在
+2017-10-27 17:25:27 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:25:54 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394186》不存在
+2017-10-27 17:25:54 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394186》不存在
+2017-10-27 17:25:54 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394186》不存在
+2017-10-27 17:25:55 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:25:56 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:25:57 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:25:57 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:25:57 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:25:58 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:25:58 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:25:58 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:25:58 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:25:59 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:25:59 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:25:59 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:25:59 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:25:59 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:00 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:00 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:00 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:00 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:00 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:00 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:06 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:06 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:06 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:06 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:07 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:07 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:07 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:07 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:07 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:08 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:08 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:08 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:08 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:08 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:11 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:11 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:11 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:12 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:12 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:12 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:12 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:12 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:12 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:13 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:13 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:13 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:13 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:13 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:13 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:14 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:14 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:14 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:14 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:16 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:16 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:16 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:17 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:18 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:18 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:19 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:19 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:19 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:19 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:19 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:20 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:20 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:20 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:21 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:28 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:28 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:29 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:29 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:29 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:26:43 [ERROR]-[com.cai.service.EmailService] 邮件已领取，无法重复领取
+2017-10-27 17:28:48 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394191》不存在
+2017-10-27 17:28:48 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394191》不存在
+2017-10-27 17:28:48 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394191》不存在
+2017-10-27 17:29:21 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394193》不存在
+2017-10-27 17:29:21 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394193》不存在
+2017-10-27 17:29:21 [ERROR]-[com.cai.service.EmailService] 玩家微信信息《22394193》不存在
+2017-10-27 17:53:12 [WARN]-[org.eclipse.jetty.server.Server] THIS IS NOT A STABLE RELEASE! DO NOT USE IN PRODUCTION!
+2017-10-27 17:53:12 [WARN]-[org.eclipse.jetty.server.Server] Download a stable release from http://download.eclipse.org/jetty/

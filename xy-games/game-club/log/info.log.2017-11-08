@@ -1,0 +1,2 @@
+2017-11-08 09:44:01 [INFO]-[com.cai.net.core.ClubAcceptorListener] [[Client->Club]]断开链接:[id: 0x42938f06, /127.0.0.1:37380 :> /127.0.0.1:30061]
+2017-11-08 09:44:01 [INFO]-[com.cai.service.SessionService] [PROXY<->club] ###### offline, channel:[id: 0x42938f06, /127.0.0.1:37380 :> /127.0.0.1:30061],serverIndex:9!

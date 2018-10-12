@@ -1,0 +1,541 @@
+2018-05-18 17:35:55 [ERROR]-[com.cai.dictionary.SysParamServerDict] 修复俱乐部战绩相关，但格式不合适！ranger:0
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部[1021822] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:108)
+	at com.cai.service.ClubService.lambda$8(ClubService.java:239)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:237)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部[1853297] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:108)
+	at com.cai.service.ClubService.lambda$8(ClubService.java:239)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:237)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部[1872458] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:108)
+	at com.cai.service.ClubService.lambda$8(ClubService.java:239)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:237)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:2516297 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部[2863390] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:108)
+	at com.cai.service.ClubService.lambda$8(ClubService.java:239)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:237)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:3119899 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部[3202277] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:108)
+	at com.cai.service.ClubService.lambda$8(ClubService.java:239)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:237)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部[3309335] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:108)
+	at com.cai.service.ClubService.lambda$8(ClubService.java:239)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:237)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部[3325802] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:108)
+	at com.cai.service.ClubService.lambda$8(ClubService.java:239)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:237)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部[5786986] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:108)
+	at com.cai.service.ClubService.lambda$8(ClubService.java:239)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:237)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部[6142560] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:108)
+	at com.cai.service.ClubService.lambda$8(ClubService.java:239)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:237)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:6206404 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:6982894 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:6990270 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7006656 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7006955 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7008112 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7009767 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7011141 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7013549 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7022828 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7027391 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7029007 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7032372 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7034602 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7055012 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7057471 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7064361 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7066081 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7105828 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7134429 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7143085 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7151493 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7162536 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7164268 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7175064 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7176483 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7176890 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7177140 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7178305 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7180975 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7182914 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7199357 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7199910 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7200076 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7204596 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7207451 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7208105 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7213672 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7226887 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7228584 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7228681 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7231309 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7258093 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7263911 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7264383 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7270039 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7271544 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7281682 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7282704 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7283247 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7296092 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7296481 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7309567 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7315576 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7319670 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7323884 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7330814 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7338607 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7343465 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7343936 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7348279 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7350657 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7359345 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7371150 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7381353 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7388979 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7390848 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7393054 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7400277 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7402380 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7406725 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7407814 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7411369 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7423049 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7443281 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7446953 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7452559 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7460189 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7468609 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7470704 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7483902 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7489792 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7510484 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7517982 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7522766 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7538654 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7538758 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7555150 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7559561 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7566747 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7569711 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7575030 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7583135 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7585847 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7587439 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7588897 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7590894 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7591127 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7595501 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7605465 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7610790 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7616237 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7619520 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7620435 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7620521 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7625337 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7626708 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7627372 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7649922 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7660668 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7673565 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7677061 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7681750 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7682064 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7685328 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7686362 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7690896 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7709783 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7714532 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7716375 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7733688 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7743927 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7751598 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7767606 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7798220 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7806545 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7807259 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7814766 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7827202 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7832464 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7843716 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7844184 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7851602 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7864403 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7865507 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7874409 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7893212 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7899445 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7903074 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7911365 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7913671 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7914824 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7918247 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7920868 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7921390 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7926090 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7944784 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7954323 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7964507 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7977779 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7983382 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7985165 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:7985769 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8007545 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8009340 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8022582 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8023180 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8035386 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8038886 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8045122 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8050961 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8057975 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8069871 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8073560 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8085761 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8085965 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8087493 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8093880 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8097733 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8107106 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8112584 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8118043 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8125368 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8126342 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8126995 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8129485 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8135670 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8137816 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8153810 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8159188 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8166097 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8167477 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8169454 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8172388 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8177493 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8179404 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8181682 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8196560 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8204353 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8214486 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8218794 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8237839 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8238275 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8247920 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8252106 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8258471 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8259224 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8260211 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8270077 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8277547 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8285989 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8290239 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8290741 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8300904 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8303093 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8307777 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8310034 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8319825 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8320210 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8320549 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8329205 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8339594 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8344180 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8345051 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8346877 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8353455 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8353646 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8357923 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8366831 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8369410 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8370426 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8372814 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8379222 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8380690 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8389722 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8394617 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8428560 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8435878 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8454627 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8455315 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8462824 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8466030 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8472752 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8491453 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8522473 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8525888 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部[8525982] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:108)
+	at com.cai.service.ClubService.lambda$8(ClubService.java:239)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:237)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8525982 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8536405 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8538240 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8538652 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8552335 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8555398 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8558126 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8567454 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8571420 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8571745 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8571776 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8572841 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8573221 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8575555 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部[8579548] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:108)
+	at com.cai.service.ClubService.lambda$8(ClubService.java:239)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:237)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8579548 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8579584 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8582535 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8583888 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8584393 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8585526 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8585615 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8585724 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8592200 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8592542 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8594123 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8604081 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8606681 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8609487 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8610550 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8627199 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8632544 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8644608 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8647657 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8658504 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8668021 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8672584 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8674391 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8678438 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8678507 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8698461 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8707222 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8722194 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8728583 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8728708 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8751091 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8759028 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8759516 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8765592 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8770084 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8781707 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8791826 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8801566 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8812044 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部[8812471] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:108)
+	at com.cai.service.ClubService.lambda$8(ClubService.java:239)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:237)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8812471 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8820884 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8822555 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8825916 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8842229 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8849164 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8849607 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8850720 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8851855 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8853307 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8862984 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8870143 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8871605 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8886140 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8888888 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8897053 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8914620 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8923494 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8926776 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8935462 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8936597 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8937367 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8942851 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8943682 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8948034 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8965307 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8970990 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8974219 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8974883 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8985319 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8992500 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:8998859 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9003608 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9010141 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9013738 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9023749 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9024084 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9028325 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9032486 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9041671 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9051532 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9061224 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9062144 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9066607 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9069385 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9072681 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9074658 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9080437 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9081698 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9090126 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9090362 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9093327 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9103246 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9103486 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9103995 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9119029 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9129568 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9146244 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9151103 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9152439 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9157613 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9158545 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9166347 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9189275 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9190638 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9191064 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9191638 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9209538 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9212829 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9222867 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9231238 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9236524 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9238063 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9244090 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9246672 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9251800 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9263771 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9265153 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9269614 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9273273 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9276075 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9285069 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9286931 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9288274 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9302281 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9304891 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9312109 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9316477 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9327151 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9332481 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9339994 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9344538 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9346255 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9351907 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9360178 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9363959 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9369685 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9374975 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9375568 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9377661 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9382772 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9392820 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9400163 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9401375 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9404510 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9404523 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9409245 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9413912 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部:9414347 成员数据为空！
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部[9480568] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:108)
+	at com.cai.service.ClubService.lambda$8(ClubService.java:239)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:237)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
+2018-05-18 17:35:57 [ERROR]-[com.cai.service.ClubService] 俱乐部[9647045] 子游戏:8044,玩法名称找不到
+java.lang.NullPointerException
+	at com.cai.dictionary.SysGameTypeDict.getMJname(SysGameTypeDict.java:108)
+	at com.cai.service.ClubService.lambda$8(ClubService.java:239)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at com.cai.service.ClubService.start(ClubService.java:237)
+	at com.xianyi.framework.core.service.ServiceManager.start(ServiceManager.java:70)
+	at GoClubServer.startService(GoClubServer.java:139)
+	at com.cai.common.util.AbstractServer.start(AbstractServer.java:90)
+	at GoClubServer.main(GoClubServer.java:52)
