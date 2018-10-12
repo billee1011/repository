@@ -1,0 +1,8 @@
+# system hardware info
+TOTAL_AVAILABLE_MEMORY=2000m
+YOUNG_EDEN=1600m
+
+# local options
+DEBUG_PORT=30050
+JMX_PORT=30051
+RMI_LOCAL=127.0.0.1

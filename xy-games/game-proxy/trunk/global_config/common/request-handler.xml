@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<include>
+
+	<!-- 
+		id=0通用逻辑服处理
+		msgType=0 代理服处理 1逻辑服处理
+		extensionName 扩展名
+		handlerClass 业务处理类
+	 -->
+	<!-- 逻辑服通用处理 -->
+	<request id="0" msgType="1" extensionName="request" handlerClass="com.cai.handler.TestLogicMsgHandler"/>
+	
+	<!-- 心跳 -->
+	<request id="1" msgType="0" extensionName="heartRequest" handlerClass="com.cai.handler.TestHeatHandler"/>
+	<!-- 登录 -->
+	<request id="2" msgType="0" extensionName="loginRequest" handlerClass="com.cai.handler.TestLoginHandler"/>
+	<!-- 房间 -->
+	<request id="5" msgType="0" extensionName="roomRequest" handlerClass="com.cai.handler.TestRoomHandler"/>
+	<!-- 压测 -->
+	<request id="7" msgType="0" extensionName="myTestRequest" handlerClass="com.cai.handler.TestMyTestHandler"/>
+	<!-- 其它系统 -->
+	<request id="8" msgType="0" extensionName="otherSystemRequest" handlerClass="com.cai.handler.TestOtherSystemHandler"/>
+	<!-- 商城 -->
+	<request id="9" msgType="0" extensionName="storeRequest" handlerClass="com.cai.handler.TestStoreHandler"/>
+	<!-- 房卡相关 -->
+	<request id="10" msgType="0" extensionName="goldCardRequest" handlerClass="com.cai.handler.TestGoldCardHandler"/>
+	
+	<request id="12" msgType="0" extensionName="activityRequest" handlerClass="com.cai.handler.TestActivityHandler"/>
+	
+	<request id="13" msgType="0" extensionName="subAppUpdateRequest" handlerClass="com.cai.handler.TestSubAppUpdateHandler"/>
+	
+	<!-- 排行榜 -->
+	<request id="14" msgType="0" extensionName="rankRequest" handlerClass="com.cai.handler.TestRankHandler"/>
+
+	<!-- 设置签名 -->
+	<request id="15" msgType="0" extensionName="signatureRequest" handlerClass="com.cai.handler.TestSignatureHandler"/>
+	
+	<!-- 查看玩家信息-->
+	<request id="16" msgType="0" extensionName="playerViewRequest" handlerClass="com.cai.handler.TestPlayerViewHandler"/>
+	
+</include>

@@ -1,0 +1,731 @@
+2017-09-26 17:40:43 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 17:40:43 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 17:40:43 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 17:40:43 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6d69484: startup date [Tue Sep 26 17:40:43 CST 2017]; root of context hierarchy
+2017-09-26 17:40:43 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 17:40:44 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 17:40:44 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 17:40:44 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 17:40:44 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 17:40:45 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 17:40:45 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 17:40:46 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 17:40:46 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 17:40:47 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#63b0ced2'
+2017-09-26 17:40:47 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 17:40:47 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 17:40:47 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 17:40:47 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 17:40:47 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 17:40:47 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 17:40:47 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 17:40:47 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@2b34be7d
+2017-09-26 17:40:47 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 17:40:47 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 17:40:47 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 17:40:47 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(3889ms)==============================
+2017-09-26 18:11:46 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 18:11:46 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 18:11:46 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 18:11:46 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2e99c8e0: startup date [Tue Sep 26 18:11:46 CST 2017]; root of context hierarchy
+2017-09-26 18:11:46 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 18:11:46 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 18:11:46 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 18:11:46 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 18:11:46 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 18:11:46 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 18:11:47 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 18:11:48 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 18:11:48 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 18:11:48 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#21f7b13'
+2017-09-26 18:11:48 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 18:11:48 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 18:11:48 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 18:11:48 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 18:11:48 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 18:11:48 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 18:11:48 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 18:11:48 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7df1d142
+2017-09-26 18:11:48 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 18:11:48 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 18:11:48 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 18:11:48 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2538ms)==============================
+2017-09-26 18:14:40 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 18:14:40 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 18:14:40 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 18:14:40 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@46ecb612: startup date [Tue Sep 26 18:14:40 CST 2017]; root of context hierarchy
+2017-09-26 18:14:40 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 18:14:40 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 18:14:40 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 18:14:40 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 18:14:40 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 18:14:41 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 18:14:41 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 18:14:42 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 18:14:42 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 18:14:42 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#71d0e4eb'
+2017-09-26 18:14:42 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 18:14:42 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 18:14:42 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 18:14:42 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 18:14:42 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 18:14:42 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 18:14:42 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 18:14:42 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@79bd4324
+2017-09-26 18:14:42 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 18:14:42 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 18:14:42 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 18:14:42 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2542ms)==============================
+2017-09-26 18:15:11 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 18:15:11 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 18:15:11 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 18:15:11 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1e714795: startup date [Tue Sep 26 18:15:11 CST 2017]; root of context hierarchy
+2017-09-26 18:15:11 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 18:15:11 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 18:15:11 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 18:15:11 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 18:15:11 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 18:15:11 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 18:15:12 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 18:15:13 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 18:15:13 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 18:15:13 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#24a9d295'
+2017-09-26 18:15:13 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 18:15:13 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 18:15:13 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 18:15:13 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 18:15:13 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 18:15:13 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 18:15:13 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 18:15:13 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@a3895ab
+2017-09-26 18:15:13 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 18:15:13 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 18:15:13 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 18:15:13 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2559ms)==============================
+2017-09-26 18:16:17 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 18:16:17 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 18:16:17 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 18:16:17 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f7bcecb: startup date [Tue Sep 26 18:16:17 CST 2017]; root of context hierarchy
+2017-09-26 18:16:17 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 18:16:17 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 18:16:17 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 18:16:17 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 18:16:17 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 18:16:17 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 18:16:18 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 18:16:19 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 18:16:19 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 18:16:19 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#4f97fb7e'
+2017-09-26 18:16:19 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 18:16:19 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 18:16:19 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 18:16:19 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 18:16:19 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 18:16:19 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 18:16:19 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 18:16:19 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@24cdcb09
+2017-09-26 18:16:19 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 18:16:19 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 18:16:19 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 18:16:19 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2381ms)==============================
+2017-09-26 18:17:01 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 18:17:01 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 18:17:01 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 18:17:01 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3b6a8024: startup date [Tue Sep 26 18:17:01 CST 2017]; root of context hierarchy
+2017-09-26 18:17:01 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 18:17:01 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 18:17:01 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 18:17:01 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 18:17:01 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 18:17:01 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 18:17:02 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 18:17:03 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 18:17:03 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 18:17:03 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#61b148ac'
+2017-09-26 18:17:03 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 18:17:03 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 18:17:03 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 18:17:03 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 18:17:03 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 18:17:03 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 18:17:03 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 18:17:03 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@2da8650c
+2017-09-26 18:17:03 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 18:17:03 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 18:17:03 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 18:17:03 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2407ms)==============================
+2017-09-26 18:18:17 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 18:18:17 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 18:18:17 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 18:18:18 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2948b466: startup date [Tue Sep 26 18:18:18 CST 2017]; root of context hierarchy
+2017-09-26 18:18:18 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 18:18:18 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 18:18:18 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 18:18:18 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 18:18:18 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 18:18:18 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 18:18:19 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 18:18:20 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 18:18:20 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 18:18:20 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#6012826d'
+2017-09-26 18:18:20 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 18:18:20 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 18:18:20 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 18:18:20 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 18:18:20 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 18:18:20 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 18:18:20 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 18:18:20 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7a30426a
+2017-09-26 18:18:20 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 18:18:20 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 18:18:20 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 18:18:20 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2419ms)==============================
+2017-09-26 18:19:32 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 18:19:32 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 18:19:32 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 18:19:32 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f7bcecb: startup date [Tue Sep 26 18:19:32 CST 2017]; root of context hierarchy
+2017-09-26 18:19:32 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 18:19:32 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 18:19:32 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 18:19:32 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 18:19:32 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 18:19:33 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 18:19:33 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 18:19:34 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 18:19:34 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 18:19:34 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#4f97fb7e'
+2017-09-26 18:19:34 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 18:19:34 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 18:19:34 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 18:19:34 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 18:19:34 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 18:19:34 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 18:19:34 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 18:19:34 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@24cdcb09
+2017-09-26 18:19:34 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 18:19:34 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 18:19:34 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 18:19:34 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2366ms)==============================
+2017-09-26 18:19:38 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 18:19:38 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 18:19:38 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 18:19:38 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2e99c8e0: startup date [Tue Sep 26 18:19:38 CST 2017]; root of context hierarchy
+2017-09-26 18:19:38 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 18:19:38 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 18:19:38 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 18:19:38 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 18:19:38 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 18:19:38 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 18:19:39 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 18:19:40 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 18:19:40 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 18:19:40 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#21f7b13'
+2017-09-26 18:19:40 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 18:19:40 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 18:19:40 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 18:19:40 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 18:19:40 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 18:19:40 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 18:19:40 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 18:19:40 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@10592eb2
+2017-09-26 18:19:40 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 18:19:40 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 18:19:40 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 18:19:40 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2542ms)==============================
+2017-09-26 18:19:44 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 18:19:44 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 18:19:44 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 18:19:44 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@46ecb612: startup date [Tue Sep 26 18:19:44 CST 2017]; root of context hierarchy
+2017-09-26 18:19:44 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 18:19:44 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 18:19:44 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 18:19:44 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 18:19:44 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 18:19:44 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 18:19:45 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 18:19:46 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 18:19:46 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 18:19:46 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#71d0e4eb'
+2017-09-26 18:19:46 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 18:19:46 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 18:19:46 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 18:19:46 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 18:19:46 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 18:19:46 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 18:19:46 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 18:19:46 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@1d3635d8
+2017-09-26 18:19:46 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 18:19:46 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 18:19:46 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 18:19:46 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2345ms)==============================
+2017-09-26 18:20:07 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 18:20:07 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 18:20:07 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 18:20:07 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@24a38e29: startup date [Tue Sep 26 18:20:07 CST 2017]; root of context hierarchy
+2017-09-26 18:20:07 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 18:20:08 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 18:20:08 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 18:20:08 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 18:20:08 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 18:20:08 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 18:20:09 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 18:20:10 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 18:20:10 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 18:20:10 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#20fd4b22'
+2017-09-26 18:20:10 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 18:20:10 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 18:20:10 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 18:20:10 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 18:20:10 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 18:20:10 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 18:20:10 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 18:20:10 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@68311d86
+2017-09-26 18:20:10 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 18:20:10 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 18:20:10 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 18:20:10 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2554ms)==============================
+2017-09-26 18:20:21 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 18:20:21 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 18:20:21 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 18:20:21 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7babc798: startup date [Tue Sep 26 18:20:21 CST 2017]; root of context hierarchy
+2017-09-26 18:20:21 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 18:20:21 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 18:20:21 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 18:20:21 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 18:20:21 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 18:20:21 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 18:20:22 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 18:20:23 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 18:20:23 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 18:20:23 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#523a0720'
+2017-09-26 18:20:23 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 18:20:23 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 18:20:23 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 18:20:23 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 18:20:23 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 18:20:23 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 18:20:23 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 18:20:23 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@2bf115f1
+2017-09-26 18:20:23 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 18:20:23 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 18:20:23 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 18:20:23 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2448ms)==============================
+2017-09-26 18:25:58 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 18:25:58 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 18:25:58 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 18:25:58 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@628f34e4: startup date [Tue Sep 26 18:25:58 CST 2017]; root of context hierarchy
+2017-09-26 18:25:58 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 18:27:44 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 18:27:44 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 18:27:44 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 18:27:44 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@355fd6a4: startup date [Tue Sep 26 18:27:44 CST 2017]; root of context hierarchy
+2017-09-26 18:27:44 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 18:27:45 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 18:27:45 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 18:27:45 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 18:27:45 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 18:27:46 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 18:27:47 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 18:27:48 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 18:27:48 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 18:27:48 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#3df175e2'
+2017-09-26 18:27:48 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 18:27:48 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 18:27:48 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 18:27:48 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 18:27:48 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 18:27:48 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 18:27:48 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 18:27:48 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@3ef5df6f
+2017-09-26 18:27:48 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 18:27:48 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 18:27:48 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 18:27:48 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(4334ms)==============================
+2017-09-26 18:29:52 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 18:29:53 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 18:29:53 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 18:29:53 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@355fd6a4: startup date [Tue Sep 26 18:29:53 CST 2017]; root of context hierarchy
+2017-09-26 18:29:53 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 18:29:53 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 18:29:53 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 18:29:53 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 18:29:53 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 18:29:53 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 18:29:54 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 18:29:55 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 18:29:55 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 18:29:55 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#3df175e2'
+2017-09-26 18:29:55 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 18:29:55 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 18:29:55 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 18:29:55 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 18:29:55 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 18:29:55 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 18:29:55 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 18:29:55 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@1de0a116
+2017-09-26 18:29:55 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 18:29:55 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 18:29:55 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 18:29:55 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2361ms)==============================
+2017-09-26 19:56:57 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 19:56:57 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 19:56:57 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 19:56:57 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3b6a8024: startup date [Tue Sep 26 19:56:57 CST 2017]; root of context hierarchy
+2017-09-26 19:56:57 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 19:56:58 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 19:56:58 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 19:56:58 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 19:56:58 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 19:56:58 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 19:56:59 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 19:57:00 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 19:57:00 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 19:57:00 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#61b148ac'
+2017-09-26 19:57:00 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 19:57:00 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 19:57:00 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 19:57:00 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 19:57:00 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 19:57:00 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 19:57:00 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 19:57:00 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@2da8650c
+2017-09-26 19:57:00 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 19:57:00 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 19:57:00 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 19:57:00 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2457ms)==============================
+2017-09-26 19:58:10 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 19:58:10 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 19:58:10 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 19:58:10 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@46ecb612: startup date [Tue Sep 26 19:58:10 CST 2017]; root of context hierarchy
+2017-09-26 19:58:10 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 19:58:11 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 19:58:11 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 19:58:11 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 19:58:11 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 19:58:11 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 19:58:11 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 19:58:12 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 19:58:12 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 19:58:12 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#71d0e4eb'
+2017-09-26 19:58:13 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 19:58:13 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 19:58:13 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 19:58:13 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 19:58:13 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 19:58:13 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 19:58:13 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 19:58:13 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@79bd4324
+2017-09-26 19:58:13 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 19:58:13 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 19:58:13 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 19:58:13 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2606ms)==============================
+2017-09-26 19:58:44 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 19:58:44 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 19:58:44 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 19:58:44 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2e99c8e0: startup date [Tue Sep 26 19:58:44 CST 2017]; root of context hierarchy
+2017-09-26 19:58:44 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 19:58:44 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 19:58:44 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 19:58:44 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 19:58:44 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 19:58:45 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 19:58:45 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 19:58:46 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 19:58:46 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 19:58:46 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#21f7b13'
+2017-09-26 19:58:46 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 19:58:46 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 19:58:46 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 19:58:46 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 19:58:46 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 19:58:46 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 19:58:46 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 19:58:46 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7df1d142
+2017-09-26 19:58:46 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 19:58:46 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 19:58:46 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 19:58:46 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2289ms)==============================
+2017-09-26 20:00:51 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 20:00:51 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 20:00:51 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 20:00:51 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f7bcecb: startup date [Tue Sep 26 20:00:51 CST 2017]; root of context hierarchy
+2017-09-26 20:00:51 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 20:00:51 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 20:00:51 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 20:00:51 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 20:00:51 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 20:00:51 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 20:00:52 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 20:00:53 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 20:00:53 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 20:00:53 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#4f97fb7e'
+2017-09-26 20:00:53 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 20:00:53 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 20:00:53 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 20:00:53 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 20:00:53 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 20:00:53 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 20:00:53 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 20:00:53 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@3ed22288
+2017-09-26 20:00:53 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 20:00:53 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 20:00:53 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 20:00:53 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2349ms)==============================
+2017-09-26 20:02:11 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 20:02:11 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 20:02:11 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 20:02:11 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4dbfb41: startup date [Tue Sep 26 20:02:11 CST 2017]; root of context hierarchy
+2017-09-26 20:02:12 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 20:02:12 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 20:02:12 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 20:02:12 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 20:02:12 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 20:02:12 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 20:02:12 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 20:02:13 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 20:02:14 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 20:02:14 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#22c65968'
+2017-09-26 20:02:14 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 20:02:14 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 20:02:14 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 20:02:14 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 20:02:14 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 20:02:14 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 20:02:14 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 20:02:14 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@57668b6a
+2017-09-26 20:02:14 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 20:02:14 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 20:02:14 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 20:02:14 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2360ms)==============================
+2017-09-26 20:02:59 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 20:02:59 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 20:02:59 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 20:02:59 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@516cdfb3: startup date [Tue Sep 26 20:02:59 CST 2017]; root of context hierarchy
+2017-09-26 20:02:59 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 20:02:59 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 20:02:59 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 20:02:59 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 20:02:59 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 20:02:59 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 20:03:00 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 20:03:01 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 20:03:01 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 20:03:01 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#625d880f'
+2017-09-26 20:03:01 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 20:03:01 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 20:03:01 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 20:03:01 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 20:03:01 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 20:03:01 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 20:03:01 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 20:03:01 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@72d865f5
+2017-09-26 20:03:01 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 20:03:01 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 20:03:01 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 20:03:01 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2350ms)==============================
+2017-09-26 20:03:11 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 20:03:11 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 20:03:11 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 20:03:11 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7babc798: startup date [Tue Sep 26 20:03:11 CST 2017]; root of context hierarchy
+2017-09-26 20:03:11 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 20:03:12 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 20:03:12 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 20:03:12 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 20:03:12 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 20:03:12 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 20:03:12 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 20:03:13 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 20:03:13 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 20:03:14 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#523a0720'
+2017-09-26 20:03:14 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 20:03:14 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 20:03:14 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 20:03:14 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 20:03:14 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 20:03:14 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 20:03:14 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 20:03:14 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@2bf115f1
+2017-09-26 20:03:14 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 20:03:14 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 20:03:14 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 20:03:14 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2338ms)==============================
+2017-09-26 20:05:57 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-09-26 20:05:57 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-09-26 20:05:57 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-09-26 20:05:57 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@a7ff134: startup date [Tue Sep 26 20:05:57 CST 2017]; root of context hierarchy
+2017-09-26 20:05:57 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-09-26 20:05:57 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-09-26 20:05:57 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-09-26 20:05:57 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-09-26 20:05:57 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-09-26 20:05:57 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]
+2017-09-26 20:05:58 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Looking for RMI registry at port '30025'
+2017-09-26 20:05:59 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Could not detect RMI registry - creating new one
+2017-09-26 20:05:59 [INFO]-[org.springframework.remoting.rmi.RmiServiceExporter] Binding service 'proxyRMIServer' to RMI registry: RegistryImpl[UnicastServerRef [liveRef: [endpoint:[192.168.1.49:30025](local),objID:[0:0:0, 0]]]]
+2017-09-26 20:05:59 [INFO]-[org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] Initializing ExecutorService  'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler#68cfd36'
+2017-09-26 20:05:59 [INFO]-[org.quartz.impl.StdSchedulerFactory] Using default implementation for ThreadExecutor
+2017-09-26 20:05:59 [INFO]-[org.quartz.core.SchedulerSignalerImpl] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2017-09-26 20:05:59 [INFO]-[org.quartz.core.QuartzScheduler] Quartz Scheduler v.2.2.3 created.
+2017-09-26 20:05:59 [INFO]-[org.quartz.simpl.RAMJobStore] RAMJobStore initialized.
+2017-09-26 20:05:59 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler meta-data: Quartz Scheduler (v2.2.3) 'startQuertz' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2017-09-26 20:05:59 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler 'startQuertz' initialized from an externally provided properties instance.
+2017-09-26 20:05:59 [INFO]-[org.quartz.impl.StdSchedulerFactory] Quartz scheduler version: 2.2.3
+2017-09-26 20:05:59 [INFO]-[org.quartz.core.QuartzScheduler] JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@6bc561a2
+2017-09-26 20:05:59 [INFO]-[org.springframework.context.support.DefaultLifecycleProcessor] Starting beans in phase 2147483647
+2017-09-26 20:05:59 [INFO]-[org.springframework.scheduling.quartz.SchedulerFactoryBean] Starting Quartz Scheduler now
+2017-09-26 20:05:59 [INFO]-[org.quartz.core.QuartzScheduler] Scheduler startQuertz_$_NON_CLUSTERED started.
+2017-09-26 20:05:59 [INFO]-[com.cai.common.util.SpringService] ===================spring 启动完成(2301ms)==============================

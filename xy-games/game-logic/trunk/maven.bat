@@ -1,0 +1,1 @@
+mvn -file F:\workplace\game-logic\trunk\pom.xml clean package -DskipTests -o

@@ -1,0 +1,8 @@
+compiler.compileProtoFiles=true
+compiler.cppOutputDirectory=message_c++
+compiler.javaCodeGenerationEnabled=true
+compiler.javaOutputDirectory=src\\main\\java
+compiler.protocFilePath=D\:\\soft\\protoc-2.5.0-win32\\protoc.exe
+compiler.useProtocInCustomPath=true
+compiler.useProtocInSystemPath=false
+eclipse.preferences.version=1

@@ -1,0 +1,10 @@
+2017-10-16 18:38:54 [WARN]-[com.cai.core.Global] 开始停止异步处理线程池，等待剩余任务执行完...
+2017-10-16 18:38:54 [WARN]-[com.cai.core.Global] DB线程池已执行完毕！
+2017-10-16 18:38:54 [INFO]-[com.cai.common.util.SpringService] ==========spring 启动中============
+2017-10-16 18:38:54 [INFO]-[org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2738f803: startup date [Mon Oct 16 18:38:54 CST 2017]; root of context hierarchy
+2017-10-16 18:38:54 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-context.xml]
+2017-10-16 18:38:55 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-rmi.xml]
+2017-10-16 18:38:55 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-redis.xml]
+2017-10-16 18:38:55 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-mongo.xml]
+2017-10-16 18:38:55 [INFO]-[org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from class path resource [spring-quartz.xml]
+2017-10-16 18:38:55 [INFO]-[com.cai.common.util.CustomizedPropertyPlaceholderConfigurer] Loading properties file from URL [file:F:/workplace/game-club/global_config/yu//config/config.properties]

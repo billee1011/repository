@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<include>
+	<service order="1" name="sessionService" class="com.cai.service.SessionServiceImpl"/>
+	<service order="2" name="playerService" class="com.cai.service.PlayerServiceImpl"/>
+	<service order="3" name="logService" class="com.cai.mongo.service.log.LogService"/>
+	<service order="4" name="redisServiceImpl" class="com.cai.service.RedisServiceImpl"/>
+	<service order="5" name="mongoDBServiceImpl" class="com.cai.service.MongoDBServiceImpl"/>
+	
+	
+</include>

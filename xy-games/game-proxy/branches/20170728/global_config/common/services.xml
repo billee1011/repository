@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<include>
+	<service order="1" name="sessionServiceImpl" class="com.cai.service.SessionServiceImpl" />
+	<service order="2" name="playerServiceImpl" class="com.cai.service.PlayerServiceImpl" />
+	<service order="3" name="publicServiceImpl" class="com.cai.service.PublicServiceImpl" />
+	<service order="4" name="clientServiceImpl" class="com.cai.service.ClientServiceImpl" />
+	<service order="6" name="redisServiceImpl" class="com.cai.service.RedisServiceImpl" />
+	<service order="7" name="ptAPIServiceImpl" class="com.cai.service.PtAPIServiceImpl" />
+	<service order="8" name="mongoDBServiceImpl" class="com.cai.service.MongoDBServiceImpl" />
+	<service order="9" name="firewallServiceImpl" class="com.cai.service.FirewallServiceImpl" />
+	<service order="10" name="handlerServiceImp" class="com.cai.service.HandlerServiceImp" />
+</include>

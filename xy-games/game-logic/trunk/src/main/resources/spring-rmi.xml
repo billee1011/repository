@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:c="http://www.springframework.org/schema/c" xmlns:cache="http://www.springframework.org/schema/cache" xmlns:context="http://www.springframework.org/schema/context" xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:jee="http://www.springframework.org/schema/jee" xmlns:lang="http://www.springframework.org/schema/lang" xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:p="http://www.springframework.org/schema/p" xmlns:task="http://www.springframework.org/schema/task" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+		http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	
+
+	<!-- 客户端 -->
+	 <bean id="centerRmiServer" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
+	 	<!-- 不在容器启动的时候创建与Server端的连接 -->
+	 	<property name="lookupStubOnStartup" value="false"/>
+	 	<!-- 是否连接出错时自动重连 -->
+	 	<property name="refreshStubOnConnectFailure" value="true"/>
+        <!-- baseService是调用服务端serviceName的value，1200是服务端注册的端口 -->  
+        <property name="serviceUrl" value="rmi://${center.rmiUrl}/centerRMIServer" />
+        <!-- service接口 -->  
+        <property name="serviceInterface" value="com.cai.common.rmi.ICenterRMIServer" />
+    </bean>
+    
+    <!-- 服务端 -->
+    <bean id="logicRMIServerImpl" class="com.cai.rmi.impl.LogicRMIServerImpl"/>
+	<bean class="org.springframework.remoting.rmi.RmiServiceExporter">
+		 <!-- value值是提供给客户端调用 -->  
+		<property name="serviceName" value="logicRMIServer"/>
+		 <!-- 调用Service --> 
+		<property name="service" ref="logicRMIServerImpl"/>
+		<!-- service接口 -->  
+		<property name="serviceInterface" value="com.cai.common.rmi.ILogicRMIServer"/>
+		<!-- 注册端口 -->
+		<property name="registryPort" value="${game.rmiPort}"/>
+	</bean>
+    
+    
+    
+</beans>

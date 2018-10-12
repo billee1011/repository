@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<include>
+
+	<!-- 
+		id=0通用逻辑服处理
+		msgType=0 代理服处理 1逻辑服处理
+		extensionName 扩展名
+		handlerClass 业务处理类
+	 -->
+	<!-- 逻辑服通用处理 -->
+	<request id="0" msgType="1" extensionName="request" handlerClass="com.cai.handler.LogicMsgHandler"/>
+	
+	<!-- 心跳 -->
+	<request id="1" msgType="0" extensionName="heartRequest" handlerClass="com.cai.handler.HeatHandler"/>
+	<!-- 登录 -->
+	<request id="2" msgType="0" extensionName="loginRequest" handlerClass="com.cai.handler.LoginHandler"/>
+	<!-- 房间 -->
+	<request id="5" msgType="0" extensionName="roomRequest" handlerClass="com.cai.handler.RoomHandler"/>
+	<!-- 压测 -->
+	<request id="7" msgType="0" extensionName="myTestRequest" handlerClass="com.cai.handler.MyTestHandler"/>
+	<!-- 其它系统 -->
+	<request id="8" msgType="0" extensionName="otherSystemRequest" handlerClass="com.cai.handler.OtherSystemHandler"/>
+	<!-- 商城 -->
+	<request id="9" msgType="0" extensionName="storeRequest" handlerClass="com.cai.handler.StoreHandler"/>
+	<!-- 房卡相关 -->
+	<request id="10" msgType="0" extensionName="goldCardRequest" handlerClass="com.cai.handler.GoldCardHandler"/>
+	
+	<request id="12" msgType="0" extensionName="activityRequest" handlerClass="com.cai.handler.ActivityHandler"/>
+	
+
+</include>

@@ -1,0 +1,9 @@
+com\cai\test\xwy\MapTest.class
+com\cai\test\xwy\MongoApp.class
+com\cai\test\platservice\GlobalTest.class
+com\cai\test\xwy\Person.class
+com\cai\test\xwy\Test.class
+com\cai\test\config\GlobalConfigTest.class
+com\cai\test\xwy\InputTest.class
+com\cai\test\platservice\PtAPIServiceImpTest.class
+com\cai\test\spring\ServerTest.class
